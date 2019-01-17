@@ -1,14 +1,13 @@
 {
-  "main.css": "/kevinhu/static/css/main.1c7cccd8.chunk.css",
-  "main.js": "/kevinhu/static/js/main.9680c2c7.chunk.js",
-  "main.js.map": "/kevinhu/static/js/main.9680c2c7.chunk.js.map",
-  "static/js/1.fa92c112.chunk.js": "/kevinhu/static/js/1.fa92c112.chunk.js",
-  "static/js/1.fa92c112.chunk.js.map": "/kevinhu/static/js/1.fa92c112.chunk.js.map",
+  "main.css": "/kevinhu/static/css/main.6916a690.chunk.css",
+  "main.js": "/kevinhu/static/js/main.d1483ea9.chunk.js",
+  "main.js.map": "/kevinhu/static/js/main.d1483ea9.chunk.js.map",
+  "static/js/1.4a34e45d.chunk.js": "/kevinhu/static/js/1.4a34e45d.chunk.js",
+  "static/js/1.4a34e45d.chunk.js.map": "/kevinhu/static/js/1.4a34e45d.chunk.js.map",
   "runtime~main.js": "/kevinhu/static/js/runtime~main.124b90c6.js",
   "runtime~main.js.map": "/kevinhu/static/js/runtime~main.124b90c6.js.map",
-  "static/media/logo.svg": "/kevinhu/static/media/logo.5d5d9eef.svg",
-  "static/css/main.1c7cccd8.chunk.css.map": "/kevinhu/static/css/main.1c7cccd8.chunk.css.map",
+  "static/css/main.6916a690.chunk.css.map": "/kevinhu/static/css/main.6916a690.chunk.css.map",
   "index.html": "/kevinhu/index.html",
-  "precache-manifest.d2acfaa5228f6e02a90dfc42d02094e6.js": "/kevinhu/precache-manifest.d2acfaa5228f6e02a90dfc42d02094e6.js",
+  "precache-manifest.7832ed72e860eba9702445b79ad47d1c.js": "/kevinhu/precache-manifest.7832ed72e860eba9702445b79ad47d1c.js",
   "service-worker.js": "/kevinhu/service-worker.js"
 }
