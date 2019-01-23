@@ -1,15 +1,14 @@
 {
-  "main.css": "/kevinhu/static/css/main.1e453188.chunk.css",
-  "main.js": "/kevinhu/static/js/main.4406184b.chunk.js",
-  "main.js.map": "/kevinhu/static/js/main.4406184b.chunk.js.map",
-  "static/js/1.3966f1eb.chunk.js": "/kevinhu/static/js/1.3966f1eb.chunk.js",
-  "static/js/1.3966f1eb.chunk.js.map": "/kevinhu/static/js/1.3966f1eb.chunk.js.map",
+  "main.css": "/kevinhu/static/css/main.61eab754.chunk.css",
+  "main.js": "/kevinhu/static/js/main.7c09abd2.chunk.js",
+  "main.js.map": "/kevinhu/static/js/main.7c09abd2.chunk.js.map",
+  "static/js/1.5f76458a.chunk.js": "/kevinhu/static/js/1.5f76458a.chunk.js",
+  "static/js/1.5f76458a.chunk.js.map": "/kevinhu/static/js/1.5f76458a.chunk.js.map",
   "runtime~main.js": "/kevinhu/static/js/runtime~main.124b90c6.js",
   "runtime~main.js.map": "/kevinhu/static/js/runtime~main.124b90c6.js.map",
-  "static/css/main.1e453188.chunk.css.map": "/kevinhu/static/css/main.1e453188.chunk.css.map",
-  "static/media/logo-via-logohub.png": "/kevinhu/static/media/logo-via-logohub.8944c19d.png",
   "static/media/kevinhu_photo.png": "/kevinhu/static/media/kevinhu_photo.fbae14d6.png",
+  "static/css/main.61eab754.chunk.css.map": "/kevinhu/static/css/main.61eab754.chunk.css.map",
   "index.html": "/kevinhu/index.html",
-  "precache-manifest.0b686acd5c8c66c10c08aadfc0b1ad76.js": "/kevinhu/precache-manifest.0b686acd5c8c66c10c08aadfc0b1ad76.js",
+  "precache-manifest.bf07bfff38aa09db4cec188e078262af.js": "/kevinhu/precache-manifest.bf07bfff38aa09db4cec188e078262af.js",
   "service-worker.js": "/kevinhu/service-worker.js"
 }
