@@ -6,7 +6,7 @@ html {
 html .resume, html .projects, html .home, html .education, html .about {
   justify-content: center;
   align-items: center;
-  height: 675px;
+  height: 750px;
   width: 100%;
   padding: 120px;
   display: flex;
@@ -48,10 +48,11 @@ html .resume, html .projects, html .home, html .education, html .about {
 .home .bio {
   display: flex;
   justify-content: center;
-  height: 70%;
+  height: 40%;
   margin: 25px;
   border-radius: 50%;
   border: 8px solid #034;
+  position: absolute;
 }
 .home .bio .profilePic {
   object-fit: cover;
@@ -68,25 +69,32 @@ html .resume, html .projects, html .home, html .education, html .about {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  transition: transform 500ms ease-in-out;
 }
 .home .bio .qualities {
-  border: 1px solid black;
   width: 50px;
   height: 50px;
   transition: transform 5000ms ease-in-out;
 }
 .home .gridContainer {
-  padding-right: 100px;
-  padding-top: 50px;
+  padding-right: 450px;
+  padding-top: 30px;
+  position: relative;
+  right: 300px;
 }
 .home .gridContainer .tile {
+  padding: 10px;
   margin: 15px;
-  width: 200px;
-  height: 135px;
+  width: 400%;
+  height: 150px;
 }
 
 .transform {
   transform: translate(150px, 0px);
+}
+
+.transform2 {
+  transform: translate(-250px, 0px);
 }
 
 /*# sourceMappingURL=App.css.map */

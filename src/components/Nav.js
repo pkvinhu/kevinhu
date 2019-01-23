@@ -22,6 +22,7 @@ class Nav extends Component {
                 <div /*className="collapse navbar-collapse" id="#navBar"*/>
                     <a className='nav-link scroll-link navbar-brand' href='#home'>Home</a>
                     <a className='nav-link scroll-link navbar-brand' href='#about'>About Me</a>
+                    <a className='nav-link scroll-link navbar-brand' href='#tech'>Technologies</a>
                     <a className='nav-link scroll-link navbar-brand' href='#projects'>Projects</a>
                     <a className='nav-link scroll-link navbar-brand' href='#education'>Education</a>
                     <a className='nav-link scroll-link navbar-brand' href='#resume'>Resume</a>

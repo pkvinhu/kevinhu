@@ -1,36 +1,57 @@
 import React, { Component } from 'react';
 import '../App.css';
-import { Button, Icon, Paper, GridList } from '@material-ui/core';
+import { Button, Icon } from '@material-ui/core';
 
 
 class Home extends Component {
     state = {
         transform: false,
-        strengths: false,
-        tech: false,
-        passions: false
+        Strengths: false,
+        Books: false,
+        Passions: false
     }
 
     handleClick = (evt) => {
-        this.setState({ [evt.target.name]: true })
+        console.log(evt.target.name, evt.target.innerHTML);
+        if(evt.target.name === "transform") {
+            this.setState({ transform: true })
+        }
+        else {
+            this.setState({ [evt.target.innerHTML]: true })
+        }
     }
 
     render() {
-        const { transform, strengths, tech, passions } = this.state;
+        const { transform, Strengths, Books, Passions } = this.state;
         const { handleClick } = this;
         return (
             <div className='home' id='home'>
-                    <GridList className="gridContainer" cellHeight={130} cols={1}>
-                        {strengths && <Paper className="tile">Strengths</Paper>}
-                        {tech && <Paper className="tile">Tech</Paper>}
-                        {passions && <Paper className="tile">Passions</Paper>}
-                    </GridList>
+                    <div className="gridContainer">
+                        {Strengths && (
+                            <div className="tile">
+                                <h5>Strengths</h5>
+                                <hr />
+                            </div>)
+                        }
+                        {Passions && (
+                            <div className="tile">
+                                <h5>Passions</h5>
+                                <hr />
+                            </div>)
+                        }
+                        {Books && (
+                            <div className="tile">
+                                <h5>Favorite Books</h5>
+                                <hr />
+                            </div>)
+                        }
+                    </div>
                     <div className="bio">
                     {transform && 
                         (<div className="insideQualities">
                             <Button name="strengths" onClick={handleClick}>Strengths</Button>
-                            <Button name="tech" onClick={handleClick}>Technologies</Button>
                             <Button name="passions" onClick={handleClick}>Passions</Button>
+                            <Button name="books" onClick={handleClick}>Books</Button>
                         </div>)
                     }
                     <img
