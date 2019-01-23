@@ -5,7 +5,7 @@ import '../App.css';
 class Resume extends Component {
     render() {
         return (
-            <div className='resume'>
+            <div className='resume' id='resume'>
                 <h1>Link to PDF..</h1>
             </div>
         )
