@@ -1,18 +1,25 @@
 html {
   margin: 0;
-  font: Georgia, serif;
+  font: Georgia, serif #034;
   scroll-behavior: smooth;
 }
 html .resume, html .projects, html .home, html .education, html .about {
-  height: 500px;
+  justify-content: center;
+  align-items: center;
+  height: 675px;
   width: 100%;
-  padding: 50px;
+  padding: 120px;
   display: flex;
+  border: 1px solid black;
 }
 
 .App {
   padding: 20px 60px 20px 60px;
-  background-color: #dddada;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
 }
 .App img {
   height: 75px;
@@ -25,29 +32,33 @@ html .resume, html .projects, html .home, html .education, html .about {
 
 .footer {
   border-top: 1px solid grey;
-  background-color: white;
+  background-color: #034;
   position: fixed;
   bottom: 0;
   height: 75px;
   width: 100%;
 }
 .footer p {
-  color: #005;
+  color: white;
   display: flex;
   justify-content: center;
   align-content: center;
 }
 
 .home .bio {
+  justify-content: center;
+  height: 70%;
   margin: 25px;
+  border-radius: 50%;
+  border: 8px solid #034;
 }
 .home .bio .profilePic {
   object-fit: cover;
   object-position: 100% 0%;
   border-radius: 50%;
-  height: 75%;
+  height: 100%;
   width: 100%;
-  padding: 10%;
+  transition: transform 1000ms ease-in-out;
 }
 .home .bio .cardContent {
   display: flex;
@@ -56,8 +67,18 @@ html .resume, html .projects, html .home, html .education, html .about {
   align-items: center;
   font-family: Georgia, serif;
 }
+.home .bio .qualities {
+  position: fixed;
+  bottom: 20;
+  left: 10;
+  transition: transform 1000ms ease-in-out;
+}
 .home .webContent {
   margin: 25px;
+}
+
+.transform {
+  transform: translate(300px, 0px);
 }
 
 /*# sourceMappingURL=App.css.map */
