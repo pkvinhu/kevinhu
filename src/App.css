@@ -46,6 +46,7 @@ html .resume, html .projects, html .home, html .education, html .about {
 }
 
 .home .bio {
+  display: flex;
   justify-content: center;
   height: 70%;
   margin: 25px;
@@ -58,27 +59,34 @@ html .resume, html .projects, html .home, html .education, html .about {
   border-radius: 50%;
   height: 100%;
   width: 100%;
-  transition: transform 1000ms ease-in-out;
+  transition: transform 500ms ease-in-out;
 }
-.home .bio .cardContent {
-  display: flex;
-  justify-content: center;
+.home .bio .insideQualities {
+  position: relative;
+  left: 150px;
+  top: 85px;
   flex-direction: column;
   align-items: center;
-  font-family: Georgia, serif;
+  width: 100%;
 }
 .home .bio .qualities {
-  position: fixed;
-  bottom: 20;
-  left: 10;
-  transition: transform 1000ms ease-in-out;
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  transition: transform 5000ms ease-in-out;
 }
-.home .webContent {
-  margin: 25px;
+.home .gridContainer {
+  padding-right: 100px;
+  padding-top: 50px;
+}
+.home .gridContainer .tile {
+  margin: 15px;
+  width: 200px;
+  height: 135px;
 }
 
 .transform {
-  transform: translate(300px, 0px);
+  transform: translate(150px, 0px);
 }
 
 /*# sourceMappingURL=App.css.map */
