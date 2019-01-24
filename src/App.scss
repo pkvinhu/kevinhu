@@ -2,18 +2,25 @@
   $primary-color: #034;
   $secondary-color: white;
 
+  %flex-centered {
+      display: flex;
+      justify-content: center;
+  }
+
+  * {
+    font: $font-stack;
+  }
+
   html {
     margin: 0;
-    font: $font-stack $primary-color;
     scroll-behavior: smooth;
     .resume, .projects, .home, .education, .about {
-        justify-content: center;
+        @extend %flex-centered;
         align-items: center;
         height: 750px;
         width: 100%;
         padding: 120px;
-        display: flex;
-        border: 1px solid black;
+        // border: 1px solid black;
     }
   }
   
@@ -43,28 +50,27 @@
     width: 100%;
     p {
       color: $secondary-color;
-      display: flex;
-      justify-content: center;
+      @extend %flex-centered;
       align-content: center;
     }
   }
 
   .home {
     .bio {
-        display: flex;
-        justify-content: center;
+        @extend %flex-centered;
         height: 40%;
         margin: 25px;
         border-radius: 50%;
         border: 8px solid $primary-color;
         position: absolute;
+        transition: transform 500ms ease-in-out;
         .profilePic {
             object-fit: cover;
             object-position: 100% 0%;
             border-radius: 50%;
             height: 100%;
             width: 100%;
-            transition: transform 500ms ease-in-out;
+            transition: transform 1500ms ease-in-out;
         }
         .insideQualities {
             position: relative;
@@ -82,16 +88,38 @@
         }
     }
     .gridContainer {
-        padding-right: 450px;
         padding-top: 30px;
         position: relative;
-        right: 300px;
+        right: 250px;
         .tile {
-            padding: 10px;
-            margin: 15px;
-            width: 400%;
-            height: 150px;
+            width: 750px;
+            height: 180px;
+            // border-top: 2px solid grey;
+            }
+            ul {
+                width: 80%;
+                column-count: 2;
+                list-style-type: none;
+                li {
+                    opacity: 0;
+                    animation: fadeIn 3s 1;
+                    animation-fill-mode: forwards;
+                }
+            }
         }
+  }
+
+  .item:hover {
+      border-bottom: 3px solid $primary-color;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0.0;
+      padding-left: 230px;
+    }
+    100% {
+      opacity: 1.0;
     }
   }
 
@@ -100,5 +128,5 @@
   }
 
   .transform2 {
-    transform: translate(-250px, 0px);    
+    transform: translate(150px, 0px);    
   }

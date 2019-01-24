@@ -1,16 +1,21 @@
+.home .bio, .footer p, html .resume, html .projects, html .home, html .education, html .about {
+  display: flex;
+  justify-content: center;
+}
+
+* {
+  font: Georgia, serif;
+}
+
 html {
   margin: 0;
-  font: Georgia, serif #034;
   scroll-behavior: smooth;
 }
 html .resume, html .projects, html .home, html .education, html .about {
-  justify-content: center;
   align-items: center;
   height: 750px;
   width: 100%;
   padding: 120px;
-  display: flex;
-  border: 1px solid black;
 }
 
 .App {
@@ -40,19 +45,16 @@ html .resume, html .projects, html .home, html .education, html .about {
 }
 .footer p {
   color: white;
-  display: flex;
-  justify-content: center;
   align-content: center;
 }
 
 .home .bio {
-  display: flex;
-  justify-content: center;
   height: 40%;
   margin: 25px;
   border-radius: 50%;
   border: 8px solid #034;
   position: absolute;
+  transition: transform 500ms ease-in-out;
 }
 .home .bio .profilePic {
   object-fit: cover;
@@ -60,7 +62,7 @@ html .resume, html .projects, html .home, html .education, html .about {
   border-radius: 50%;
   height: 100%;
   width: 100%;
-  transition: transform 500ms ease-in-out;
+  transition: transform 1500ms ease-in-out;
 }
 .home .bio .insideQualities {
   position: relative;
@@ -77,24 +79,44 @@ html .resume, html .projects, html .home, html .education, html .about {
   transition: transform 5000ms ease-in-out;
 }
 .home .gridContainer {
-  padding-right: 450px;
   padding-top: 30px;
   position: relative;
-  right: 300px;
+  right: 250px;
 }
 .home .gridContainer .tile {
-  padding: 10px;
-  margin: 15px;
-  width: 400%;
-  height: 150px;
+  width: 750px;
+  height: 180px;
+}
+.home .gridContainer ul {
+  width: 80%;
+  column-count: 2;
+  list-style-type: none;
+}
+.home .gridContainer ul li {
+  opacity: 0;
+  animation: fadeIn 3s 1;
+  animation-fill-mode: forwards;
 }
 
+.item:hover {
+  border-bottom: 3px solid #034;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    padding-left: 230px;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .transform {
   transform: translate(150px, 0px);
 }
 
 .transform2 {
-  transform: translate(-250px, 0px);
+  transform: translate(150px, 0px);
 }
 
 /*# sourceMappingURL=App.css.map */
