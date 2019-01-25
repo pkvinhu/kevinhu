@@ -3,6 +3,22 @@
   justify-content: center;
 }
 
+.aboutBG2, .aboutBG1 {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation: bgFade 6s 1;
+  animation-fill-mode: forwards;
+}
+
+.home .bio .profilePic, .about .image {
+  object-fit: cover;
+  object-position: 100% 0%;
+  border-radius: 50%;
+}
+
 * {
   font: Georgia, serif;
 }
@@ -24,15 +40,48 @@ html .resume, html .projects, html .home, html .education, html .about {
   display: flex;
   justify-content: space-between;
   position: fixed;
+  top: 0;
   width: 100%;
+  overflow: hidden;
+  z-index: 1;
 }
 .App img {
   height: 75px;
   width: auto;
 }
 
-.bio {
-  width: 300px;
+.about .image {
+  height: 60%;
+  width: 0%;
+  margin-right: 300px;
+  border: 8px solid #034;
+  opacity: 0;
+  animation: fadeRight 5s 1;
+  animation-fill-mode: forwards;
+}
+
+.info {
+  opacity: 1;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  background-size: 328px 238px;
+  float: left;
+  position: relative;
+  height: 0px;
+  width: 70%;
+  padding: 25px;
+  margin-left: 300px;
+  opacity: 0;
+  animation: fadeLeft 5s 1;
+  animation-fill-mode: forwards;
+}
+
+.aboutBG1 {
+  background-image: url("https://cache-graphicslib.viator.com/graphicslib/thumbs674x446/5651/SITours/360-chicago-observation-deck-formerly-john-hancock-observatory-in-chicago-379484.jpg");
+}
+
+.aboutBG2 {
+  background-image: url("https://thehappyjetlagger.com/wp-content/uploads/2017/07/Brooklyn_Bridge-15.jpg");
 }
 
 .footer {
@@ -49,6 +98,7 @@ html .resume, html .projects, html .home, html .education, html .about {
 }
 
 .home .bio {
+  width: 300px;
   height: 40%;
   margin: 25px;
   border-radius: 50%;
@@ -57,9 +107,6 @@ html .resume, html .projects, html .home, html .education, html .about {
   transition: transform 500ms ease-in-out;
 }
 .home .bio .profilePic {
-  object-fit: cover;
-  object-position: 100% 0%;
-  border-radius: 50%;
   height: 100%;
   width: 100%;
   transition: transform 1500ms ease-in-out;
@@ -109,6 +156,47 @@ html .resume, html .projects, html .home, html .education, html .about {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes bgFade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeLeft {
+  0% {
+    opacity: 0;
+    margin-left: 300px;
+  }
+  50% {
+    opacity: 0.7;
+    margin-left: 35px;
+    height: 0px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 35px;
+    height: 300px;
+  }
+}
+@keyframes fadeRight {
+  0% {
+    opacity: 0;
+    margin-right: 300px;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+    width: 25%;
+    margin-right: 35px;
   }
 }
 .transform {

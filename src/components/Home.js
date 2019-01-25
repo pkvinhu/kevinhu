@@ -67,7 +67,7 @@ class Home extends Component {
                     <div className={transform ? "transform bio" : "bio"}>
                     {transform && 
                         (<div className="insideQualities">
-                            <Button name="strengths" color="gray" onClick={handleClick}>Strengths</Button>
+                            <Button name="strengths" onClick={handleClick}>Strengths</Button>
                             <Button name="passions" onClick={handleClick}>Passions</Button>
                             <Button name="books" onClick={handleClick}>Books</Button>
                         </div>)
@@ -80,7 +80,7 @@ class Home extends Component {
                     />
                     
                     </div>
-                    <div className={transform ? "qualities transform2" : "qualities"}>
+                    <div className="qualities">
                         {!transform && 
                         (<div><Icon>menu</Icon>
                         <Icon>arrow_forward_ios</Icon></div>)}
