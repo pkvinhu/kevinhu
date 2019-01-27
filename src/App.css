@@ -1,4 +1,4 @@
-.home .bio, .footer p, html .resume, html .projects, html .home, html .education, html .about {
+.home .bio, .footer p, html .resume, html .projects, html .home, html .education, html .about, html .tech {
   display: flex;
   justify-content: center;
 }
@@ -8,8 +8,13 @@
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  position: static;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
-  animation: bgFade 6s 1;
+  animation: bgFade 2s 1;
   animation-fill-mode: forwards;
 }
 
@@ -17,6 +22,13 @@
   object-fit: cover;
   object-position: 100% 0%;
   border-radius: 50%;
+}
+
+.info, .about .image {
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  background-size: 328px 238px;
+  position: relative;
 }
 
 * {
@@ -27,9 +39,9 @@ html {
   margin: 0;
   scroll-behavior: smooth;
 }
-html .resume, html .projects, html .home, html .education, html .about {
+html .resume, html .projects, html .home, html .education, html .about, html .tech {
   align-items: center;
-  height: 750px;
+  height: 775px;
   width: 100%;
   padding: 120px;
 }
@@ -43,34 +55,53 @@ html .resume, html .projects, html .home, html .education, html .about {
   top: 0;
   width: 100%;
   overflow: hidden;
-  z-index: 1;
+  z-index: 10;
 }
 .App img {
   height: 75px;
   width: auto;
 }
 
+.about::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  z-index: -1;
+  filter: blur(4px);
+  -moz-filter: blur(4px);
+  -webkit-filter: blur(4px);
+  -o-filter: blur(4px);
+  transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -webkit-transition: all 1s linear;
+  -o-transition: all 1s linear;
+}
+
+.about {
+  overflow: hidden;
+  height: 100%;
+}
 .about .image {
-  height: 60%;
-  width: 0%;
-  margin-right: 300px;
+  height: 37%;
+  width: 15%;
   border: 8px solid #034;
-  opacity: 0;
+  bottom: 30%;
+  left: 3%;
+  opacity: 1;
   animation: fadeRight 5s 1;
   animation-fill-mode: forwards;
 }
 
 .info {
-  opacity: 1;
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
-  background-size: 328px 238px;
-  float: left;
-  position: relative;
-  height: 0px;
+  color: #034;
+  font: 1.5em solid Georgia, serif;
+  font-weight: bold;
   width: 70%;
-  padding: 25px;
-  margin-left: 300px;
+  padding: 45px;
+  height: 525px;
+  background-color: rgba(252, 248, 248, 0.7);
   opacity: 0;
   animation: fadeLeft 5s 1;
   animation-fill-mode: forwards;
@@ -162,11 +193,8 @@ html .resume, html .projects, html .home, html .education, html .about {
   0% {
     opacity: 0;
   }
-  50% {
-    opacity: 0.5;
-  }
   100% {
-    opacity: 1;
+    opacity: 0.9;
   }
 }
 @keyframes fadeLeft {
@@ -174,15 +202,9 @@ html .resume, html .projects, html .home, html .education, html .about {
     opacity: 0;
     margin-left: 300px;
   }
-  50% {
-    opacity: 0.7;
-    margin-left: 35px;
-    height: 0px;
-  }
   100% {
     opacity: 1;
     margin-left: 35px;
-    height: 300px;
   }
 }
 @keyframes fadeRight {
@@ -190,12 +212,8 @@ html .resume, html .projects, html .home, html .education, html .about {
     opacity: 0;
     margin-right: 300px;
   }
-  50% {
-    opacity: 0.2;
-  }
   100% {
     opacity: 1;
-    width: 25%;
     margin-right: 35px;
   }
 }

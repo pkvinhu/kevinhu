@@ -11,9 +11,14 @@
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat;
+    position: static;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.5);
     opacity: 0;
-    animation: bgFade 6s 1;
+    animation: bgFade 2s 1;
     animation-fill-mode: forwards;
   }
 
@@ -23,6 +28,13 @@
     border-radius: 50%;
   }
 
+  %content-overlay {
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+    background-size: 328px 238px;
+    position: relative;
+  }
+
   * {
     font: $font-stack;
   }
@@ -30,10 +42,10 @@
   html {
     margin: 0;
     scroll-behavior: smooth;
-    .resume, .projects, .home, .education, .about {
+    .resume, .projects, .home, .education, .about, .tech {
         @extend %flex-centered;
         align-items: center;
-        height: 750px;
+        height: 775px;
         width: 100%;
         padding: 120px;
         // border: 1px solid black;
@@ -49,36 +61,71 @@
     top: 0;
     width: 100%;
     overflow: hidden;
-    z-index:1;
+    z-index: 10;
     // border-bottom: 5px solid $primary-color;
     img {
         height: 75px;
         width: auto;
     }
   }
-  .about {
-      .image {
+
+  .about::before {
+    content: "";
+    position: absolute;
+    width : 100%;
+    height: 100%;
+    background: inherit;
+    z-index: -1;
+    
+    filter        : blur(4px);
+    -moz-filter   : blur(4px);
+    -webkit-filter: blur(4px);
+    -o-filter     : blur(4px);
+    
+    transition        : all 1s linear;
+    -moz-transition   : all 1s linear;
+    -webkit-transition: all 1s linear;
+    -o-transition     : all 1s linear;
+  }
+
+  .about{
+    overflow: hidden;
+    height: 100%;
+    // opacity: .5;
+    .image {
           @extend %circle-img;
-          height: 60%;
-          width: 0%;
-          margin-right: 300px;
+          @extend %content-overlay;
+          height: 37%;
+          width: 15%;
           border: 8px solid $primary-color;
-          opacity: 0;
+          bottom: 30%;
+          left: 3%;
+        //   z-index:-1;
+          opacity: 1;
           animation: fadeRight 5s 1;
           animation-fill-mode: forwards;
-      }
+    }
   }
+
+    // .info::before {
+    //     -webkit-filter: blur(5px);
+    //     -moz-filter: blur(5px);
+    //     -o-filter: blur(5px);
+    //     -ms-filter: blur(5px);
+    //     filter: blur(5px);
+    // }
+
+
   .info {
-    opacity: 1;
-    -webkit-transition: opacity 1s;
-    transition: opacity 1s;
-    background-size: 328px 238px;
-    float: left;
-    position: relative;
-    height: 0px;
+    @extend %content-overlay;
+    color: $primary-color;
+    font: 1.5em solid $font-stack;
+    font-weight: bold;
     width: 70%;
-    padding: 25px;
-    margin-left: 300px;
+    padding: 45px;
+    height: 525px;
+    background-color: rgb(252, 248, 248, 0.7);
+    // mix-blend-mode: difference;
     opacity: 0;
     animation: fadeLeft 5s 1;
     animation-fill-mode: forwards;
@@ -179,11 +226,8 @@
     0% {
       opacity: 0.0;
     }
-    50% {
-        opacity: .5;
-    }
     100% {
-      opacity: 1.0;
+      opacity: 0.9;
     }
   }
 
@@ -192,15 +236,13 @@
       opacity: 0.0;
       margin-left: 300px;
     }
-    50%{
-        opacity: .7;
-        margin-left: 35px; 
-        height: 0px;
-    }
+    // 50%{
+    //     opacity: .7;
+    //     margin-left: 35px; 
+    // }
     100% {
       opacity: 1.0;
       margin-left: 35px;
-      height: 300px;
     }
   }
 
@@ -209,12 +251,12 @@
       opacity: 0.0;
       margin-right: 300px;
     }
-    50% {
-      opacity: 0.2;
-    }
+    // 50% {
+    //   opacity: 0.2;
+    // }
     100% {
       opacity: 1.0;
-      width: 25%;
+
       margin-right: 35px;
     }
   }

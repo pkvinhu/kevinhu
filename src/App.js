@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter as Router, Route } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Home from './components/Home';
@@ -7,6 +7,7 @@ import About from './components/About';
 import Education from './components/Education';
 import Projects from './components/Projects';
 import Resume from './components/Resume';
+import Technologies from './components/Technologies';
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
           <Nav />
           <Home />
           <About />
+          <Technologies />
           <Projects />
           <Education />
           <Resume />

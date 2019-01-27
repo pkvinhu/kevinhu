@@ -73,6 +73,7 @@ class Home extends Component {
                         </div>)
                     }
                     <img
+                        alt=""
                         name="transform"
                         className={transform ? "profilePic transform2" : "profilePic"}
                         src={require('../kevinhu_photo.png')}
