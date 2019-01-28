@@ -137,6 +137,7 @@ html .section {
   border-top: 1px solid grey;
   background-color: #034;
   position: fixed;
+  z-index: 10;
   bottom: 0;
   height: 40px;
   width: 100%;
@@ -223,8 +224,8 @@ html .section {
 }
 .textbox ul {
   column-count: 3;
-  column-gap: 100px;
   align-content: center;
+  width: 90%;
 }
 .textbox ul li {
   text-align: center;
@@ -233,7 +234,6 @@ html .section {
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    padding-left: 230px;
   }
   100% {
     opacity: 1;
@@ -275,52 +275,139 @@ html .section {
   transform: translate(150px, 0px);
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1366px) {
-  .section {
-    height: 1366px;
+@media (min-width: 768px) and (max-width: 1366px) {
+  section, .home, .about, .tech {
+    height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    position: none;
-    border: 1px solid black;
-    transition: none;
-  }
-  .section .children {
-    transition: none;
-  }
-
-  .home {
-    height: 800px;
-  }
-
-  .about::before {
-    height: 80%;
   }
 
   .about .image {
-    position: none;
+    position: relative;
+    top: 40px;
+    z-index: 1;
   }
   .about .info {
     margin: 0px;
+    width: 100%;
+  }
+
+  .aboutBG1, .aboutBG2 {
+    position: relative;
   }
 
   .bio {
-    position: static;
+    position: relative;
+    top: 0px;
+    height: 270px;
+    width: 200px;
+  }
+  .bio .insideQualities {
+    top: 50px;
+    left: 120px;
   }
 
   .gridContainer {
     display: flex;
     justify-content: center;
-    position: static;
+    position: none;
+    right: 0;
+    top: 10px;
     height: auto;
+    padding: 0px;
   }
   .gridContainer .tile {
-    width: 200px;
-    height: 400px;
+    width: 250px;
+    height: 350px;
+  }
+  .gridContainer .tile ul {
+    column-count: 1;
+  }
+
+  .logoContainer {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    position: relative;
+    top: 150px;
+    left: 30px;
+  }
+  .logoContainer .logo {
+    width: 16%;
+  }
+
+  .textbox {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 150px;
+  }
+  .textbox ul {
+    column-count: 4;
   }
 
   .transform {
-    transform: translate(0px, 0px);
+    transform: translate(-100px, 0px);
+  }
+}
+@media (max-width: 736px) {
+  body {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    position: relative;
+  }
+
+  .about {
+    width: 100%;
+  }
+  .about .image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    top: 60px;
+    z-index: 1;
+  }
+  .about .info {
+    margin: 0px;
+    position: relative;
+    top: 40px;
+    right: 20px;
+    font-size: 1em;
+    width: 400px;
+  }
+
+  .textbox {
+    width: 400px;
+    height: 100%;
+    position: relative;
+    top: 150px;
+    right: 0px;
+  }
+  .textbox ul {
+    column-count: 4;
+  }
+
+  .logoContainer {
+    width: 400px;
+    height: 100%;
+    align-items: center;
+    position: relative;
+    top: 150px;
+    left: 30px;
+  }
+  .logoContainer .logo {
+    width: 33%;
   }
 }
 

@@ -18,23 +18,12 @@ class Technologies extends Component {
                        "https://avatars2.githubusercontent.com/u/317889?s=200&v=4",
                        "https://miro.medium.com/max/918/1*SruahLTSYt6Oo8MKhTMI6w.png"]
         const tech = {
-            Proficient: [ "Javascript (ES5, ES6, JSX)", "HTML", "CSS", "React", "Redux", "Material Design", "Express", "Node.js", "PostgreSQL", "Sequelize", "Git", "Github", "npm" ],
-            Intermediate: [ "Bootstrap", "Responsive Design", "Heroku", "Webpack", "Mocha", "Chai", "Supertest", "Google Sheets Script", "Google App Maker" ],
-            Beginner: [ "Enzyme", "Jest", "SQL", "Google BigQuery", "Google Cloud", "Socket.io", "SASS"]
+            Proficient: [ "Javascript (ES5, ES6, JSX)", "HTML5", "React", "Redux", "Material Design", "Express", "Node.js", "PostgreSQL", "Sequelize", "Git", "Github", "NPM", "JSON", "AJAX", "RESTful API" ],
+            Intermediate: [ "Agile/Scrum", "CSS3", , "Heroku", "Webpack", "Mocha", "Chai", "Supertest", "Google Sheets Script", "Google App Maker" ],
+            Beginner: [ "Enzyme", "Jest", "SQL", "Responsive Design", "Bootstrap", "Google BigQuery", "Google Cloud", "SASS"]
         }
         return (
             <div className='tech section' id='tech'>
-                <div className="logoContainer">
-                {logos.map(each => {
-                    return(
-                        <img 
-                            alt=""
-                            className="logo"
-                            src={each}
-                            />
-                    )
-                })}
-                </div>
                 <div className="textbox">
                     <div>
                         <h4 className="skills">Proficient</h4>
@@ -63,6 +52,17 @@ class Technologies extends Component {
                         ))}
                         </ul>       
                     </div>
+                </div>
+                <div className="logoContainer">
+                {logos.map(each => {
+                    return(
+                        <img 
+                            alt=""
+                            className="logo"
+                            src={each}
+                            />
+                    )
+                })}
                 </div>
             </div>
         )

@@ -25,17 +25,16 @@ class Home extends Component {
         }
     }
 
-    // componentDidMount(){
-    //     console.log(this.props)
-    //     const { height, width } = this.props.size;
-    //     if(width <= 1024) {
-    //         this.setState({ 
-    //             Strengths: true,
-    //             Books: true,
-    //             Passions: true
-    //         })
-    //     }
-    // }
+    componentDidMount(){
+        const { height, width } = this.props.size;
+        if(width <= 1024) {
+            this.setState({ 
+                Strengths: true,
+                Books: true,
+                Passions: true
+            })
+        }
+    }
 
     render() {
         const { transform, Strengths, Books, Passions } = this.state;
@@ -44,7 +43,7 @@ class Home extends Component {
                             "Passions": ["People", "Story-telling", "Data", "Writing", "Social Equality/Equity", "Asian American Community"], 
                             "Favorite Books": [ "East of Eden - John Steinbeck", "Gilead - Marilynne Robinson", "The Brothers K - David James Duncan", "A Tale for the Time Being - Ruth Ozeki", "Homegoing - Yaa Gyasi"]}
         const { width } = this.props.size;
-        if(width <= 1024) {
+        if(width <= 736) {
             return (
                 <div></div>
             )} else {
@@ -102,11 +101,11 @@ class Home extends Component {
                     />
                     
                     </div>
-                    <div className="qualities">
+                    {/*<div className="qualities">
                         {!transform && 
                         (<div><Icon>menu</Icon>
                         <Icon>arrow_forward_ios</Icon></div>)}
-                    </div>
+                        </div>*/}
 
             </div>
         )
