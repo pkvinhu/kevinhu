@@ -16,8 +16,8 @@ class About extends Component {
     render() {
         const { bg } = this.state;
         return (
-            <Fragment className="about" >
-            <div className={!bg ? 'about aboutBG1' : 'about aboutBG2'} id='about'>
+            <Fragment className='about section'>
+            <div className={!bg ? 'about section aboutBG1' : 'about section aboutBG2'} id='about'>
             <img
                 alt=""
                 name=""

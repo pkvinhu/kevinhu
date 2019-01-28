@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import '../App.css';
 import { Button, Icon } from '@material-ui/core';
+import sizeMe from 'react-sizeme';
 
 
 class Home extends Component {
+    constructor(props){
+        super(props);
+    }
     state = {
         transform: false,
         Strengths: false,
@@ -21,14 +25,31 @@ class Home extends Component {
         }
     }
 
+    // componentDidMount(){
+    //     console.log(this.props)
+    //     const { height, width } = this.props.size;
+    //     if(width <= 1024) {
+    //         this.setState({ 
+    //             Strengths: true,
+    //             Books: true,
+    //             Passions: true
+    //         })
+    //     }
+    // }
+
     render() {
         const { transform, Strengths, Books, Passions } = this.state;
         const { handleClick } = this;
         const qualities = { "Strengths": ["Problem Solving", "Learner", "Connectedness", "Relational", "Public Speaking", "Work Ethic"],
                             "Passions": ["People", "Story-telling", "Data", "Writing", "Social Equality/Equity", "Asian American Community"], 
                             "Favorite Books": [ "East of Eden - John Steinbeck", "Gilead - Marilynne Robinson", "The Brothers K - David James Duncan", "A Tale for the Time Being - Ruth Ozeki", "Homegoing - Yaa Gyasi"]}
+        const { width } = this.props.size;
+        if(width <= 1024) {
+            return (
+                <div></div>
+            )} else {
         return (
-            <div className='home' id='home'>
+            <div className='home section' id='home'>
                     <div className="gridContainer">
                         {Strengths && (
                             <div className="tile">
@@ -89,7 +110,8 @@ class Home extends Component {
 
             </div>
         )
+        }
     }
 }
 
-export default Home;
+export default sizeMe()(Home);

@@ -1,4 +1,4 @@
-.home .bio, .footer p, html .resume, html .projects, html .home, html .education, html .about, html .tech {
+.textbox .skills, .bio, .footer p, html .section {
   display: flex;
   justify-content: center;
 }
@@ -18,7 +18,7 @@
   animation-fill-mode: forwards;
 }
 
-.home .bio .profilePic, .about .image {
+.bio .profilePic, .about .image {
   object-fit: cover;
   object-position: 100% 0%;
   border-radius: 50%;
@@ -31,15 +31,32 @@
   position: relative;
 }
 
-* {
-  font: Georgia, serif;
+.info {
+  opacity: 0;
+  animation: fadeLeft 5s 1;
+  animation-fill-mode: forwards;
+}
+
+.textbox ul li, .textbox, .gridContainer ul li {
+  opacity: 0;
+  animation: fadeIn 3s 1;
+  animation-fill-mode: forwards;
+}
+
+.textbox ul, .gridContainer ul {
+  width: 80%;
+  list-style-type: none;
+}
+
+* div {
+  font-family: Georgia, serif;
 }
 
 html {
   margin: 0;
   scroll-behavior: smooth;
 }
-html .resume, html .projects, html .home, html .education, html .about, html .tech {
+html .section {
   align-items: center;
   height: 775px;
   width: 100%;
@@ -54,12 +71,17 @@ html .resume, html .projects, html .home, html .education, html .about, html .te
   position: fixed;
   top: 0;
   width: 100%;
+  height: 85px;
   overflow: hidden;
   z-index: 10;
 }
 .App img {
   height: 75px;
   width: auto;
+}
+.App div {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .about::before {
@@ -84,8 +106,8 @@ html .resume, html .projects, html .home, html .education, html .about, html .te
   height: 100%;
 }
 .about .image {
-  height: 37%;
-  width: 15%;
+  height: 210px;
+  width: 210px;
   border: 8px solid #034;
   bottom: 30%;
   left: 3%;
@@ -96,15 +118,11 @@ html .resume, html .projects, html .home, html .education, html .about, html .te
 
 .info {
   color: #034;
-  font: 1.5em solid Georgia, serif;
-  font-weight: bold;
+  font: 1.3em solid Georgia, serif;
   width: 70%;
   padding: 45px;
-  height: 525px;
-  background-color: rgba(252, 248, 248, 0.7);
-  opacity: 0;
-  animation: fadeLeft 5s 1;
-  animation-fill-mode: forwards;
+  height: 550px;
+  background-color: rgba(252, 248, 248, 0.6);
 }
 
 .aboutBG1 {
@@ -120,7 +138,7 @@ html .resume, html .projects, html .home, html .education, html .about, html .te
   background-color: #034;
   position: fixed;
   bottom: 0;
-  height: 75px;
+  height: 40px;
   width: 100%;
 }
 .footer p {
@@ -128,21 +146,21 @@ html .resume, html .projects, html .home, html .education, html .about, html .te
   align-content: center;
 }
 
-.home .bio {
+.bio {
   width: 300px;
-  height: 40%;
+  height: 300px;
   margin: 25px;
   border-radius: 50%;
   border: 8px solid #034;
   position: absolute;
   transition: transform 500ms ease-in-out;
 }
-.home .bio .profilePic {
+.bio .profilePic {
   height: 100%;
   width: 100%;
   transition: transform 1500ms ease-in-out;
 }
-.home .bio .insideQualities {
+.bio .insideQualities {
   position: relative;
   left: 150px;
   top: 85px;
@@ -151,33 +169,65 @@ html .resume, html .projects, html .home, html .education, html .about, html .te
   width: 100%;
   transition: transform 500ms ease-in-out;
 }
-.home .bio .qualities {
+.bio .qualities {
   width: 50px;
   height: 50px;
   transition: transform 5000ms ease-in-out;
 }
-.home .gridContainer {
+
+.gridContainer {
   padding-top: 30px;
   position: relative;
   right: 250px;
 }
-.home .gridContainer .tile {
-  width: 750px;
+.gridContainer .tile {
+  width: 650px;
   height: 180px;
+  padding: 15px;
+  margin: 15px;
+  background-color: rgba(24, 50, 99, 0.1);
 }
-.home .gridContainer ul {
-  width: 80%;
-  column-count: 2;
-  list-style-type: none;
+.gridContainer ul {
+  column-count: 3;
 }
-.home .gridContainer ul li {
-  opacity: 0;
-  animation: fadeIn 3s 1;
-  animation-fill-mode: forwards;
-}
-
 .item:hover {
   border-bottom: 3px solid #034;
+}
+
+.tech {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logoContainer {
+  height: 80%;
+  width: 80%;
+  padding: 20px;
+  margin-right: 30px;
+}
+.logoContainer .logo {
+  width: 25%;
+  height: 40%;
+  object-fit: contain;
+  padding: 15px;
+}
+
+.textbox {
+  height: auto;
+  width: 42%;
+  padding: 10px;
+  background-color: rgba(24, 50, 99, 0.1);
+}
+.textbox .skills {
+  color: #034;
+}
+.textbox ul {
+  column-count: 3;
+  column-gap: 100px;
+  align-content: center;
+}
+.textbox ul li {
+  text-align: center;
 }
 
 @keyframes fadeIn {
@@ -223,6 +273,55 @@ html .resume, html .projects, html .home, html .education, html .about, html .te
 
 .transform2 {
   transform: translate(150px, 0px);
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  .section {
+    height: 1366px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: none;
+    border: 1px solid black;
+    transition: none;
+  }
+  .section .children {
+    transition: none;
+  }
+
+  .home {
+    height: 800px;
+  }
+
+  .about::before {
+    height: 80%;
+  }
+
+  .about .image {
+    position: none;
+  }
+  .about .info {
+    margin: 0px;
+  }
+
+  .bio {
+    position: static;
+  }
+
+  .gridContainer {
+    display: flex;
+    justify-content: center;
+    position: static;
+    height: auto;
+  }
+  .gridContainer .tile {
+    width: 200px;
+    height: 400px;
+  }
+
+  .transform {
+    transform: translate(0px, 0px);
+  }
 }
 
 /*# sourceMappingURL=App.css.map */

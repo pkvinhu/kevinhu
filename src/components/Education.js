@@ -5,7 +5,7 @@ import '../App.css';
 class Education extends Component {
     render() {
         return (
-            <div className='education' id='education'>
+            <div className='section' id='education'>
                 <h1>My Education..</h1>
             </div>
         )
