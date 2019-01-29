@@ -35,8 +35,10 @@ class Nav extends Component {
                     <a className='nav-link scroll-link navbar-brand item' href='#about'>About Me</a>
                     <a className='nav-link scroll-link navbar-brand item' href='#tech'>Technologies</a>
                     <a className='nav-link scroll-link navbar-brand item' href='#projects'>Projects</a>
+                    <a className='nav-link scroll-link navbar-brand item' href='#writing'>Writing</a>
                     <a className='nav-link scroll-link navbar-brand item' href='#education'>Education</a>
-                    <a className='nav-link scroll-link navbar-brand item' href='#resume'>Resume</a>
+                    <a className='nav-link scroll-link navbar-brand item' target="_blank" rel="noopener noreferrer" href="https://medium.com/@kvinhu/latest">Blog</a>
+                    <a className='nav-link scroll-link navbar-brand item' target="_blank" rel="noopener noreferrer" href="Software_Engineer_CV_v3.pdf">Resume</a>
                 </div>
             </nav>
         )

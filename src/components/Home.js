@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import '../App.css';
-import { Button, Icon } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 import sizeMe from 'react-sizeme';
 
 
 class Home extends Component {
-    constructor(props){
-        super(props);
-    }
+
     state = {
         transform: false,
         Strengths: false,

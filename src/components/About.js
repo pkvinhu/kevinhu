@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import '../App.css';
-import { Paper } from '@material-ui/core';
+// import { Paper } from '@material-ui/core';
 
 class About extends Component {
     state = {
@@ -25,14 +25,24 @@ class About extends Component {
                 src={require('../faphoto3.jpg')}
             />
             {/* <Paper className='info'> */}
-                <div className='info'>I am a Chicago native transplanted to Brooklyn. 
-                                      After a stint working as a Youth Pastor in New Jersey, 
-                                      I moved to New York to continue exploring my passions for story-telling, connecting communities, and writing.
-                                      Along the way, I guess you can say I took on the New York identity - multiple jobs, some to survive and some to nurture my passions.
+                <div className='info'><h1><strong>Hi, my name is Kevin.</strong></h1>
+                                      I am a Fullstack Software Engineer and Writer based in Brooklyn, New York. 
+                                      My story started in Chicago, and is quite long, so I'll try my best not to bore you with the details.
                                       <br /><br />
-                                      During this time, I discovered code and loved that, as a craft, it was the perfect integration between technical and creative writing.
-                                      My journey in code showed me how software connects communities where otherwise connections would never exist.
-                                      After playing with Javascript for some time, I decided to enroll with Fullstack Academy of Code for their flex immersive program.
+                                      My vocational journey took me on a whirlwind. On this journey, 
+                                      I discovered that I was passionate about connecting communities, doing good, story-telling, and my identity as an Asian American.
+                                      <br/><br/>
+                                      During this time, I also discovered code and fell in love with how it worked to intersect some of these passions.
+                                      So I took a deep dive into Javascript by attending Fullstack Academy's Web Development bootcamp,
+                                      and also into the Asian American writing space.
+                                      <br /><br />
+                                      This will sound cliche, but I promise I am being frank when I say this and not just trying to say what I'm supposed to.
+                                      I enjoy problem solving. It was a part of me that code really unlocked. Problem solving excites me. 
+                                      Like, when I solve problems, in the technical sense, something about my amygdala triggering and dopamine increasing.
+                                      I would like to think though that my exploration in identity and story as a writer humbles me to know that not every problem has a quick solution like coding often might.
+                                      <br/><br/>
+                                      I am currently searching for engineering roles where I can contribute on an agile oriented team that is built with a DNA of learning and curiosity.
+                                      Check out some of my projects below for more insight on what I do.
                                       </div>
             {/*</Paper>*/}</div>
             </Fragment>

@@ -6,7 +6,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Education from './components/Education';
 import Projects from './components/Projects';
-import Resume from './components/Resume';
+import Writing from './components/Writing';
 import Technologies from './components/Technologies';
 
 class App extends Component {
@@ -19,13 +19,8 @@ class App extends Component {
           <About />
           <Technologies />
           <Projects />
+          <Writing />
           <Education />
-          <Resume />
-          {/*<Route path='/' component={Home}/>
-          <Route path='/about' component={About}/>
-          <Route path='/education' component={Education}/>
-          <Route path='/projects' component={Projects}/>
-          <Route path='/resume' component={Resume}/>*/}
           <Footer />
         </div>
       </Router>

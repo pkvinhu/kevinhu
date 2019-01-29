@@ -52,8 +52,13 @@
     list-style-type: none;
   }
 
+  * a {
+      text-decoration: none;
+  }
+
   * div {
     font-family: $font-stack;
+    font: $primary-color;
   }
 
   html {
@@ -116,11 +121,11 @@
     .image {
           @extend %circle-img;
           @extend %content-overlay;
-          height: 210px;
-          width: 210px;
+          height: 270px;
+          width: 270px;
           border: 8px solid $primary-color;
-          bottom: 30%;
-          left: 3%;
+          bottom: 35%;
+          left: 0%;
           opacity: 1;
           animation: fadeRight 5s 1;
           animation-fill-mode: forwards;
@@ -131,9 +136,9 @@
     @extend %content-overlay;
     color: $primary-color;
     font: 1.3em solid $font-stack;
-    width: 70%;
+    width: 100%;
     padding: 45px;
-    height: 550px;
+    height: auto;
     background-color: rgb(252, 248, 248, 0.6);
     // mix-blend-mode: difference;
     @extend %fade-left;
@@ -220,49 +225,106 @@
       border-bottom: 3px solid $primary-color;
   }
 
+  .grid {
+    height: 100%;
+    width: 100%;
+    // border: 1px solid black;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'first first first second second second'
+      'third third third fourth fourth fourth';
+    grid-gap: 10px;
+    padding: 10px;
+    border: 1px solid black;
+  }
+
+    .item1 { grid-area: first; }
+    .item2 { grid-area: second; }
+    .item3 { grid-area: third; }
+    .item4 { grid-area: fourth; }
+
+  .grid-item {
+      
+  }
+
+  .projectTile {
+    height: 100%;
+    // border: 1px solid black;
+
+    img {
+      height: 100%;
+      width: 100%;
+      padding: 10px;
+      object-fit: cover;
+      }
+  }
+
   .tech {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     // border: 1px solid black;
   }
     .logoContainer{
-        height: 80%;
-        width: 80%;
+        height: 40%;
+        width: 100%;
         padding: 20px;
-        margin-right: 30px;
+        margin-right: 20px;
+        @extend %li-fade;
         // opacity: 1;
         // animation: skew 1.5s 1;
         // animation-fill-mode: forwards;
         // border: 1px solid black;
         .logo {
-            width: 25%;
-            height: 40%;
+            width: 20%;
+            height: 25%;
             object-fit: contain;
-            padding: 15px;
+            padding: 10px;
         }
     }
-
+  
+  .techbox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 10%;
+    height: 100%;
+    width: 50%;
+    padding: 30px;
+    background-color: rgba(247, 114, 6, 0.3);
+    ul {
+        @extend %ul-style;
+        column-count: 3;
+        align-content: center;
+        width: 90%;
+        height: 50%;
+        li {
+            @extend %li-fade;
+            text-align: center;
+        }
+    }
+  }
 
   .textbox { 
-    height: auto;
-    width: 42%;
-    padding: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    right: 10%;
+    height: 100%;
+    width: 50%;
+    padding: 30px;
     @extend %li-fade;
     background-color: rgba(24, 50, 99, 0.1);
     // border: 1px solid black;
     .skills {
         @extend %flex-centered;
         color: $primary-color;
-    }
-    ul {
-        @extend %ul-style;
-        column-count: 3;
-        align-content: center;
-        width: 90%;
-        li {
-            @extend %li-fade;
-            text-align: center;
-        }
+        cursor: pointer;
     }
   }
 
@@ -310,13 +372,12 @@
 
 //   @keyframes skew {
 //     0% {
-//       transform: skewY(20deg);
+//       transform: rotate(20deg);
 //     }
 //     50%{
-//       transform: skewY(-20deg); 
+//       transform: rotate(-20deg); 
 //     }
 //     100% {
-//       transform: skewY(0deg);
 //       transform: rotate(0deg);
 //     }
 //   }
@@ -355,6 +416,7 @@
         .info {
             margin: 0px;
             width: 100%;
+            font-size: 1.1em;
         }
     }
 
@@ -436,7 +498,7 @@
 
 // }
 
-@media (max-width: 736px) {
+@media (max-width: 768px) {
 
     body {
         text-align: center;
@@ -469,9 +531,9 @@
             position: relative;
             top: 40px;
             right: 20px;
-            font-size: 1em;
+            font-size: .9em;
             // padding: 10px;
-            width: 400px;
+            width: 100%;
         }
     }
     .textbox {
