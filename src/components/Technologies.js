@@ -10,6 +10,12 @@ class Technologies extends Component {
     }
 
     handleClick = (evt) => {
+        var elements = document.querySelectorAll(".skills");
+        for(let i = 0; i < elements.length; i++){
+            elements[i].innerHTML == evt.target.innerHTML ? 
+            elements[i].classList.add("grow") : 
+            elements[i].className = "skills"
+        }
         this.setState({ current: [evt.target.innerHTML]})
     }
 

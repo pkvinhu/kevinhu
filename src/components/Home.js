@@ -24,7 +24,7 @@ class Home extends Component {
     }
 
     componentDidMount(){
-        const { height, width } = this.props.size;
+        const { width } = this.props.size;
         if(width <= 1024) {
             this.setState({ 
                 Strengths: true,

@@ -48,7 +48,7 @@
   list-style-type: none;
 }
 
-* a {
+a {
   text-decoration: none;
 }
 
@@ -63,7 +63,7 @@ html {
 }
 html .section {
   align-items: center;
-  height: 775px;
+  height: 800px;
   width: 100%;
   padding: 120px;
 }
@@ -200,33 +200,18 @@ html .section {
   border-bottom: 3px solid #034;
 }
 
-.grid {
+.writing {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 30%;
   height: 100%;
-  width: 100%;
 }
-
-.grid-container {
-  display: grid;
-  grid-template-areas: "first first first second second second" "third third third fourth fourth fourth";
-  grid-gap: 10px;
-  padding: 10px;
-  border: 1px solid black;
+.writing img {
+  object-fit: cover;
 }
-
-.item1 {
-  grid-area: first;
-}
-
-.item2 {
-  grid-area: second;
-}
-
-.item3 {
-  grid-area: third;
-}
-
-.item4 {
-  grid-area: fourth;
+.writing a {
+  text-decoration: none;
 }
 
 .projectTile {
@@ -292,6 +277,14 @@ html .section {
 .textbox .skills {
   color: #034;
   cursor: pointer;
+}
+
+.grow {
+  flex-grow: 3;
+  font-size: 3.5em;
+  font-weight: bold;
+  transition: transform 500ms ease-in-out;
+  transform: translate(175px, 0px);
 }
 
 @keyframes fadeIn {
@@ -416,6 +409,11 @@ html .section {
   }
 }
 @media (max-width: 768px) {
+  .about, .tech, .home, .writing, .projects, .education {
+    height: auto;
+    width: auto;
+  }
+
   body {
     text-align: center;
     height: 100%;

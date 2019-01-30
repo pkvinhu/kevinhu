@@ -16,7 +16,7 @@ class Projects extends Component {
                                     cellHeight={250}
                                     >
                                     <a target="_blank" rel="noopener noreferrer" href="https://rosetta-capstone.herokuapp.com/">
-                                        <img src={require("../RSCapstone.png")}/>
+                                        <img alt="" src={require("../RSCapstone.png")}/>
                                     </a>
                                 </GridListTile>
                                 <GridListTile 
@@ -24,7 +24,7 @@ class Projects extends Component {
                                     cols={1}
                                     >
                                     <a target="_blank" rel="noopener noreferrer" href="https://www.fullstackacademy.com/hackathon-presentations/litreviews-digest">
-                                        <img src={require("../LitReviews.png")}/>
+                                        <img alt="" src={require("../LitReviews.png")}/>
                                     </a>
                                 </GridListTile>
                                 <GridListTile 
@@ -32,7 +32,7 @@ class Projects extends Component {
                                     cols={1}
                                     >
                                     <a target="_blank" rel="noopener noreferrer" href="https://man-petals.herokuapp.com/#/">
-                                        <img src={require("../ManPetals.png")}/>
+                                        <img alt="" src={require("../ManPetals.png")}/>
                                     </a>
                                 </GridListTile>
                                 <h2>Rosetta Capstone</h2>
@@ -42,13 +42,13 @@ class Projects extends Component {
                                     className="projectTile"
                                     cols={1}
                                     >
-                                    <img src={require("../Tula.png")} />
+                                    <img alt="" src={require("../Tula.png")} />
                                 </GridListTile>
                                 <GridListTile 
                                     className="projectTile"
                                     cols={1}
                                     >
-                                    <img src={require("../DigInnProjection.png")} />
+                                    <img alt="" src={require("../DigInnProjection.png")} />
                                 </GridListTile>
                                 <GridListTile 
                                     className="projectTile"

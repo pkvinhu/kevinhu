@@ -52,7 +52,7 @@
     list-style-type: none;
   }
 
-  * a {
+  a {
       text-decoration: none;
   }
 
@@ -67,7 +67,7 @@
     .section {
         @extend %flex-centered;
         align-items: center;
-        height: 775px;
+        height: 800px;
         width: 100%;
         padding: 120px;
         // border: 1px solid black;
@@ -225,30 +225,21 @@
       border-bottom: 3px solid $primary-color;
   }
 
-  .grid {
+  .writing {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 30%;
     height: 100%;
-    width: 100%;
     // border: 1px solid black;
+    img {
+        object-fit: cover;
+    }
+    a {
+        text-decoration: none;
+    }
   }
 
-  .grid-container {
-    display: grid;
-    grid-template-areas:
-      'first first first second second second'
-      'third third third fourth fourth fourth';
-    grid-gap: 10px;
-    padding: 10px;
-    border: 1px solid black;
-  }
-
-    .item1 { grid-area: first; }
-    .item2 { grid-area: second; }
-    .item3 { grid-area: third; }
-    .item4 { grid-area: fourth; }
-
-  .grid-item {
-      
-  }
 
   .projectTile {
     height: 100%;
@@ -326,6 +317,14 @@
         color: $primary-color;
         cursor: pointer;
     }
+  }
+
+  .grow {
+    flex-grow: 3;
+    font-size: 3.5em;
+    font-weight: bold;
+    transition: transform 500ms ease-in-out;
+    transform: translate(175px, 0px);
   }
 
   @keyframes fadeIn {
@@ -479,27 +478,16 @@
         }
     }
 
-    // * ul {
-    //     column-count: 1;
-    //     width: 100%;
-    //     height: 100%;
-    // }
-
     .transform {
         transform: translate(-100px, 0px);
       }
-    
-    //   .transform2 {
-    //     transform: translate(0px, 0px);    
-    //   }
 }
 
-// @media (min-width: 768px) and (max-width: 1024px) {
-
-// }
-
 @media (max-width: 768px) {
-
+    .about, .tech, .home, .writing, .projects, .education {
+        height: auto;
+        width: auto;
+    }
     body {
         text-align: center;
         height: 100%;
@@ -514,7 +502,6 @@
         height: auto;
         margin: auto;
         position: relative;
-
     }
 
     .about{
