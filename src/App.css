@@ -89,7 +89,7 @@ html .section {
   justify-content: flex-end;
 }
 
-.about::before {
+.about::before, .projects::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -210,8 +210,10 @@ html .section {
 .writing img {
   object-fit: cover;
 }
-.writing a {
-  text-decoration: none;
+
+.projects {
+  overflow: hidden;
+  height: 100%;
 }
 
 .projectTile {
@@ -220,7 +222,6 @@ html .section {
 .projectTile img {
   height: 100%;
   width: 100%;
-  padding: 10px;
   object-fit: cover;
 }
 
@@ -347,7 +348,7 @@ html .section {
   .about .info {
     margin: 0px;
     width: 100%;
-    font-size: 1.1em;
+    font-size: 1em;
   }
 
   .aboutBG1, .aboutBG2 {
@@ -384,7 +385,7 @@ html .section {
 
   .logoContainer {
     width: 100%;
-    height: 100%;
+    height: 60%;
     align-items: center;
     position: relative;
     top: 150px;
@@ -395,13 +396,36 @@ html .section {
   }
 
   .textbox {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    top: 150px;
+    width: 150%;
+    height: 40%;
+    position: none;
+    bottom: 70px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
   }
   .textbox ul {
     column-count: 4;
+  }
+
+  .techbox {
+    top: 70px;
+    left: 0;
+    height: 170%;
+    width: 150%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .techbox ul {
+    height: 100%;
+    width: 100%;
+  }
+
+  .logoContainer {
+    left: 0px;
+    top: 0px;
   }
 
   .transform {

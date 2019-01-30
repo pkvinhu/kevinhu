@@ -6,25 +6,32 @@ import { Card, CardActionArea, CardMedia, CardActions, Button, Icon } from '@mat
 
 const styles = () => ({
     gridItem: {
-      width: "100%",
-      height: 350,
+      width: "370px",
+      height: 300,
     },
     actions: {
         display: 'flex',
         justifyContent: "flex-end"
+    },
+    contain: {
+        display: 'flex',
+        justifyContent: 'center',
+        padding: '25px'
     }
   });
 
 class Writing extends Component {
+
     render() {
         const { classes } = this.props;
         return (
-            <div className="section writing" id="writing">
-                <div><Card className={classes.gridItem}>
+            <div className='writing section' id='writing'>
+                <div>
+                    <div className={classes.contain}><Card className={classes.gridItem}>
                     <CardActionArea>
                         <CardMedia
                             component="img"
-                            height="270"
+                            height="240"
                             image={require("../CultivatingAppetites.png")}
                         />
                     <CardActions className={classes.actions}>
@@ -35,12 +42,12 @@ class Writing extends Component {
                         Go to InheritanceMag for Full Article <Icon>arrow_forward_ios</Icon></a></Button>
                     </CardActions>
                     </CardActionArea>
-                </Card>
-                <Card className={classes.gridItem}>
+                </Card></div>
+                <div className={classes.contain}><Card className={classes.gridItem}>
                     <CardActionArea>
                         <CardMedia
                             component="img"
-                            height="270"
+                            height="240"
                             image={require("../EngagingPower.png")}
                         />
                     <CardActions className={classes.actions}>
@@ -51,12 +58,14 @@ class Writing extends Component {
                         Go to InheritanceMag for Full Article <Icon>arrow_forward_ios</Icon></a></Button>
                     </CardActions>
                     </CardActionArea>
-                </Card>  </div>             
-                <div><Card className={classes.gridItem}>
+                </Card></div>  
+                </div>             
+                <div >
+                <div className={classes.contain}><Card className={classes.gridItem}>
                     <CardActionArea>
                         <CardMedia
                             component="img"
-                            height="270"
+                            height="240"
                             image={require("../NamingViolence.png")}
                         />
                     <CardActions className={classes.actions}>
@@ -67,12 +76,12 @@ class Writing extends Component {
                         Go to InheritanceMag for Full Article <Icon>arrow_forward_ios</Icon></a></Button>
                     </CardActions>
                     </CardActionArea>
-                </Card>               
-                <Card className={classes.gridItem}>
+                </Card></div>               
+                <div className={classes.contain}><Card className={classes.gridItem}>
                     <CardActionArea>
                         <CardMedia
                             component="img"
-                            height="270"
+                            height="240"
                             image={require("../ExcavatingMemory.png")}
                         />
                     <CardActions className={classes.actions}>
@@ -84,6 +93,7 @@ class Writing extends Component {
                     </CardActions>
                     </CardActionArea>
                 </Card></div>
+                </div>
             </div>
         )
     }
