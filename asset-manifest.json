@@ -1,9 +1,9 @@
 {
-  "main.css": "/kevinhu/static/css/main.4960dec7.chunk.css",
-  "main.js": "/kevinhu/static/js/main.fbfc0586.chunk.js",
-  "main.js.map": "/kevinhu/static/js/main.fbfc0586.chunk.js.map",
-  "static/js/1.416f0d9d.chunk.js": "/kevinhu/static/js/1.416f0d9d.chunk.js",
-  "static/js/1.416f0d9d.chunk.js.map": "/kevinhu/static/js/1.416f0d9d.chunk.js.map",
+  "main.css": "/kevinhu/static/css/main.310342c8.chunk.css",
+  "main.js": "/kevinhu/static/js/main.1ff544b7.chunk.js",
+  "main.js.map": "/kevinhu/static/js/main.1ff544b7.chunk.js.map",
+  "static/js/1.355caa8a.chunk.js": "/kevinhu/static/js/1.355caa8a.chunk.js",
+  "static/js/1.355caa8a.chunk.js.map": "/kevinhu/static/js/1.355caa8a.chunk.js.map",
   "runtime~main.js": "/kevinhu/static/js/runtime~main.124b90c6.js",
   "runtime~main.js.map": "/kevinhu/static/js/runtime~main.124b90c6.js.map",
   "static/media/kevinhu_photo.png": "/kevinhu/static/media/kevinhu_photo.fbae14d6.png",
@@ -17,8 +17,8 @@
   "static/media/NamingViolence.png": "/kevinhu/static/media/NamingViolence.ac46886b.png",
   "static/media/ExcavatingMemory.png": "/kevinhu/static/media/ExcavatingMemory.b8809e5d.png",
   "static/media/faphoto3.jpg": "/kevinhu/static/media/faphoto3.236428af.jpg",
-  "static/css/main.4960dec7.chunk.css.map": "/kevinhu/static/css/main.4960dec7.chunk.css.map",
+  "static/css/main.310342c8.chunk.css.map": "/kevinhu/static/css/main.310342c8.chunk.css.map",
   "index.html": "/kevinhu/index.html",
-  "precache-manifest.746351ed6e4cc2f6bdf17a00806cc7f7.js": "/kevinhu/precache-manifest.746351ed6e4cc2f6bdf17a00806cc7f7.js",
+  "precache-manifest.0586806207cd6f737d0bc24e1967ecb9.js": "/kevinhu/precache-manifest.0586806207cd6f737d0bc24e1967ecb9.js",
   "service-worker.js": "/kevinhu/service-worker.js"
 }
