@@ -25,7 +25,7 @@ class Projects extends Component {
                                     cellHeight={280}
                                     >
                                     <a target="_blank" rel="noopener noreferrer" href="https://rosetta-capstone.herokuapp.com/">
-                                        <img alt="" src={require("../RSCapstone.png")}/>
+                                        <img alt="" src={require("../assets/RSCapstone.png")}/>
                                     </a>
                                     <GridListTileBar title="Rosetta Capstone"/>
                                 </GridListTile>
@@ -35,7 +35,7 @@ class Projects extends Component {
                                     cellHeight={280}
                                     >
                                     <a target="_blank" rel="noopener noreferrer" href="https://www.fullstackacademy.com/hackathon-presentations/litreviews-digest">
-                                        <img alt="" src={require("../LitReviews.png")}/>
+                                        <img alt="" src={require("../assets/LitReviews.png")}/>
                                     </a>
                                     <GridListTileBar title="LitReviews Digest"/>
                                 </GridListTile>
@@ -45,7 +45,7 @@ class Projects extends Component {
                                     cellHeight={280}
                                     >
                                     <a target="_blank" rel="noopener noreferrer" href="https://man-petals.herokuapp.com/#/">
-                                        <img alt="" src={require("../ManPetals.png")}/>
+                                        <img alt="" src={require("../assets/ManPetals.png")}/>
                                     </a>
                                     <GridListTileBar title="ManPetals E-Commerce"/>
                                 </GridListTile>
@@ -57,14 +57,14 @@ class Projects extends Component {
                                     cols={1}
                                     cellHeight={280}
                                     >
-                                    <img alt="" src={require("../Tula.png")} />
+                                    <img alt="" src={require("../assets/Tula.png")} />
                                     <GridListTileBar title="Tula App"/>
                                 </GridListTile>
                                 <GridListTile 
                                     className="projectTile"
                                     cols={1}
                                     >
-                                    <img alt="" src={require("../DigInnProjection.png")} />
+                                    <img alt="" src={require("../assets/DigInnProjection.png")} />
                                     <GridListTileBar title="DigInn Projection Tool"/>
                                 </GridListTile>
                                 <GridListTile 

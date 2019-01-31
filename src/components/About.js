@@ -22,7 +22,7 @@ class About extends Component {
                 alt=""
                 name=""
                 className="image"
-                src={require('../faphoto3.jpg')}
+                src={require('../assets/faphoto3.jpg')}
             />
             {/* <Paper className='info'> */}
                 <div className='info'><h1><strong>Hi, my name is Kevin.</strong></h1>

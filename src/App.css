@@ -114,7 +114,7 @@ html .section {
   height: 270px;
   width: 270px;
   border: 8px solid #034;
-  bottom: 35%;
+  bottom: 26%;
   left: 0%;
   opacity: 1;
   animation: fadeRight 5s 1;
@@ -123,11 +123,14 @@ html .section {
 
 .info {
   color: #034;
-  font: 1.3em solid Georgia, serif;
+  font: 1.3em "Garamond", "Times New Roman", sans-serif;
   width: 100%;
   padding: 45px;
   height: auto;
   background-color: rgba(252, 248, 248, 0.6);
+}
+.info h1 {
+  font-family: Georgia, serif;
 }
 
 .aboutBG1 {
@@ -193,9 +196,16 @@ html .section {
   margin: 15px;
   background-color: rgba(24, 50, 99, 0.1);
 }
+.gridContainer .tile h3 {
+  font-family: Georgia, serif;
+}
 .gridContainer ul {
   column-count: 3;
 }
+.gridContainer ul li {
+  font: 1.1em "Garamond", "Times New Roman", sans-serif;
+}
+
 .item:hover {
   border-bottom: 3px solid #034;
 }
@@ -261,6 +271,7 @@ html .section {
   height: 50%;
 }
 .techbox ul li {
+  font: 1.3em "Garamond", "Times New Roman", sans-serif;
   text-align: center;
 }
 
@@ -343,9 +354,13 @@ html .section {
   .about .image {
     position: relative;
     top: 40px;
+    left: 10px;
     z-index: 1;
   }
   .about .info {
+    position: none;
+    right: 15px;
+    bottom: 10px;
     margin: 0px;
     width: 100%;
     font-size: 1em;

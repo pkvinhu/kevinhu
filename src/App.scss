@@ -1,4 +1,5 @@
   $font-stack: Georgia, serif;
+  $secondary-font: 'Garamond', 'Times New Roman', sans-serif;
   $primary-color: #034;
   $secondary-color: white;
 
@@ -124,7 +125,7 @@
           height: 270px;
           width: 270px;
           border: 8px solid $primary-color;
-          bottom: 35%;
+          bottom: 26%;
           left: 0%;
           opacity: 1;
           animation: fadeRight 5s 1;
@@ -133,9 +134,12 @@
   }
 
   .info {
+    h1 {
+       font-family: $font-stack;
+    }
     @extend %content-overlay;
     color: $primary-color;
-    font: 1.3em solid $font-stack;
+    font: 1.3em $secondary-font;
     width: 100%;
     padding: 45px;
     height: auto;
@@ -210,12 +214,14 @@
             padding: 15px;
             margin: 15px;
             background-color: rgba(24, 50, 99, 0.1);
+            h3 {font-family: $font-stack;}
             // border-top: 2px solid grey;
             }
             ul {
                 @extend %ul-style;
                 column-count: 3;
                 li {
+                    font: 1.1em $secondary-font;
                     @extend %li-fade;
                 }
             }
@@ -296,6 +302,7 @@
         width: 90%;
         height: 50%;
         li {
+            font: 1.3em $secondary-font;
             @extend %li-fade;
             text-align: center;
         }
@@ -403,18 +410,18 @@
 
     }
 
-    // .about::before {
-    //     height: 80%;
-    //     // overflow: scroll;
-    // }
 
     .about {
         .image {
             position: relative;
             top: 40px;
+            left: 10px;
             z-index: 1;
         }
         .info {
+            position: none;
+            right: 15px;
+            bottom: 10px;
             margin: 0px;
             width: 100%;
             font-size: 1em;

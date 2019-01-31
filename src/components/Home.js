@@ -94,7 +94,7 @@ class Home extends Component {
                         alt=""
                         name="transform"
                         className={transform ? "profilePic transform2" : "profilePic"}
-                        src={require('../kevinhu_photo.png')}
+                        src={require('../assets/kevinhu_photo.png')}
                         onClick={handleClick}
                     />
                     

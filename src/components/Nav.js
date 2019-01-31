@@ -17,7 +17,7 @@ class Nav extends Component {
         
         return (
             <nav className='App navbar navbar-light navbar-expand-md'>
-                <img alt='' src={require('../initials.png')} />
+                <img alt='' src={require('../assets/initials.png')} />
                 <Button
                     className="navbar-toggler"
                     type="button"
@@ -38,7 +38,7 @@ class Nav extends Component {
                     <a className='nav-link scroll-link navbar-brand item' href='#writing'>Writing</a>
                     <a className='nav-link scroll-link navbar-brand item' href='#education'>Education</a>
                     <a className='nav-link scroll-link navbar-brand item' target="_blank" rel="noopener noreferrer" href="https://medium.com/@kvinhu/latest">Blog</a>
-                    <a className='nav-link scroll-link navbar-brand item' target="_blank" rel="noopener noreferrer" href="Software_Engineer_CV_v3.pdf">Resume</a>
+                    <a className='nav-link scroll-link navbar-brand item' target="_blank" rel="noopener noreferrer" href="https://pkvinhu.github.io/kevinhu/Software_Engineer_CV_v3.pdf">Resume</a>
                 </div>
             </nav>
         )

@@ -32,7 +32,7 @@ class Writing extends Component {
                         <CardMedia
                             component="img"
                             height="240"
-                            image={require("../CultivatingAppetites.png")}
+                            image={require("../assets/CultivatingAppetites.png")}
                         />
                     <CardActions className={classes.actions}>
                         <Button size="small"><a 
@@ -48,7 +48,7 @@ class Writing extends Component {
                         <CardMedia
                             component="img"
                             height="240"
-                            image={require("../EngagingPower.png")}
+                            image={require("../assets/EngagingPower.png")}
                         />
                     <CardActions className={classes.actions}>
                         <Button size="small"><a 
@@ -66,7 +66,7 @@ class Writing extends Component {
                         <CardMedia
                             component="img"
                             height="240"
-                            image={require("../NamingViolence.png")}
+                            image={require("../assets/NamingViolence.png")}
                         />
                     <CardActions className={classes.actions}>
                         <Button size="small"><a 
@@ -82,7 +82,7 @@ class Writing extends Component {
                         <CardMedia
                             component="img"
                             height="240"
-                            image={require("../ExcavatingMemory.png")}
+                            image={require("../assets/ExcavatingMemory.png")}
                         />
                     <CardActions className={classes.actions}>
                         <Button size="small"><a 
