@@ -1,7 +1,7 @@
 {
-  "main.css": "/kevinhu/static/css/main.310342c8.chunk.css",
-  "main.js": "/kevinhu/static/js/main.1ff544b7.chunk.js",
-  "main.js.map": "/kevinhu/static/js/main.1ff544b7.chunk.js.map",
+  "main.css": "/kevinhu/static/css/main.8de817be.chunk.css",
+  "main.js": "/kevinhu/static/js/main.9696bb08.chunk.js",
+  "main.js.map": "/kevinhu/static/js/main.9696bb08.chunk.js.map",
   "static/js/1.355caa8a.chunk.js": "/kevinhu/static/js/1.355caa8a.chunk.js",
   "static/js/1.355caa8a.chunk.js.map": "/kevinhu/static/js/1.355caa8a.chunk.js.map",
   "runtime~main.js": "/kevinhu/static/js/runtime~main.124b90c6.js",
@@ -17,8 +17,8 @@
   "static/media/NamingViolence.png": "/kevinhu/static/media/NamingViolence.ac46886b.png",
   "static/media/ExcavatingMemory.png": "/kevinhu/static/media/ExcavatingMemory.b8809e5d.png",
   "static/media/faphoto3.jpg": "/kevinhu/static/media/faphoto3.236428af.jpg",
-  "static/css/main.310342c8.chunk.css.map": "/kevinhu/static/css/main.310342c8.chunk.css.map",
+  "static/css/main.8de817be.chunk.css.map": "/kevinhu/static/css/main.8de817be.chunk.css.map",
   "index.html": "/kevinhu/index.html",
-  "precache-manifest.0586806207cd6f737d0bc24e1967ecb9.js": "/kevinhu/precache-manifest.0586806207cd6f737d0bc24e1967ecb9.js",
+  "precache-manifest.fdb773677084478d73d8a5a7b95dd55b.js": "/kevinhu/precache-manifest.fdb773677084478d73d8a5a7b95dd55b.js",
   "service-worker.js": "/kevinhu/service-worker.js"
 }
