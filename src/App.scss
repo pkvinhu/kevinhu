@@ -189,6 +189,7 @@
             @extend %circle-img;
             height: 100%;
             width: 100%;
+            cursor: pointer;
             transition: transform 1500ms ease-in-out;
         }
         .insideQualities {

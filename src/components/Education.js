@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../App.css';
-// import { Carousel } from 'react-bootstrap';
 
 const ed = [
     { img: "https://religionnews.com/wp-content/uploads/2018/04/webRNS-Wheaton-College-041718.jpg",
@@ -34,7 +33,7 @@ class Education extends Component {
       const { index } = this.state;
       return (
           <div className="section education" id="education">
-            <p>Sometime in college, I decided that I no longer believe that school was the sum of our education.
+            <p>Sometime in college, I decided that I no longer believed that school was the sum of our education.
                I have been privileged enough with the resources to gain an education - albeit with mounting debt - 
                but I do believe that life has taught me far more valuable lessons. 
                During my post-undergraduate life, I have consumed and digested stacks and stacks of books that informs how I live and work.
