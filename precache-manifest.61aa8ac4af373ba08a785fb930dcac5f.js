@@ -1,19 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "b5025ac2da436efe4a1d3803b14cba0c",
-    "url": "/kevinhu/static/media/ManPetals.b5025ac2.png"
+    "revision": "82fc5348972726043ee89a930407828e",
+    "url": "/kevinhu/static/media/LitReviews.82fc5348.png"
   },
   {
-    "revision": "9696bb081c7c82665716",
-    "url": "/kevinhu/static/css/main.8de817be.chunk.css"
+    "revision": "220cb85f12964697202a",
+    "url": "/kevinhu/static/css/main.7d9512f5.chunk.css"
   },
   {
-    "revision": "355caa8a31c49d32825a",
-    "url": "/kevinhu/static/js/1.355caa8a.chunk.js"
+    "revision": "c1a3443850ad2d53eaa9",
+    "url": "/kevinhu/static/js/1.c1a34438.chunk.js"
   },
   {
     "revision": "124b90c61e1c4b86bfa6",
     "url": "/kevinhu/static/js/runtime~main.124b90c6.js"
+  },
+  {
+    "revision": "0c15b92cacb421424ab9d0b6b216c818",
+    "url": "/kevinhu/static/media/linkedin_circle.0c15b92c.png"
+  },
+  {
+    "revision": "26b622caf81e38a0abf5e7ece4e261ab",
+    "url": "/kevinhu/static/media/mediumlogo.26b622ca.jpg"
   },
   {
     "revision": "fbae14d6db1afc47522b75f18b8a9a33",
@@ -28,12 +36,12 @@ self.__precacheManifest = [
     "url": "/kevinhu/static/media/RSCapstone.2cea6a18.png"
   },
   {
-    "revision": "82fc5348972726043ee89a930407828e",
-    "url": "/kevinhu/static/media/LitReviews.82fc5348.png"
+    "revision": "220cb85f12964697202a",
+    "url": "/kevinhu/static/js/main.220cb85f.chunk.js"
   },
   {
-    "revision": "9696bb081c7c82665716",
-    "url": "/kevinhu/static/js/main.9696bb08.chunk.js"
+    "revision": "b5025ac2da436efe4a1d3803b14cba0c",
+    "url": "/kevinhu/static/media/ManPetals.b5025ac2.png"
   },
   {
     "revision": "d987b8da71efc6daa640e3e1b1436cd9",
@@ -60,7 +68,7 @@ self.__precacheManifest = [
     "url": "/kevinhu/static/media/ExcavatingMemory.b8809e5d.png"
   },
   {
-    "revision": "fb2832f84c38b27408540976e0d1c264",
+    "revision": "0f46e0d163b605765c6a519b588d293a",
     "url": "/kevinhu/index.html"
   }
 ];
