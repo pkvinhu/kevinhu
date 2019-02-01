@@ -52,7 +52,7 @@ a {
   text-decoration: none;
 }
 
-* div {
+div {
   font-family: Georgia, serif;
   font: #034;
 }
@@ -87,6 +87,9 @@ html .section {
 .App div {
   display: flex;
   justify-content: flex-end;
+}
+.App .item {
+  font: 1.2em solid Georgia, serif;
 }
 
 .about::before, .projects::before {
@@ -158,7 +161,6 @@ html .section {
 .bio {
   width: 300px;
   height: 300px;
-  margin: 25px;
   border-radius: 50%;
   border: 8px solid #034;
   position: absolute;
@@ -184,6 +186,58 @@ html .section {
   transition: transform 5000ms ease-in-out;
 }
 
+.socialContainer .social {
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+  border-radius: 50%;
+  border: 2px solid black;
+  object-fit: contain;
+}
+
+.education {
+  display: flex;
+  justify-content: flex-end;
+}
+.education .slide {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+.education img {
+  height: 600px;
+  width: 600px;
+  object-fit: contain;
+}
+.education .image {
+  visibility: hidden;
+}
+.education .descript {
+  visibility: hidden;
+}
+.education .current1 {
+  position: relative;
+  right: 10%;
+  opacity: 0;
+  animation: fadeDown 3s 1;
+  animation-fill-mode: forwards;
+}
+.education .current2 {
+  position: relative;
+  right: 45%;
+  font: 4em solid Georgia, serif;
+  opacity: 0;
+  animation: fadeUp 3s 1;
+  animation-fill-mode: forwards;
+  transform: rotate(90deg);
+}
+.education p {
+  width: 30%;
+  position: relative;
+  left: 400px;
+  font: 1.5em "Garamond", "Times New Roman", sans-serif;
+}
+
 .gridContainer {
   padding-top: 30px;
   position: relative;
@@ -201,6 +255,10 @@ html .section {
 }
 .gridContainer ul {
   column-count: 3;
+}
+.gridContainer ul h3 {
+  animation: fadeLeft 3s 1;
+  animation-fill-mode: forwards;
 }
 .gridContainer ul li {
   font: 1.1em "Garamond", "Times New Roman", sans-serif;
@@ -335,6 +393,24 @@ html .section {
     margin-right: 35px;
   }
 }
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    margin-bottom: 300px;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    margin-top: 300px;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .transform {
   transform: translate(150px, 0px);
 }
@@ -344,8 +420,17 @@ html .section {
 }
 
 @media (min-width: 768px) and (max-width: 1366px) {
-  section, .home, .about, .tech {
-    height: 100%;
+  html .section {
+    height: auto;
+    width: 100%;
+    padding: 80px;
+  }
+
+  .home, .about, .tech, .education, .writing, .projects {
+    height: 150%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -373,12 +458,33 @@ html .section {
   .bio {
     position: relative;
     top: 0px;
-    height: 270px;
+    height: 220px;
     width: 200px;
   }
   .bio .insideQualities {
     top: 50px;
-    left: 120px;
+    left: 100px;
+  }
+
+  .education {
+    height: 800px;
+  }
+  .education img {
+    height: 300px;
+    width: 300px;
+  }
+  .education .current1 {
+    right: 0px;
+  }
+  .education .current2 {
+    right: 300px;
+    bottom: 35px;
+    transform: rotate(0deg);
+  }
+  .education p {
+    left: 250px;
+    bottom: 50px;
+    font: 1.1em "Garamond", "Times New Roman", sans-serif;
   }
 
   .gridContainer {
@@ -391,8 +497,9 @@ html .section {
     padding: 0px;
   }
   .gridContainer .tile {
-    width: 250px;
-    height: 350px;
+    text-align: center;
+    width: 350px;
+    height: 300px;
   }
   .gridContainer .tile ul {
     column-count: 1;
@@ -410,12 +517,22 @@ html .section {
     width: 16%;
   }
 
+  .socialContainer .social {
+    height: 25px;
+    width: 25px;
+    margin: 10px;
+    border-radius: 50%;
+    border: 2px solid black;
+    object-fit: contain;
+  }
+
   .textbox {
     width: 150%;
     height: 40%;
     position: none;
     bottom: 70px;
     right: 0px;
+    padding: 0px 200px 0px 200px;
     display: flex;
     justify-content: center;
   }
@@ -424,33 +541,43 @@ html .section {
   }
 
   .techbox {
-    top: 70px;
     left: 0;
     height: 170%;
     width: 150%;
+    padding: 0px 200px 200px 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: rgba(247, 114, 6, 0);
   }
   .techbox ul {
-    height: 100%;
+    height: auto;
     width: 100%;
-  }
-
-  .logoContainer {
-    left: 0px;
-    top: 0px;
   }
 
   .transform {
     transform: translate(-100px, 0px);
   }
 }
-@media (max-width: 768px) {
-  .about, .tech, .home, .writing, .projects, .education {
+@media (max-width: 767px) {
+  html .section {
+    height: auto;
+    width: 100%;
+    padding: 80px 0px 80px 0px;
+  }
+
+  .App {
+    padding: 0px;
+  }
+
+  .about, .home, .writing, .projects, .education {
     height: auto;
     width: auto;
+  }
+
+  .tech {
+    height: 1000px;
   }
 
   body {
@@ -488,27 +615,65 @@ html .section {
     width: 100%;
   }
 
-  .textbox {
-    width: 400px;
-    height: 100%;
-    position: relative;
-    top: 150px;
+  .education {
+    height: 800px;
+  }
+  .education img {
+    height: 200px;
+    width: 200px;
+  }
+  .education .current1 {
     right: 0px;
+  }
+  .education .current2 {
+    right: 0px;
+  }
+  .education p {
+    padding: 100px 0px 100px 0px;
+    left: 0px;
+    top: 200px;
+    width: 100%;
+    font: 1em "Garamond", "Times New Roman", sans-serif;
+  }
+
+  .socialContainer .social {
+    height: 25px;
+    width: 25px;
+    margin: 10px;
+    border-radius: 50%;
+    border: 2px solid black;
+    object-fit: contain;
+  }
+
+  .textbox {
+    width: 150%;
+    height: 40%;
+    position: none;
+    bottom: 70px;
+    right: 0px;
+    padding: 0px 200px 0px 200px;
+    display: flex;
+    justify-content: center;
   }
   .textbox ul {
     column-count: 4;
   }
 
-  .logoContainer {
-    width: 400px;
-    height: 100%;
+  .techbox {
+    top: 70px;
+    left: 0;
+    height: 170%;
+    width: 150%;
+    padding: 0px 200px 0px 200px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    position: relative;
-    top: 150px;
-    left: 30px;
+    justify-content: center;
+    background-color: rgba(247, 114, 6, 0);
   }
-  .logoContainer .logo {
-    width: 33%;
+  .techbox ul {
+    height: 100%;
+    width: 100%;
   }
 }
 

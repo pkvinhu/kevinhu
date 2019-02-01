@@ -8,38 +8,35 @@ class Home extends Component {
 
     state = {
         transform: false,
-        Strengths: false,
-        Books: false,
-        Passions: false
+        current: ''
     }
 
     handleClick = (evt) => {
-        console.log(evt.target.name, evt.target.innerHTML);
+        console.log(evt.target.innerHTML);
         if(evt.target.name === "transform") {
             this.setState({ transform: true })
         }
         else {
-            this.setState({ [evt.target.innerHTML]: true })
+            this.setState({ current: [evt.target.innerHTML] })
         }
+        console.log(this.state.current);
     }
 
     componentDidMount(){
         const { width } = this.props.size;
         if(width <= 1024) {
             this.setState({ 
-                Strengths: true,
-                Books: true,
-                Passions: true
+                current: "Strengths"
             })
         }
     }
 
     render() {
-        const { transform, Strengths, Books, Passions } = this.state;
+        const { transform, current } = this.state;
         const { handleClick } = this;
         const qualities = { "Strengths": ["Problem Solving", "Learner", "Connectedness", "Relational", "Public Speaking", "Work Ethic"],
                             "Passions": ["People", "Story-telling", "Data", "Writing", "Social Equality/Equity", "Asian American Community"], 
-                            "Favorite Books": [ "East of Eden - John Steinbeck", "Gilead - Marilynne Robinson", "The Brothers K - David James Duncan", "A Tale for the Time Being - Ruth Ozeki", "Homegoing - Yaa Gyasi"]}
+                            "Books": [ "East of Eden - John Steinbeck", "Gilead - Marilynne Robinson", "The Brothers K - David James Duncan", "A Tale for the Time Being - Ruth Ozeki", "Homegoing - Yaa Gyasi"]}
         const { width } = this.props.size;
         if(width <= 736) {
             return (
@@ -48,39 +45,17 @@ class Home extends Component {
         return (
             <div className='home section' id='home'>
                     <div className="gridContainer">
-                        {Strengths && (
-                            <div className="tile">
-                                <h3>Strengths</h3>
+                            {current && (<div className="tile">
+                                <h3>{current}</h3>
                                 <hr />
                                 <ul>
-                                    {qualities["Strengths"].map(each => (
+                                    {current ? qualities[current].map(each => (
                                         <li>{each}</li>
-                                    ))}
+                                    )) :
+                                    (<div></div>)
+                                    }
                                 </ul>
-                            </div>)
-                        }
-                        {Passions && (
-                            <div className="tile">
-                                <h3>Passions</h3>
-                                <hr />
-                                <ul>
-                                    {qualities["Passions"].map(each => (
-                                        <li>{each}</li>
-                                    ))}
-                                </ul>
-                            </div>)
-                        }
-                        {Books && (
-                            <div className="tile">
-                                <h3>Favorite Books</h3>
-                                <hr />
-                                <ul>
-                                    {qualities["Favorite Books"].map(each => (
-                                        <li>{each}</li>
-                                    ))}
-                                </ul>
-                            </div>)
-                        }
+                            </div>)}
                     </div>
                     <div className={transform ? "transform bio" : "bio"}>
                     {transform && 
@@ -97,14 +72,7 @@ class Home extends Component {
                         src={require('../assets/kevinhu_photo.png')}
                         onClick={handleClick}
                     />
-                    
                     </div>
-                    {/*<div className="qualities">
-                        {!transform && 
-                        (<div><Icon>menu</Icon>
-                        <Icon>arrow_forward_ios</Icon></div>)}
-                        </div>*/}
-
             </div>
         )
         }

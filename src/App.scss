@@ -57,7 +57,7 @@
       text-decoration: none;
   }
 
-  * div {
+  div {
     font-family: $font-stack;
     font: $primary-color;
   }
@@ -94,6 +94,9 @@
     div {
         display: flex;
         justify-content: flex-end;
+    }
+    .item {
+        font: 1.2em solid $font-stack;
     }
   }
 
@@ -177,7 +180,7 @@
         @extend %flex-centered;
         width: 300px;
         height: 300px;
-        margin: 25px;
+        // margin: 25px;
         border-radius: 50%;
         border: 8px solid $primary-color;
         position: absolute;
@@ -204,6 +207,62 @@
         }
     }
 
+    .socialContainer {
+        .social {
+            height: 40px;
+            width: 40px;
+            margin:10px;
+            border-radius: 50%;
+            border: 2px solid black;
+            object-fit: contain;
+        }
+    }
+
+    .education {
+        display: flex;
+        justify-content: flex-end;
+        .slide {
+            position: absolute;
+            display: flex;
+            justify-content: center; 
+        }
+        img {
+            height: 600px;
+            width: 600px;
+            object-fit: contain;
+        }
+        .image {
+            visibility: hidden;
+        }
+        .descript {
+            visibility: hidden;
+        }
+        .current1 {
+            position: relative;
+            right: 10%;
+            opacity: 0;
+            animation: fadeDown 3s 1;
+            animation-fill-mode: forwards;
+        }
+    
+        .current2 {
+            position: relative;
+            right: 45%;
+            font: 4.0em solid $font-stack;
+            opacity: 0;
+            animation: fadeUp 3s 1;
+            animation-fill-mode: forwards;
+            transform: rotate(90deg);
+        }
+
+        p{
+           width: 30%;
+            position: relative;
+            left: 400px;
+            font: 1.5em $secondary-font;
+        }
+    }
+
     .gridContainer {
         padding-top: 30px;
         position: relative;
@@ -220,6 +279,10 @@
             ul {
                 @extend %ul-style;
                 column-count: 3;
+                h3{ 
+                    animation: fadeLeft 3s 1; 
+                    animation-fill-mode: forwards;
+                }
                 li {
                     font: 1.1em $secondary-font;
                     @extend %li-fade;
@@ -378,17 +441,25 @@
     }
   }
 
-//   @keyframes skew {
-//     0% {
-//       transform: rotate(20deg);
-//     }
-//     50%{
-//       transform: rotate(-20deg); 
-//     }
-//     100% {
-//       transform: rotate(0deg);
-//     }
-//   }
+  @keyframes fadeDown {
+    0% {
+      opacity: 0.0;
+      margin-bottom: 300px;
+    }
+    100% {
+      opacity: 1.0;
+    }
+  }
+
+  @keyframes fadeUp {
+    0% {
+      opacity: 0.0;
+      margin-top: 300px;
+    }
+    100% {
+      opacity: 1.0;
+    }
+  }
 
   .transform {
     transform: translate(150px, 0px);
@@ -400,14 +471,23 @@
 
 
 @media (min-width: 768px) and (max-width: 1366px) {
+    html{
+        .section{
+            height: auto;
+            width: 100%;
+            padding: 80px;
+        }
+    }
     
-    section, .home, .about, .tech {
-        height: 100%;
+    .home, .about, .tech, .education, .writing, .projects {
+        height: 150%;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
         display: flex;
         justify-content: center;
         flex-direction: column;
         // border: 1px solid black;
-
     }
 
 
@@ -435,11 +515,34 @@
     .bio {
         position: relative;
         top: 0px;
-        height: 270px;
+        height: 220px;
         width: 200px;
         .insideQualities {
             top: 50px;
-            left: 120px;
+            left: 100px;
+        }
+    }
+
+    .education {
+        height: 800px;
+        img{
+            height: 300px;
+            width: 300px;
+        }
+        .current1{
+            right: 0px;
+        }
+        .current2{
+            right: 300px;
+            bottom: 35px;
+            transform: rotate(0deg);
+        }
+        p{
+            // padding: 100px 0px 100px 0px;
+            left: 250px;
+            bottom: 50px;
+            // width: 100%;
+            font: 1.1em $secondary-font;
         }
     }
 
@@ -453,8 +556,9 @@
         padding: 0px;
         // border: 1px solid black;
         .tile {
-            width: 250px;
-            height: 350px;
+            text-align: center;
+            width: 350px;
+            height: 300px;
             //border: 1px solid black;
             ul {
                 column-count: 1;
@@ -474,12 +578,24 @@
         }
     }
 
+    .socialContainer {
+        .social {
+            height: 25px;
+            width: 25px;
+            margin:10px;
+            border-radius: 50%;
+            border: 2px solid black;
+            object-fit: contain;
+        }
+    }
+
     .textbox {
         width: 150%;
         height: 40%;
         position: none;
         bottom: 70px;
         right: 0px;
+        padding: 0px 200px 0px 200px;
         display: flex;
         justify-content: center;
         // border: 1px solid black;
@@ -490,30 +606,23 @@
     }
 
     .techbox{
-        top: 70px;
+        // top: 70px;
         left: 0;
         height: 170%;
         width: 150%;
+        padding: 0px 200px 200px 200px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        background-color: rgba(247, 114, 6, 0.0);
         // border: 1px solid black;
 
         ul {
-            height: 100%;
+            height: auto;
             width: 100%;
             // border: 1px solid black;
         }
-    }
-
-    .logoContainer{
-        // border: 1px solid black;
-        left: 0px;
-        top: 0px;
-        // .logo {
-        //     width: 33%;
-        // }
     }
 
     .transform {
@@ -521,11 +630,28 @@
       }
 }
 
-@media (max-width: 768px) {
-    .about, .tech, .home, .writing, .projects, .education {
+@media (max-width: 767px) {
+    html{
+        .section{
+            height: auto;
+            width: 100%;
+            padding: 80px 0px 80px 0px;
+        }
+    }
+
+    .App {
+        padding: 0px;
+    }
+
+    .about, .home, .writing, .projects, .education {
         height: auto;
         width: auto;
     }
+
+    .tech {
+        height: 1000px;
+    }
+
     body {
         text-align: center;
         height: 100%;
@@ -561,28 +687,72 @@
             width: 100%;
         }
     }
+
+    .education {
+        height: 800px;
+        img{
+            height: 200px;
+            width: 200px;
+        }
+        .current1{
+            right: 0px;
+        }
+        .current2{
+            right:0px;
+        }
+        p{
+            padding: 100px 0px 100px 0px;
+            left: 0px;
+            top: 200px;
+            width: 100%;
+            font: 1em $secondary-font;
+        }
+    }
+
+    .socialContainer {
+        .social {
+            height: 25px;
+            width: 25px;
+            margin:10px;
+            border-radius: 50%;
+            border: 2px solid black;
+            object-fit: contain;
+        }
+    }
+
     .textbox {
-        width: 400px;
-        height: 100%;
-        position: relative;
-        // background-color: rgb(248, 246, 246, 0);
-        top: 150px;
+        width: 150%;
+        height: 40%;
+        position: none;
+        bottom: 70px;
         right: 0px;
-        // display: flex;
-        // justify-content: center;
+        padding: 0px 200px 0px 200px;
+        display: flex;
+        justify-content: center;
+        // border: 1px solid black;
+
         ul {
             column-count: 4;
         }
     }
-    .logoContainer{
-        width: 400px;
-        height: 100%;
+
+    .techbox{
+        top: 70px;
+        left: 0;
+        height: 170%;
+        width: 150%;
+        padding: 0px 200px 0px 200px;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        position: relative;
-        top: 150px;
-        left: 30px;
-        .logo {
-            width: 33%;
+        justify-content: center;
+        background-color: rgba(247, 114, 6, 0.0);
+        // border: 1px solid black;
+
+        ul {
+            height: 100%;
+            width: 100%;
+            // border: 1px solid black;
         }
     }
 }

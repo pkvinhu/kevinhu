@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from 'react';
 import '../App.css';
-// import { Paper } from '@material-ui/core';
 
 class About extends Component {
     state = {
@@ -24,7 +23,6 @@ class About extends Component {
                 className="image"
                 src={require('../assets/faphoto3.jpg')}
             />
-            {/* <Paper className='info'> */}
                 <div className='info'><h1><strong>Hi, my name is Kevin.</strong></h1>
                                       I am a Fullstack Software Engineer and Writer based in Brooklyn, New York. 
                                       My story started in Chicago, and is quite long, so I'll try my best not to bore you with the details.
@@ -44,7 +42,7 @@ class About extends Component {
                                       I am currently searching for engineering roles where I can contribute on an agile oriented team that is built with a DNA of learning and curiosity.
                                       Check out some of my projects below for more insight on what I do.
                                       </div>
-            {/*</Paper>*/}</div>
+            </div>
             </Fragment>
         )
     }
