@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
-import { GridList, GridListTile, GridListTileBar } from '@material-ui/core';
+import { GridList, GridListTile, GridListTileBar, IconButton, Icon } from '@material-ui/core';
 
 class Projects extends Component {
     state = {
@@ -27,7 +27,13 @@ class Projects extends Component {
                                     <a target="_blank" rel="noopener noreferrer" href="https://rosetta-capstone.herokuapp.com/">
                                         <img alt="" src={require("../assets/RSCapstone.png")}/>
                                     </a>
-                                    <GridListTileBar title="Rosetta Capstone"/>
+                                    <GridListTileBar 
+                                        title="Rosetta Capstone"
+                                        actionIcon={
+                                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/RosettaCapstoned/main_app">
+                                              <Icon>chevron_left</Icon><Icon>chevron_right</Icon>
+                                            </a>
+                                          }/>
                                 </GridListTile>
                                 <GridListTile 
                                     className="projectTile"
@@ -37,7 +43,13 @@ class Projects extends Component {
                                     <a target="_blank" rel="noopener noreferrer" href="https://www.fullstackacademy.com/hackathon-presentations/litreviews-digest">
                                         <img alt="" src={require("../assets/LitReviews.png")}/>
                                     </a>
-                                    <GridListTileBar title="LitReviews Digest"/>
+                                    <GridListTileBar 
+                                        title="LitReviews Digest"
+                                        actionIcon={
+                                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/pkvinhu/lit-reviews-digest">
+                                                <Icon>chevron_left</Icon><Icon>chevron_right</Icon>                                            
+                                            </a>
+                                          }/>
                                 </GridListTile>
                                 <GridListTile 
                                     className="projectTile"
@@ -47,11 +59,14 @@ class Projects extends Component {
                                     <a target="_blank" rel="noopener noreferrer" href="https://man-petals.herokuapp.com/#/">
                                         <img alt="" src={require("../assets/ManPetals.png")}/>
                                     </a>
-                                    <GridListTileBar title="ManPetals E-Commerce"/>
+                                    <GridListTileBar 
+                                        title="ManPetals E-Commerce"
+                                        actionIcon={
+                                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/DisruptionCorp/man-petals-store">
+                                              <Icon>chevron_left</Icon><Icon>chevron_right</Icon>
+                                            </a>
+                                          }/>
                                 </GridListTile>
-                                {/*<h2>Rosetta Capstone</h2>
-                                <h2>LitReviews Digest</h2>
-                                <h2>ManPetals E-Commerce</h2>*/}
                                 <GridListTile 
                                     className="projectTile"
                                     cols={1}
@@ -72,9 +87,6 @@ class Projects extends Component {
                                     cols={1}
                                     >
                                 </GridListTile>
-                                {/*<h2>Tula App</h2>
-                                <h2>DigInn Projection Tool</h2>
-                                <h2></h2>*/}
                     </GridList>
             </div>
         )
