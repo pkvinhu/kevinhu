@@ -19,10 +19,11 @@ class Nav extends Component {
             <nav className='App navbar navbar-light navbar-expand-md navbar-no-bg'>
                 <img alt='' src={require('../assets/initials.png')} />
                 <div className="socialContainer">
-                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/pkvinhu"><img alt="" className="social" src={require('../assets/github_circle.png')}/></a>
                         <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kevin-hu-82673529/"><img alt="" className="social" src={require('../assets/linkedin_circle.png')}/></a>
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/pkvinhu/"><img alt="" className="social" src={require('../assets/instagramlogo.png')}/></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/pkvinhu"><img alt="" className="social" src={require('../assets/github_circle.png')}/></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/pkvinhu/"><img alt="" className="social" src={require('../assets/instagramlogo.jpg')}/></a>
                         <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@kvinhu/latest"><img alt="" className="social" src={require('../assets/mediumlogo.jpg')}/></a>
+                        <a href="mailto:pkvinhu@gmail.com"><img alt="" className="social" src={require('../assets/gmaillogo.png')}/></a>
                 </div>
                 <button
                     className="navbar-toggler"
@@ -43,7 +44,7 @@ class Nav extends Component {
                     <a className='scroll-link navbar-brand item' href='#projects'>Projects</a>
                     <a className='scroll-link navbar-brand item' href='#writing'>Writing</a>
                     <a className='scroll-link navbar-brand item' href='#education'>Education</a>
-                    <a className='navbar-brand item' target="pdf-frame" rel="noopener noreferrer" href="Software_Engineer_CV_v3.pdf">Resume</a>
+                    <a className='navbar-brand item' target="_blank" href="Software_Engineer_CV_v3.pdf">Resume</a>
                 </div>
             </nav>
         )
