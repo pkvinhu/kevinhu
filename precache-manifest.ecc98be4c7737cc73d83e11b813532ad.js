@@ -76,7 +76,7 @@ self.__precacheManifest = [
     "url": "/kevinhu/static/media/ExcavatingMemory.b8809e5d.png"
   },
   {
-    "revision": "abf1726a74a805c051ae5584986470fa",
+    "revision": "17732872d8e367f51e753bd225190221",
     "url": "/kevinhu/index.html"
   }
 ];
