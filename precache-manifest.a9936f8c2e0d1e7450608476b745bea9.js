@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "82fc5348972726043ee89a930407828e",
-    "url": "/kevinhu/static/media/LitReviews.82fc5348.png"
+    "revision": "2cea6a1851df50588e4477e6db379ca7",
+    "url": "/kevinhu/static/media/RSCapstone.2cea6a18.png"
   },
   {
-    "revision": "220cb85f12964697202a",
+    "revision": "19c5e1426db20eb01cb0",
     "url": "/kevinhu/static/css/main.7d9512f5.chunk.css"
   },
   {
-    "revision": "c1a3443850ad2d53eaa9",
-    "url": "/kevinhu/static/js/1.c1a34438.chunk.js"
+    "revision": "3182208ca540701c8c3c",
+    "url": "/kevinhu/static/js/1.3182208c.chunk.js"
   },
   {
     "revision": "124b90c61e1c4b86bfa6",
@@ -20,8 +20,16 @@ self.__precacheManifest = [
     "url": "/kevinhu/static/media/linkedin_circle.0c15b92c.png"
   },
   {
+    "revision": "55e7eb5512ec5da045d7df5097405064",
+    "url": "/kevinhu/static/media/instagramlogo.55e7eb55.jpg"
+  },
+  {
     "revision": "26b622caf81e38a0abf5e7ece4e261ab",
     "url": "/kevinhu/static/media/mediumlogo.26b622ca.jpg"
+  },
+  {
+    "revision": "db85ab2b952f74fed436feff6faf6a95",
+    "url": "/kevinhu/static/media/gmaillogo.db85ab2b.png"
   },
   {
     "revision": "fbae14d6db1afc47522b75f18b8a9a33",
@@ -32,12 +40,12 @@ self.__precacheManifest = [
     "url": "/kevinhu/static/media/faphoto3.236428af.jpg"
   },
   {
-    "revision": "2cea6a1851df50588e4477e6db379ca7",
-    "url": "/kevinhu/static/media/RSCapstone.2cea6a18.png"
+    "revision": "19c5e1426db20eb01cb0",
+    "url": "/kevinhu/static/js/main.19c5e142.chunk.js"
   },
   {
-    "revision": "220cb85f12964697202a",
-    "url": "/kevinhu/static/js/main.220cb85f.chunk.js"
+    "revision": "82fc5348972726043ee89a930407828e",
+    "url": "/kevinhu/static/media/LitReviews.82fc5348.png"
   },
   {
     "revision": "b5025ac2da436efe4a1d3803b14cba0c",
@@ -68,7 +76,7 @@ self.__precacheManifest = [
     "url": "/kevinhu/static/media/ExcavatingMemory.b8809e5d.png"
   },
   {
-    "revision": "0f46e0d163b605765c6a519b588d293a",
+    "revision": "4e26f82479434590a7b4bd9d43a23efc",
     "url": "/kevinhu/index.html"
   }
 ];
