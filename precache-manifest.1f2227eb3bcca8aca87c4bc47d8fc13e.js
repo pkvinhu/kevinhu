@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "2cea6a1851df50588e4477e6db379ca7",
-    "url": "/kevinhu/static/media/RSCapstone.2cea6a18.png"
+    "revision": "b5025ac2da436efe4a1d3803b14cba0c",
+    "url": "/kevinhu/static/media/ManPetals.b5025ac2.png"
   },
   {
-    "revision": "0ac8c494d1f14ae0740c",
-    "url": "/kevinhu/static/css/main.a9bcd23a.chunk.css"
+    "revision": "9f7e3d838fb0914cb4dd",
+    "url": "/kevinhu/static/css/main.376a00a2.chunk.css"
   },
   {
     "revision": "f2e68f14df062c9a5829",
@@ -16,22 +16,6 @@ self.__precacheManifest = [
     "url": "/kevinhu/static/js/runtime~main.124b90c6.js"
   },
   {
-    "revision": "0c15b92cacb421424ab9d0b6b216c818",
-    "url": "/kevinhu/static/media/linkedin_circle.0c15b92c.png"
-  },
-  {
-    "revision": "55e7eb5512ec5da045d7df5097405064",
-    "url": "/kevinhu/static/media/instagramlogo.55e7eb55.jpg"
-  },
-  {
-    "revision": "26b622caf81e38a0abf5e7ece4e261ab",
-    "url": "/kevinhu/static/media/mediumlogo.26b622ca.jpg"
-  },
-  {
-    "revision": "db85ab2b952f74fed436feff6faf6a95",
-    "url": "/kevinhu/static/media/gmaillogo.db85ab2b.png"
-  },
-  {
     "revision": "fbae14d6db1afc47522b75f18b8a9a33",
     "url": "/kevinhu/static/media/kevinhu_photo.fbae14d6.png"
   },
@@ -40,16 +24,16 @@ self.__precacheManifest = [
     "url": "/kevinhu/static/media/faphoto3.236428af.jpg"
   },
   {
-    "revision": "0ac8c494d1f14ae0740c",
-    "url": "/kevinhu/static/js/main.0ac8c494.chunk.js"
+    "revision": "2cea6a1851df50588e4477e6db379ca7",
+    "url": "/kevinhu/static/media/RSCapstone.2cea6a18.png"
   },
   {
     "revision": "82fc5348972726043ee89a930407828e",
     "url": "/kevinhu/static/media/LitReviews.82fc5348.png"
   },
   {
-    "revision": "b5025ac2da436efe4a1d3803b14cba0c",
-    "url": "/kevinhu/static/media/ManPetals.b5025ac2.png"
+    "revision": "9f7e3d838fb0914cb4dd",
+    "url": "/kevinhu/static/js/main.9f7e3d83.chunk.js"
   },
   {
     "revision": "d987b8da71efc6daa640e3e1b1436cd9",
@@ -76,7 +60,7 @@ self.__precacheManifest = [
     "url": "/kevinhu/static/media/ExcavatingMemory.b8809e5d.png"
   },
   {
-    "revision": "70d26b7b3a294511aaf8fbc5e46bc82f",
+    "revision": "caa197f00ff6b38d3e9efd0dd95b3e87",
     "url": "/kevinhu/index.html"
   }
 ];
