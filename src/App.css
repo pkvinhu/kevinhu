@@ -125,15 +125,16 @@ html .section {
 }
 
 .info {
-  color: #034;
+  color: black;
   font: 1.3em "Garamond", "Times New Roman", sans-serif;
   width: 100%;
   padding: 45px;
   height: auto;
-  background-color: rgba(252, 248, 248, 0.6);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 .info h1 {
   font-family: Georgia, serif;
+  color: #034;
 }
 
 .aboutBG1 {
@@ -188,12 +189,11 @@ html .section {
 }
 
 .socialContainer .social {
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
   margin: 10px;
   border-radius: 50%;
-  border: 2px solid black;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .education {
@@ -485,7 +485,7 @@ html .section {
   .education p {
     left: 250px;
     bottom: 50px;
-    font: 1.1em "Garamond", "Times New Roman", sans-serif;
+    font: 1.2em "Garamond", "Times New Roman", sans-serif;
   }
 
   .gridContainer {
@@ -521,10 +521,6 @@ html .section {
   .socialContainer .social {
     height: 25px;
     width: 25px;
-    margin: 10px;
-    border-radius: 50%;
-    border: 2px solid black;
-    object-fit: contain;
   }
 
   .textbox {
@@ -612,7 +608,7 @@ html .section {
     position: relative;
     top: 40px;
     right: 20px;
-    font-size: 0.9em;
+    font-size: 1.2em;
     width: 100%;
   }
 
@@ -630,20 +626,16 @@ html .section {
     right: 0px;
   }
   .education p {
-    padding: 100px 0px 100px 0px;
+    padding: 150px 0px 120px 0px;
     left: 0px;
     top: 200px;
     width: 100%;
-    font: 1em "Garamond", "Times New Roman", sans-serif;
+    font: 1.2em "Garamond", "Times New Roman", sans-serif;
   }
 
   .socialContainer .social {
     height: 25px;
     width: 25px;
-    margin: 10px;
-    border-radius: 50%;
-    border: 2px solid black;
-    object-fit: contain;
   }
 
   .textbox {

@@ -139,14 +139,16 @@
   .info {
     h1 {
        font-family: $font-stack;
+       color: $primary-color;
     }
     @extend %content-overlay;
-    color: $primary-color;
+    color: black;
     font: 1.3em $secondary-font;
     width: 100%;
     padding: 45px;
     height: auto;
-    background-color: rgb(252, 248, 248, 0.6);
+    background-color: rgb(255, 255, 255, 0.8);
+    // background-color: rgb(252, 248, 248, 0.6);
     // mix-blend-mode: difference;
     @extend %fade-left;
   }
@@ -210,12 +212,11 @@
 
     .socialContainer {
         .social {
-            height: 40px;
-            width: 40px;
+            height: 35px;
+            width: 35px;
             margin:10px;
             border-radius: 50%;
-            border: 2px solid black;
-            object-fit: contain;
+            object-fit: cover;
         }
     }
 
@@ -326,7 +327,6 @@
 
   .tech {
     display: flex;
-    // justify-content: space-between;
     // border: 1px solid black;
   }
 
@@ -336,9 +336,6 @@
         padding: 20px;
         margin-right: 20px;
         @extend %li-fade;
-        // opacity: 1;
-        // animation: skew 1.5s 1;
-        // animation-fill-mode: forwards;
         // border: 1px solid black;
         .logo {
             width: 20%;
@@ -403,7 +400,6 @@
   @keyframes fadeIn {
     0% {
       opacity: 0.0;
-    //   padding-left: 230px;
     }
     100% {
       opacity: 1.0;
@@ -539,11 +535,9 @@
             transform: rotate(0deg);
         }
         p{
-            // padding: 100px 0px 100px 0px;
             left: 250px;
             bottom: 50px;
-            // width: 100%;
-            font: 1.1em $secondary-font;
+            font: 1.2em $secondary-font;
         }
     }
 
@@ -583,10 +577,6 @@
         .social {
             height: 25px;
             width: 25px;
-            margin:10px;
-            border-radius: 50%;
-            border: 2px solid black;
-            object-fit: contain;
         }
     }
 
@@ -600,14 +590,12 @@
         display: flex;
         justify-content: center;
         // border: 1px solid black;
-
         ul {
             column-count: 4;
         }
     }
 
     .techbox{
-        // top: 70px;
         left: 0;
         height: 170%;
         width: 150%;
@@ -683,8 +671,7 @@
             position: relative;
             top: 40px;
             right: 20px;
-            font-size: .9em;
-            // padding: 10px;
+            font-size: 1.2em;
             width: 100%;
         }
     }
@@ -702,11 +689,11 @@
             right:0px;
         }
         p{
-            padding: 100px 0px 100px 0px;
+            padding: 150px 0px 120px 0px;
             left: 0px;
             top: 200px;
             width: 100%;
-            font: 1em $secondary-font;
+            font: 1.2em $secondary-font;
         }
     }
 
@@ -714,10 +701,6 @@
         .social {
             height: 25px;
             width: 25px;
-            margin:10px;
-            border-radius: 50%;
-            border: 2px solid black;
-            object-fit: contain;
         }
     }
 

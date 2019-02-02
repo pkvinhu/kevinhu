@@ -17,13 +17,13 @@ const tech = {
                         ]
                 },
     Intermediate: {
-                    stack: [ "Agile/Scrum", "CSS3", "Heroku", "Webpack", "Babel", "Mocha", "Chai", "Supertest", "Google Sheets Script", "Google App Maker" ],
+                    stack: [ "Agile/Scrum", "CSS3", "Heroku", "Webpack", "Babel", "Mocha", "Chai", "Supertest", "Google Apps Script", "Google App Maker" ],
                     logos: [ "https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png",
                             "https://miro.medium.com/max/768/1*w2RAR48UbSAYv-6y_V-cdA.png",
                             "https://cdn-images-1.medium.com/max/1600/1*gdoQ1_5OID90wf1eLTFvWw.png",
                             "https://cdn-images-1.medium.com/max/1200/1*43_9024fQOfFJTWQZPiASw.jpeg",
                             "https://cdn-images-1.medium.com/max/1600/1*BmORsbtFaWw0lyyfMtYd0Q.png",
-                            "https://s3.amazonaws.com/kinlane-productions/google-sheets/google-sheets-icon.jpg",
+                            "https://vinoaj.com/wp-content/uploads/2018/01/logo-google-apps-script.png",
                             "https://www.theinquirer.net/w-images/c91d76c8-1124-4c30-95f6-d32d81b3bb1b/2/455275googleappmaker-580x358.jpg" 
                            ]
                 },

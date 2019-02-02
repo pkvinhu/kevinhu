@@ -20,10 +20,10 @@ class Nav extends Component {
                 <img alt='' src={require('../assets/initials.png')} />
                 <div className="socialContainer">
                         <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kevin-hu-82673529/"><img alt="" className="social" src={require('../assets/linkedin_circle.png')}/></a>
-                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/pkvinhu"><img alt="" className="social" src={require('../assets/github_circle.png')}/></a>
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/pkvinhu/"><img alt="" className="social" src={require('../assets/instagramlogo.jpg')}/></a>
-                        <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@kvinhu/latest"><img alt="" className="social" src={require('../assets/mediumlogo.jpg')}/></a>
                         <a href="mailto:pkvinhu@gmail.com"><img alt="" className="social" src={require('../assets/gmaillogo.png')}/></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/pkvinhu"><img alt="" className="social" src={require('../assets/github_circle.png')}/></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/pkvinhu/"><img alt="" className="social" src={require('../assets/instagramlogo.png')}/></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@kvinhu/latest"><img alt="" className="social" src={require('../assets/mediumlogo.png')}/></a>
                 </div>
                 <button
                     className="navbar-toggler"

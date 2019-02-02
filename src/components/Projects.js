@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
-import { GridList, GridListTile, GridListTileBar, IconButton, Icon } from '@material-ui/core';
+import { GridList, GridListTile, GridListTileBar, Icon } from '@material-ui/core';
 
 class Projects extends Component {
     state = {
