@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/kevinhu/static/media/ManPetals.b5025ac2.png"
   },
   {
-    "revision": "9f7e3d838fb0914cb4dd",
-    "url": "/kevinhu/static/css/main.376a00a2.chunk.css"
+    "revision": "b6941f7bfa534d726bfc",
+    "url": "/kevinhu/static/css/main.474f00b3.chunk.css"
   },
   {
-    "revision": "f2e68f14df062c9a5829",
-    "url": "/kevinhu/static/js/1.f2e68f14.chunk.js"
+    "revision": "636084c0cba7e0b57eee",
+    "url": "/kevinhu/static/js/1.636084c0.chunk.js"
   },
   {
     "revision": "124b90c61e1c4b86bfa6",
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/kevinhu/static/media/LitReviews.82fc5348.png"
   },
   {
-    "revision": "9f7e3d838fb0914cb4dd",
-    "url": "/kevinhu/static/js/main.9f7e3d83.chunk.js"
+    "revision": "b6941f7bfa534d726bfc",
+    "url": "/kevinhu/static/js/main.b6941f7b.chunk.js"
   },
   {
     "revision": "d987b8da71efc6daa640e3e1b1436cd9",
@@ -60,7 +60,7 @@ self.__precacheManifest = [
     "url": "/kevinhu/static/media/ExcavatingMemory.b8809e5d.png"
   },
   {
-    "revision": "8766ea875791ddaddb343e6d86c3e3cd",
+    "revision": "388581a19a8f9671c02edbce1470fa14",
     "url": "/kevinhu/index.html"
   }
 ];
