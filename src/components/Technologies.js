@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
+import sizeMe from 'react-sizeme';
 
 const tech = {
     Proficient: { 
@@ -46,11 +47,20 @@ class Technologies extends Component {
     }
 
     handleClick = (evt) => {
+        const { width } = this.props.size;
         var elements = document.querySelectorAll(".skills");
         for(let i = 0; i < elements.length; i++){
-            elements[i].innerHTML == evt.target.innerHTML ? 
-            elements[i].classList.add("grow") : 
-            elements[i].className = "skills"
+            if(elements[i].innerHTML == evt.target.innerHTML) {
+                if(width >= 768){
+                    elements[i].classList.add("grow2")
+                }
+                else if(width < 768){
+                    elements[i].classList.add("grow")
+                }
+            }
+            else {
+                elements[i].className = "skills";
+            }
         }
         this.setState({ current: [evt.target.innerHTML]})
     }
@@ -95,4 +105,4 @@ class Technologies extends Component {
     }
 }
 
-export default Technologies;
+export default sizeMe()(Technologies);

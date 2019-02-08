@@ -31,12 +31,6 @@
   position: relative;
 }
 
-.info {
-  opacity: 0;
-  animation: fadeLeft 5s 1;
-  animation-fill-mode: forwards;
-}
-
 .textbox, .techbox ul li, .logoContainer, .gridContainer ul li {
   opacity: 0;
   animation: fadeIn 3s 1;
@@ -119,15 +113,13 @@ html .section {
   border: 8px solid #034;
   bottom: 26%;
   left: 0%;
-  opacity: 1;
-  animation: fadeRight 5s 1;
-  animation-fill-mode: forwards;
+  margin-right: 35px;
 }
 
 .info {
   color: black;
   font: 1.3em "Garamond", "Times New Roman", sans-serif;
-  width: 100%;
+  width: 80%;
   padding: 45px;
   height: auto;
   background-color: rgba(255, 255, 255, 0.8);
@@ -286,12 +278,55 @@ html .section {
 }
 
 .projectTile {
-  height: 100%;
+  height: 90%;
 }
 .projectTile img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.card:hover .card-image {
+  opacity: 0.3;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+  background-color: rgba(10, 10, 10, 0.5);
+}
+
+.overlay {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay-icons {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 45%;
+}
+
+.material-icons {
+  font-size: 40px;
+  color: #034;
+  margin: 5px;
+}
+
+.row {
+  height: 290px;
+}
+
+.card-image {
+  height: 100%;
 }
 
 .tech {
@@ -351,6 +386,12 @@ html .section {
 }
 
 .grow {
+  flex-grow: 3;
+  font-size: 3.5em;
+  font-weight: bold;
+}
+
+.grow2 {
   flex-grow: 3;
   font-size: 3.5em;
   font-weight: bold;

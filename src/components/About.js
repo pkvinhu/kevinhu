@@ -23,7 +23,7 @@ class About extends Component {
                 className="image"
                 src={require('../assets/faphoto3.jpg')}
             />
-                <div className='info'><h1><strong>Hi, my name is Kevin.</strong></h1>
+                <div className='info'><h1 className="animated bounceInDown delay-1s"><strong>Hi, my name is Kevin.</strong></h1>
                                       I am a Fullstack Software Engineer and Writer based in Brooklyn, New York. 
                                       My story started in Chicago, and is quite long, so I'll try my best not to bore you with the details.
                                       <br /><br />
