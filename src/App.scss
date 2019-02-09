@@ -330,7 +330,7 @@
   
   .card:hover .overlay {
     opacity: 1;
-    background-color: rgba(10, 10, 10, 0.5)
+    background-color: rgba(10, 10, 10, 0.7)
 
   }
 
@@ -342,21 +342,27 @@
     width: 100%;
     top: 50%;
     left: 50%;
+    padding: 15px;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
+    overflow: scroll;
+    p{
+        color: $secondary-color;
+        font: 1.3em $secondary-font;
+    }
   }
 
   .overlay-icons {
       display: flex;
       justify-content: center;
       position: relative;
-      top: 45%;
+    //   top: 45%;
   }
 
   .material-icons {
       font-size: 40px;
-      color: $primary-color;
+      color: $secondary-color;
       margin: 5px;
   }
 

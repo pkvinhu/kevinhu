@@ -292,7 +292,7 @@ html .section {
 
 .card:hover .overlay {
   opacity: 1;
-  background-color: rgba(10, 10, 10, 0.5);
+  background-color: rgba(10, 10, 10, 0.7);
 }
 
 .overlay {
@@ -303,21 +303,26 @@ html .section {
   width: 100%;
   top: 50%;
   left: 50%;
+  padding: 15px;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+  overflow: scroll;
+}
+.overlay p {
+  color: white;
+  font: 1.3em "Garamond", "Times New Roman", sans-serif;
 }
 
 .overlay-icons {
   display: flex;
   justify-content: center;
   position: relative;
-  top: 45%;
 }
 
 .material-icons {
   font-size: 40px;
-  color: #034;
+  color: white;
   margin: 5px;
 }
 
