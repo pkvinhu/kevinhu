@@ -7,7 +7,7 @@ class Header extends Component {
     render() {
         return (
             <div>
-                <div className='header'>
+                <div className='header' id="header">
                 <div className="header-content">
                     <div className="animated slideInLeft name">KEVIN HU</div>
                     <h4 className="animated slideInRight delay-1s title"><font color="#FEC339">SOFTWARE ENGINEER</font> AND WRITER</h4>

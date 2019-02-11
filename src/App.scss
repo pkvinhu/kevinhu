@@ -135,8 +135,8 @@
           height: 100%;
           width: auto;
         //   border: 8px solid $primary-color;
-          bottom: 26%;
-          left: 0%;
+        //   bottom: 26%;
+        //   left: 0%;
           margin-right: 35px;
         //   opacity: 1;
         //   animation: fadeRight 5s 1;
@@ -152,9 +152,9 @@
     // @extend %content-overlay;
     color: black;
     font: $secondary-font;
-    font-size: 1.3em;
+    font-size: 1.2em;
     width: 80%;
-    padding: 45px;
+    padding: 100px;
     height: auto;
     background-color: rgb(255, 255, 255, 0.8);
     // @extend %fade-left;
@@ -206,6 +206,7 @@
 
   .feature {
     position: relative;
+    background-color: rgba(252, 252, 252, 0.2);
     .container {
         display: flex;
         justify-content: space-around;
@@ -789,11 +790,11 @@
     .about{
         width: 100%;
         .image {
-            position: relative;
+            // position: relative;
             height: 200px;
             width: 200px;
             // top: 0px;
-            right: 0px;
+            // right: 0px;
             z-index: 1;
             object-fit: cover;
             object-position: 100% 0%;
@@ -805,7 +806,7 @@
             position: none;
             // top: 40px;
             // right: 20px;
-            font-size: 1.2em;
+            font-size: 1.1em;
             width: 100%;
         }
     }

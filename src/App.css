@@ -85,17 +85,15 @@ html .section, body .section {
 .about .image {
   height: 100%;
   width: auto;
-  bottom: 26%;
-  left: 0%;
   margin-right: 35px;
 }
 
 .info {
   color: black;
   font: "Quattrocento Sans";
-  font-size: 1.3em;
+  font-size: 1.2em;
   width: 80%;
-  padding: 45px;
+  padding: 100px;
   height: auto;
   background-color: rgba(255, 255, 255, 0.8);
 }
@@ -147,6 +145,7 @@ html .section, body .section {
 
 .feature {
   position: relative;
+  background-color: rgba(252, 252, 252, 0.2);
 }
 .feature .container {
   display: flex;
@@ -659,10 +658,8 @@ html .section, body .section {
     width: 100%;
   }
   .about .image {
-    position: relative;
     height: 200px;
     width: 200px;
-    right: 0px;
     z-index: 1;
     object-fit: cover;
     object-position: 100% 0%;
@@ -672,7 +669,7 @@ html .section, body .section {
     margin: 0px;
     padding: 0px;
     position: none;
-    font-size: 1.2em;
+    font-size: 1.1em;
     width: 100%;
   }
 

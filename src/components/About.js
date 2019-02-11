@@ -38,7 +38,7 @@ class About extends Component {
                                       I would like to think though that my exploration in identity and story as a writer humbles me to know that not every problem has a quick solution like coding often might.
                                       <br/><br/>
                                       I am currently searching for engineering roles where I can contribute on an agile oriented team that is built with a DNA of learning and curiosity.
-                                      Check out some of my projects below for more insight on what I do.
+                                      Check out some of my projects for more insight on what I do.
                                       </div>
             </div>
         )

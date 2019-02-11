@@ -29,8 +29,8 @@ const styles = theme => ({
     color: 'white',
     padding: '10px 40px 10px 40px',
     '&:hover': {
-      color: 'yellow',
-      borderBottom: '3px solid white'
+      color: '#FEC339',
+      borderBottom: '3px solid #FEC339'
     }
   }
 })
@@ -52,7 +52,11 @@ class DrawerList extends Component {
   	  <div>
   	    <div>
   	    <div>
-  	      <Button onClick={this.handleDrawerToggle} className={classes.buttonBase}><Icon className={classNames(classes.button, className)}>menu</Icon></Button>
+          <Button 
+            onClick={this.handleDrawerToggle} 
+            className={classes.buttonBase}>
+            <Icon className={classNames(classes.button, className)}>menu</Icon>
+          </Button>
   	    </div>
   	    <Drawer variant="temporary"
                 anchor='left'
@@ -60,12 +64,12 @@ class DrawerList extends Component {
                 open={mobileOpen}
                 onClose={handleDrawerToggle}>
                 <ul className={classes.list}>
-                    <a className={`scroll-link navbar-brand item ${classes.listItem}`} href='#home'>HOME</a>
-                    <a className={`scroll-link navbar-brand item ${classes.listItem}`} href='#about'>ABOUT ME</a>
+                    <a className={`scroll-link navbar-brand item ${classes.listItem}`} href='#header'>HOME</a>
                     <a className={`scroll-link navbar-brand item ${classes.listItem}`} href='#tech'>TECHNOLOGIES</a>
                     <a className={`scroll-link navbar-brand item ${classes.listItem}`} href='#projects'>PROJECTS</a>
                     <a className={`scroll-link navbar-brand item ${classes.listItem}`} href='#writing'>WRITING</a>
-                    <a className={`scroll-link navbar-brand item ${classes.listItem}`} href='#education'>EDUCATION</a>
+                    <a className={`scroll-link navbar-brand item ${classes.listItem}`} href='#about'>ABOUT ME</a>
+                    {/* <a className={`scroll-link navbar-brand item ${classes.listItem}`} href='#education'>EDUCATION</a> */}
                     <a className={`scroll-link navbar-brand item ${classes.listItem}`} target="_blank" href="Software_Engineer_CV_v3.pdf">RESUME</a>
                 </ul>
   	    </Drawer>

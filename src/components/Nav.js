@@ -22,7 +22,7 @@ class Nav extends Component {
             <Paper className='App navbar' style={width < 768 ? {justifyContent: "flex-end"} : {}}>
                 {width >= 768 ? (
                     <div className="">
-                        <a className='scroll-link navbar-brand item' href='#home'>HOME</a>
+                        <a className='scroll-link navbar-brand item' href='#header'>HOME</a>
                         <a className='scroll-link navbar-brand item' href='#tech'>TECH</a>
                         <a className='scroll-link navbar-brand item' href='#projects'>PROJECTS</a>
                         <a className='scroll-link navbar-brand item' href='#writing'>WRITING</a>
