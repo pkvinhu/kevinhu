@@ -1,19 +1,31 @@
 self.__precacheManifest = [
   {
-    "revision": "b5025ac2da436efe4a1d3803b14cba0c",
-    "url": "/kevinhu/static/media/ManPetals.b5025ac2.png"
+    "revision": "2cea6a1851df50588e4477e6db379ca7",
+    "url": "/kevinhu/static/media/RSCapstone.2cea6a18.png"
   },
   {
-    "revision": "09584e13ecd5f20c0c75",
-    "url": "/kevinhu/static/css/main.46f9d2c3.chunk.css"
+    "revision": "c3f184abaa4a52c38fac",
+    "url": "/kevinhu/static/css/main.fe2bcfb3.chunk.css"
   },
   {
-    "revision": "636084c0cba7e0b57eee",
-    "url": "/kevinhu/static/js/1.636084c0.chunk.js"
+    "revision": "ff9283b62586ff778bd3",
+    "url": "/kevinhu/static/js/1.ff9283b6.chunk.js"
   },
   {
     "revision": "124b90c61e1c4b86bfa6",
     "url": "/kevinhu/static/js/runtime~main.124b90c6.js"
+  },
+  {
+    "revision": "630467c3c9d849f5acedb5d6f913875a",
+    "url": "/kevinhu/static/media/lightbulb.630467c3.jpg"
+  },
+  {
+    "revision": "e4936486c9f39d72ce98afe5f59c675b",
+    "url": "/kevinhu/static/media/chicago.e4936486.jpg"
+  },
+  {
+    "revision": "ded472805f226fddc44576d3c23d6ccc",
+    "url": "/kevinhu/static/media/brooklyn.ded47280.jpg"
   },
   {
     "revision": "fbae14d6db1afc47522b75f18b8a9a33",
@@ -24,16 +36,16 @@ self.__precacheManifest = [
     "url": "/kevinhu/static/media/faphoto3.236428af.jpg"
   },
   {
-    "revision": "2cea6a1851df50588e4477e6db379ca7",
-    "url": "/kevinhu/static/media/RSCapstone.2cea6a18.png"
+    "revision": "c3f184abaa4a52c38fac",
+    "url": "/kevinhu/static/js/main.c3f184ab.chunk.js"
   },
   {
     "revision": "82fc5348972726043ee89a930407828e",
     "url": "/kevinhu/static/media/LitReviews.82fc5348.png"
   },
   {
-    "revision": "09584e13ecd5f20c0c75",
-    "url": "/kevinhu/static/js/main.09584e13.chunk.js"
+    "revision": "b5025ac2da436efe4a1d3803b14cba0c",
+    "url": "/kevinhu/static/media/ManPetals.b5025ac2.png"
   },
   {
     "revision": "d987b8da71efc6daa640e3e1b1436cd9",
@@ -60,7 +72,7 @@ self.__precacheManifest = [
     "url": "/kevinhu/static/media/ExcavatingMemory.b8809e5d.png"
   },
   {
-    "revision": "453b14f7954e9e5820e9a79e78e429f0",
+    "revision": "1b7d2d92c4723ff3060c8a9c9da0a710",
     "url": "/kevinhu/index.html"
   }
 ];
