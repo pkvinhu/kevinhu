@@ -43,7 +43,7 @@ class Home extends Component {
                 <div></div>
             )} else {
         return (
-            <div className='home section' id='home'>
+            <div className='home section scrollspy' id='home'>
                     <div className="gridContainer">
                             {current && (<div className="tile">
                                 <h3>{current}</h3>

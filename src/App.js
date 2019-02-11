@@ -8,19 +8,30 @@ import Education from './components/Education';
 import Projects from './components/Projects';
 import Writing from './components/Writing';
 import Technologies from './components/Technologies';
+import Parallax from './components/Parallax';
+import Header from './components/Header';
+// import FeatureTraits from './components/FeatureTraits';
 
 class App extends Component {
+
   render() {
     return (
       <Router>
         <div>
           <Nav />
-          <Home />
-          <About />
+          <Header />
+          {/* <Home /> */}
+          {/* <Parallax bg="first"/> */}
+          {/* <FeatureTraits /> */}
           <Technologies />
+          <Parallax bg="first" tag="Projects"/>
           <Projects />
+          <Parallax bg="second" tag="Writing"/>
           <Writing />
-          <Education />
+          <Parallax bg="first" tag="About Me"/>
+          <About />
+          {/* <Parallax bg="second" tag="Education"/>
+          <Education /> */}
           <Footer />
         </div>
       </Router>

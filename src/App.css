@@ -1,34 +1,24 @@
-.textbox .skills, .bio, .footer p, html .section {
+.textbox .skills, .bio, .footer p, html .section, body .section {
   display: flex;
   justify-content: center;
 }
 
-.aboutBG2, .aboutBG1 {
+.parallax2, .parallax1, .header {
   background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  overflow: hidden;
   position: static;
   width: 100%;
-  height: 100%;
+  height: 300px;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  animation: bgFade 2s 1;
-  animation-fill-mode: forwards;
 }
 
-.bio .profilePic, .about .image {
+.bio .profilePic {
   object-fit: cover;
   object-position: 100% 0%;
   border-radius: 50%;
-}
-
-.info, .about .image {
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
-  background-size: 328px 238px;
-  position: relative;
 }
 
 .textbox, .techbox ul li, .logoContainer, .gridContainer ul li {
@@ -43,64 +33,49 @@
 }
 
 a {
+  font: "Quattrocento Sans";
   text-decoration: none;
 }
 
 div {
-  font-family: Georgia, serif;
+  font-family: Raleway;
   font: #034;
 }
 
-html {
-  margin: 0;
+html, body {
   scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
-html .section {
+html .section, body .section {
   align-items: center;
   height: 800px;
   width: 100%;
-  padding: 120px;
+  padding: 60px 0px 60px 0px;
 }
 
 .App {
   padding: 20px 60px 20px 60px;
   background-color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   position: fixed;
   top: 0;
   width: 100%;
-  height: 85px;
+  height: 45px;
   overflow: hidden;
   z-index: 10;
-}
-.App img {
-  height: 75px;
-  width: auto;
 }
 .App div {
   display: flex;
   justify-content: flex-end;
 }
 .App .item {
-  font: 1.2em solid Georgia, serif;
-}
-
-.about::before, .projects::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: inherit;
-  z-index: -1;
-  filter: blur(4px);
-  -moz-filter: blur(4px);
-  -webkit-filter: blur(4px);
-  -o-filter: blur(4px);
-  transition: all 1s linear;
-  -moz-transition: all 1s linear;
-  -webkit-transition: all 1s linear;
-  -o-transition: all 1s linear;
+  font: 1.2em solid "Quattrocento Sans";
+  color: black;
 }
 
 .about {
@@ -108,9 +83,8 @@ html .section {
   height: 100%;
 }
 .about .image {
-  height: 270px;
-  width: 270px;
-  border: 8px solid #034;
+  height: 100%;
+  width: auto;
   bottom: 26%;
   left: 0%;
   margin-right: 35px;
@@ -118,29 +92,84 @@ html .section {
 
 .info {
   color: black;
-  font: 1.3em "Garamond", "Times New Roman", sans-serif;
+  font: "Quattrocento Sans";
+  font-size: 1.3em;
   width: 80%;
   padding: 45px;
   height: auto;
   background-color: rgba(255, 255, 255, 0.8);
 }
 .info h1 {
-  font-family: Georgia, serif;
-  color: #034;
+  font: 2.3em bold Raleway;
+  color: black;
 }
 
-.aboutBG1 {
-  background-image: url("https://cache-graphicslib.viator.com/graphicslib/thumbs674x446/5651/SITours/360-chicago-observation-deck-formerly-john-hancock-observatory-in-chicago-379484.jpg");
+.name {
+  font: 5em bold;
 }
 
-.aboutBG2 {
-  background-image: url("https://thehappyjetlagger.com/wp-content/uploads/2017/07/Brooklyn_Bridge-15.jpg");
+.header-content {
+  position: relative;
+  top: 30%;
+  left: 15%;
+  color: white;
+  justify-content: center;
+  text-align: center;
+}
+
+.header {
+  background-image: url("./assets/lightbulb.jpg");
+  height: 1200px;
+}
+
+.parallax1 {
+  background-image: url("./assets/chicago.jpg");
+  height: 250px;
+}
+
+.parallax2 {
+  background-image: url("./assets/brooklyn.jpg");
+  height: 250px;
+}
+
+.tagline {
+  font-size: 5em;
+  color: white;
+  font: Raleway;
+  position: relative;
+  padding: 70px;
+  justify-content: center;
+  text-align: center;
+  font-weight: 900;
+  background-color: rgba(10, 10, 10, 0.4);
+  height: 100%;
+}
+
+.feature {
+  position: relative;
+}
+.feature .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+.feature .container .row {
+  text-align: center;
+  width: 100%;
+}
+
+.trait {
+  margin: 0px 20px 0px 20px;
+  font-size: 1.5em;
+  font-weight: 1000;
+  font: "Quattrocento Sans";
+  color: white;
 }
 
 .footer {
-  border-top: 1px solid grey;
-  background-color: #034;
-  position: fixed;
+  background-color: black;
+  position: static;
   z-index: 10;
   bottom: 0;
   height: 40px;
@@ -218,7 +247,7 @@ html .section {
 .education .current2 {
   position: relative;
   right: 45%;
-  font: 4em solid Georgia, serif;
+  font: 4em solid Raleway;
   opacity: 0;
   animation: fadeUp 3s 1;
   animation-fill-mode: forwards;
@@ -228,7 +257,7 @@ html .section {
   width: 30%;
   position: relative;
   left: 400px;
-  font: 1.5em "Garamond", "Times New Roman", sans-serif;
+  font: 1.5em "Quattrocento Sans";
 }
 
 .gridContainer {
@@ -244,7 +273,7 @@ html .section {
   background-color: rgba(24, 50, 99, 0.1);
 }
 .gridContainer .tile h3 {
-  font-family: Georgia, serif;
+  font-family: Raleway;
 }
 .gridContainer ul {
   column-count: 3;
@@ -254,11 +283,12 @@ html .section {
   animation-fill-mode: forwards;
 }
 .gridContainer ul li {
-  font: 1.1em "Garamond", "Times New Roman", sans-serif;
+  font: 1.1em "Quattrocento Sans";
 }
 
 .item:hover {
   border-bottom: 3px solid #034;
+  font: 1.4em bold;
 }
 
 .writing {
@@ -311,7 +341,7 @@ html .section {
 }
 .overlay p {
   color: white;
-  font: 1.3em "Garamond", "Times New Roman", sans-serif;
+  font: 1.3em "Quattrocento Sans";
 }
 
 .overlay-icons {
@@ -352,7 +382,6 @@ html .section {
 }
 
 .techbox {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -361,7 +390,8 @@ html .section {
   height: 100%;
   width: 50%;
   padding: 30px;
-  background-color: rgba(247, 114, 6, 0.3);
+  margin-left: 100px;
+  background-color: rgba(252, 154, 74, 0.6);
 }
 .techbox ul {
   column-count: 3;
@@ -370,12 +400,11 @@ html .section {
   height: 50%;
 }
 .techbox ul li {
-  font: 1.3em "Garamond", "Times New Roman", sans-serif;
+  font: 1.3em "Quattrocento Sans";
   text-align: center;
 }
 
 .textbox {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -383,10 +412,11 @@ html .section {
   height: 100%;
   width: 50%;
   padding: 30px;
-  background-color: rgba(24, 50, 99, 0.1);
+  margin-right: 100px;
+  background-color: rgba(2, 2, 2, 0.4);
 }
 .textbox .skills {
-  color: #034;
+  color: black;
   cursor: pointer;
 }
 
@@ -410,14 +440,6 @@ html .section {
   }
   100% {
     opacity: 1;
-  }
-}
-@keyframes bgFade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0.9;
   }
 }
 @keyframes fadeLeft {
@@ -470,14 +492,12 @@ html .section {
   html .section {
     height: auto;
     width: 100%;
-    padding: 80px;
+    padding: 0px;
   }
 
   .home, .about, .tech, .education, .writing, .projects {
     height: 150%;
     width: 100%;
-    margin: 0px;
-    padding: 0px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -485,21 +505,19 @@ html .section {
 
   .about .image {
     position: relative;
-    top: 40px;
-    left: 10px;
+    height: 300px;
+    width: 300px;
+    top: 30px;
+    right: 0px;
     z-index: 1;
+    object-fit: cover;
+    object-position: 100% 0%;
+    border-radius: 50%;
   }
   .about .info {
-    position: none;
-    right: 15px;
-    bottom: 10px;
     margin: 0px;
     width: 100%;
     font-size: 1em;
-  }
-
-  .aboutBG1, .aboutBG2 {
-    position: relative;
   }
 
   .bio {
@@ -531,7 +549,7 @@ html .section {
   .education p {
     left: 250px;
     bottom: 50px;
-    font: 1.2em "Garamond", "Times New Roman", sans-serif;
+    font: 1.2em "Quattrocento Sans";
   }
 
   .gridContainer {
@@ -557,8 +575,6 @@ html .section {
     height: 60%;
     align-items: center;
     position: relative;
-    top: 150px;
-    left: 30px;
   }
   .logoContainer .logo {
     width: 16%;
@@ -570,14 +586,15 @@ html .section {
   }
 
   .textbox {
-    width: 150%;
+    width: 100%;
     height: 40%;
     position: none;
     bottom: 70px;
     right: 0px;
-    padding: 0px 200px 0px 200px;
+    padding: 50px 200px 50px 200px;
     display: flex;
     justify-content: center;
+    margin: 0px;
   }
   .textbox ul {
     column-count: 4;
@@ -586,8 +603,9 @@ html .section {
   .techbox {
     left: 0;
     height: 170%;
-    width: 150%;
-    padding: 0px 200px 200px 200px;
+    width: 100%;
+    padding: 50px 200px 50px 200px;
+    margin: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -599,15 +617,23 @@ html .section {
     width: 100%;
   }
 
+  .trait {
+    font-size: 1.3em;
+  }
+
   .transform {
     transform: translate(-100px, 0px);
   }
 }
 @media (max-width: 767px) {
   html .section {
-    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
-    padding: 80px 0px 80px 0px;
+    height: auto;
+    margin: auto;
+    position: relative;
   }
 
   .App {
@@ -629,31 +655,23 @@ html .section {
     width: 100%;
   }
 
-  .section {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    margin: auto;
-    position: relative;
-  }
-
   .about {
     width: 100%;
   }
   .about .image {
     position: relative;
-    height: 150px;
-    width: 150px;
-    top: 60px;
+    height: 200px;
+    width: 200px;
+    right: 0px;
     z-index: 1;
+    object-fit: cover;
+    object-position: 100% 0%;
+    border-radius: 50%;
   }
   .about .info {
     margin: 0px;
-    position: relative;
-    top: 40px;
-    right: 20px;
+    padding: 0px;
+    position: none;
     font-size: 1.2em;
     width: 100%;
   }
@@ -676,7 +694,14 @@ html .section {
     left: 0px;
     top: 200px;
     width: 100%;
-    font: 1.2em "Garamond", "Times New Roman", sans-serif;
+    font: 1.2em "Quattrocento Sans";
+  }
+
+  .header-content {
+    width: 300px;
+  }
+  .header-content .name {
+    font-size: 4em;
   }
 
   .socialContainer .social {
@@ -684,13 +709,18 @@ html .section {
     width: 25px;
   }
 
+  .tagline {
+    font-size: 4em;
+  }
+
   .textbox {
-    width: 150%;
+    width: 100%;
     height: 40%;
     position: none;
     bottom: 70px;
-    right: 0px;
-    padding: 0px 200px 0px 200px;
+    left: 0;
+    margin: 0px;
+    padding: 50px 200px 50px 200px;
     display: flex;
     justify-content: center;
   }
@@ -702,8 +732,9 @@ html .section {
     top: 70px;
     left: 0;
     height: 170%;
-    width: 150%;
-    padding: 0px 200px 0px 200px;
+    width: 100%;
+    padding: 50px 100px 50px 100px;
+    margin: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -713,6 +744,11 @@ html .section {
   .techbox ul {
     height: 100%;
     width: 100%;
+  }
+
+  .trait {
+    font-size: 1.2em;
+    margin: 10px;
   }
 }
 

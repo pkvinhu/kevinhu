@@ -25,7 +25,7 @@ class Writing extends Component {
     render() {
         const { classes } = this.props;
         return (
-            <div className='writing section' id='writing'>
+            <div className='writing section scrollspy' id='writing'>
                 <div>
                     <div className={classes.contain}><Card className={classes.gridItem}>
                     <CardActionArea>

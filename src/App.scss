@@ -1,5 +1,5 @@
-  $font-stack: Georgia, serif;
-  $secondary-font: 'Garamond', 'Times New Roman', sans-serif;
+  $font-stack: Raleway;
+  $secondary-font: "Quattrocento Sans";
   $primary-color: #034;
   $secondary-color: white;
 
@@ -10,17 +10,18 @@
 
   %background-fade {
     background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    overflow: hidden;
     position: static;
     width: 100%;
-    height: 100%;
+    height: 300px;
     z-index: 1;
-    background-color: rgba(0,0,0,0.5);
-    opacity: 0;
-    animation: bgFade 2s 1;
-    animation-fill-mode: forwards;
+    // background-color: rgba(0,0,0,0.5);
+    // opacity: 0;
+    // animation: bgFade 2s 1;
+    // animation-fill-mode: forwards;
   }
 
   %circle-img {
@@ -54,6 +55,7 @@
   }
 
   a {
+      font: $secondary-font;
       text-decoration: none;
   }
 
@@ -62,15 +64,19 @@
     font: $primary-color;
   }
 
-  html {
-    margin: 0;
+  html, body {
     scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
     .section {
         @extend %flex-centered;
         align-items: center;
         height: 800px;
         width: 100%;
-        padding: 120px;
+        padding: 60px 0px 60px 0px;
         // border: 1px solid black;
     }
   }
@@ -79,55 +85,56 @@
     padding: 20px 60px 20px 60px;
     background-color: $secondary-color;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     position: fixed;
     top: 0;
     width: 100%;
-    height: 85px;
+    height: 45px;
     overflow: hidden;
     z-index: 10;
     // border-bottom: 5px solid $primary-color;
-    img {
-        height: 75px;
-        width: auto;
-    }
+    // img {
+    //     height: 75px;
+    //     width: auto;
+    // }
     div {
         display: flex;
         justify-content: flex-end;
     }
     .item {
-        font: 1.2em solid $font-stack;
+        font: 1.2em solid $secondary-font;
+        color: black;
     }
   }
 
-  .about::before, .projects::before {
-    content: "";
-    position: absolute;
-    width : 100%;
-    height: 100%;
-    background: inherit;
-    z-index: -1;
+//   .about::before, .projects::before {
+//     content: "";
+//     position: absolute;
+//     width : 100%;
+//     height: 100%;
+//     background: inherit;
+//     z-index: -1;
     
-    filter        : blur(4px);
-    -moz-filter   : blur(4px);
-    -webkit-filter: blur(4px);
-    -o-filter     : blur(4px);
+//     filter        : blur(4px);
+//     -moz-filter   : blur(4px);
+//     -webkit-filter: blur(4px);
+//     -o-filter     : blur(4px);
     
-    transition        : all 1s linear;
-    -moz-transition   : all 1s linear;
-    -webkit-transition: all 1s linear;
-    -o-transition     : all 1s linear;
-  }
+//     transition        : all 1s linear;
+//     -moz-transition   : all 1s linear;
+//     -webkit-transition: all 1s linear;
+//     -o-transition     : all 1s linear;
+//   }
 
   .about{
     overflow: hidden;
     height: 100%;
     .image {
-          @extend %circle-img;
-          @extend %content-overlay;
-          height: 270px;
-          width: 270px;
-          border: 8px solid $primary-color;
+        //   @extend %circle-img;
+        //   @extend %content-overlay;
+          height: 100%;
+          width: auto;
+        //   border: 8px solid $primary-color;
           bottom: 26%;
           left: 0%;
           margin-right: 35px;
@@ -139,12 +146,13 @@
 
   .info {
     h1 {
-       font-family: $font-stack;
-       color: $primary-color;
+       font: 2.3em bold $font-stack;
+       color: black;
     }
-    @extend %content-overlay;
+    // @extend %content-overlay;
     color: black;
-    font: 1.3em $secondary-font;
+    font: $secondary-font;
+    font-size: 1.3em;
     width: 80%;
     padding: 45px;
     height: auto;
@@ -152,20 +160,76 @@
     // @extend %fade-left;
   }
 
-  .aboutBG1 {
-    background-image: url('https://cache-graphicslib.viator.com/graphicslib/thumbs674x446/5651/SITours/360-chicago-observation-deck-formerly-john-hancock-observatory-in-chicago-379484.jpg');
+  .name {
+      font: 5em bold;
+  }
+
+  .header-content {
+    position: relative;
+    top: 30%;
+    left: 15%;
+    color: $secondary-color;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .header {
+    background-image: url('./assets/lightbulb.jpg');
+    height: 1200px;
     @extend %background-fade;
   }
 
-  .aboutBG2 {
-    background-image: url('https://thehappyjetlagger.com/wp-content/uploads/2017/07/Brooklyn_Bridge-15.jpg');
+  .parallax1 {
+    background-image: url('./assets/chicago.jpg');
+    height: 250px;
     @extend %background-fade;
   }
+
+  .parallax2 {
+    background-image: url('./assets/brooklyn.jpg');
+    height: 250px;
+    @extend %background-fade;
+  }
+
+  .tagline {
+      font-size: 5em;
+      color: white;
+      font: $font-stack;
+      position: relative;
+      padding: 70px;
+      justify-content: center;
+      text-align: center;
+      font-weight: 900;
+      background-color: rgba(10, 10, 10, 0.4);
+      height: 100%;
+  }
+
+  .feature {
+    position: relative;
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center; 
+        padding: 20px;
+        .row {
+          text-align: center;
+          width: 100%;
+      }
+    }
+  }
+
+  .trait {
+    margin: 0px 20px 0px 20px;
+    font-size: 1.5em;
+    font-weight: 1000;
+    font: $secondary-font;
+    color: white;
+}
   
   .footer {
-    border-top: 1px solid grey;
-    background-color: $primary-color;
-    position: fixed;
+    // border-top: 1px solid grey;
+    background-color: black;
+    position: static;
     z-index: 10;
     bottom: 0;
     height: 40px;
@@ -293,6 +357,7 @@
 
   .item:hover {
       border-bottom: 3px solid $primary-color;
+      font: 1.4em bold;
   }
 
   .writing {
@@ -396,7 +461,7 @@
     }
   
   .techbox {
-    position: relative;
+    // position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -405,7 +470,9 @@
     height: 100%;
     width: 50%;
     padding: 30px;
-    background-color: rgba(247, 114, 6, 0.3);
+    margin-left: 100px;
+    background-color: rgba(252, 154, 74, 0.6);
+    // color: rgb(255, 166, 82)
     ul {
         @extend %ul-style;
         column-count: 3;
@@ -421,7 +488,7 @@
   }
 
   .textbox { 
-    position: relative;
+    // position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -429,12 +496,13 @@
     height: 100%;
     width: 50%;
     padding: 30px;
+    margin-right: 100px;
     @extend %li-fade;
-    background-color: rgba(24, 50, 99, 0.1);
+    background-color: rgba(2, 2, 2, 0.4);
     // border: 1px solid black;
     .skills {
         @extend %flex-centered;
-        color: $primary-color;
+        color: black;
         cursor: pointer;
     }
   }
@@ -462,14 +530,14 @@
     }
   }
 
-  @keyframes bgFade {
-    0% {
-      opacity: 0.0;
-    }
-    100% {
-      opacity: 0.9;
-    }
-  }
+//   @keyframes bgFade {
+//     0% {
+//       opacity: 0.0;
+//     }
+//     100% {
+//       opacity: 0.9;
+//     }
+//   }
 
   @keyframes fadeLeft {
     0% {
@@ -528,15 +596,15 @@
         .section{
             height: auto;
             width: 100%;
-            padding: 80px;
+            padding: 0px;
         }
     }
     
     .home, .about, .tech, .education, .writing, .projects {
         height: 150%;
         width: 100%;
-        margin: 0px;
-        padding: 0px;
+        // margin: 0px;
+        // padding: 0px;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -547,23 +615,28 @@
     .about {
         .image {
             position: relative;
-            top: 40px;
-            left: 10px;
+            height: 300px;
+            width: 300px;
+            top: 30px;
+            right: 0px;
             z-index: 1;
+            object-fit: cover;
+            object-position: 100% 0%;
+            border-radius: 50%;
         }
         .info {
-            position: none;
-            right: 15px;
-            bottom: 10px;
+            // position: none;
+            // right: 15px;
+            // bottom: 10px;
             margin: 0px;
             width: 100%;
             font-size: 1em;
         }
     }
 
-    .aboutBG1, .aboutBG2 {
-        position: relative;
-    }
+    // .aboutBG1, .aboutBG2 {
+    //     position: relative;
+    // }
 
     .bio {
         position: relative;
@@ -622,8 +695,8 @@
         height: 60%;
         align-items: center;
         position: relative;
-        top: 150px;
-        left: 30px;
+        // top: 150px;
+        // left: 30px;
         .logo {
             width: 16%;
         }
@@ -637,14 +710,15 @@
     }
 
     .textbox {
-        width: 150%;
+        width: 100%;
         height: 40%;
         position: none;
         bottom: 70px;
         right: 0px;
-        padding: 0px 200px 0px 200px;
+        padding: 50px 200px 50px 200px;
         display: flex;
         justify-content: center;
+        margin: 0px;
         // border: 1px solid black;
         ul {
             column-count: 4;
@@ -654,8 +728,9 @@
     .techbox{
         left: 0;
         height: 170%;
-        width: 150%;
-        padding: 0px 200px 200px 200px;
+        width: 100%;
+        padding: 50px 200px 50px 200px;
+        margin: 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -670,6 +745,10 @@
         }
     }
 
+    .trait {
+        font-size: 1.3em;
+    }
+
     .transform {
         transform: translate(-100px, 0px);
       }
@@ -678,9 +757,13 @@
 @media (max-width: 767px) {
     html{
         .section{
-            height: auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
             width: 100%;
-            padding: 80px 0px 80px 0px;
+            height: auto;
+            margin: auto;
+            position: relative;
         }
     }
 
@@ -703,30 +786,25 @@
         width: 100%;
     }
 
-    .section{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        margin: auto;
-        position: relative;
-    }
-
     .about{
         width: 100%;
         .image {
             position: relative;
-            height: 150px;
-            width: 150px;
-            top: 60px;
+            height: 200px;
+            width: 200px;
+            // top: 0px;
+            right: 0px;
             z-index: 1;
+            object-fit: cover;
+            object-position: 100% 0%;
+            border-radius: 50%;
         }
         .info {
             margin: 0px;
-            position: relative;
-            top: 40px;
-            right: 20px;
+            padding: 0px;
+            position: none;
+            // top: 40px;
+            // right: 20px;
             font-size: 1.2em;
             width: 100%;
         }
@@ -753,6 +831,13 @@
         }
     }
 
+    .header-content {
+        width: 300px;
+        .name {
+            font-size: 4em;
+        }
+    }
+
     .socialContainer {
         .social {
             height: 25px;
@@ -760,13 +845,18 @@
         }
     }
 
+    .tagline {
+        font-size: 4em;
+    }
+
     .textbox {
-        width: 150%;
+        width: 100%;
         height: 40%;
         position: none;
         bottom: 70px;
-        right: 0px;
-        padding: 0px 200px 0px 200px;
+        left: 0;
+        margin: 0px;
+        padding: 50px 200px 50px 200px;
         display: flex;
         justify-content: center;
         // border: 1px solid black;
@@ -780,8 +870,9 @@
         top: 70px;
         left: 0;
         height: 170%;
-        width: 150%;
-        padding: 0px 200px 0px 200px;
+        width: 100%;
+        padding: 50px 100px 50px 100px;
+        margin: 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -794,5 +885,10 @@
             width: 100%;
             // border: 1px solid black;
         }
+    }
+
+    .trait {
+        font-size: 1.2em;
+        margin: 10px;
     }
 }

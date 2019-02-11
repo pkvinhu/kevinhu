@@ -32,7 +32,7 @@ class Education extends Component {
     render() {
       const { index } = this.state;
       return (
-          <div className="section education" id="education">
+          <div className="section education scrollspy" id="education">
             <p>Sometime in college, I decided that I no longer believed that school was the sum of our education.
                I have been privileged enough with the resources to gain an education - albeit with mounting debt - 
                but I do believe that life has taught me far more valuable lessons. 

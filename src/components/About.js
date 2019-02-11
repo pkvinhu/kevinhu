@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import '../App.css';
 
 class About extends Component {
@@ -13,17 +13,15 @@ class About extends Component {
     }
 
     render() {
-        const { bg } = this.state;
+        // const { bg } = this.state;
         return (
-            <Fragment className='about section'>
-            <div className={!bg ? 'about section aboutBG1' : 'about section aboutBG2'} id='about'>
+            <div className='about section' id="about">
             <img
                 alt=""
-                name=""
                 className="image"
                 src={require('../assets/faphoto3.jpg')}
             />
-                <div className='info'><h1 className="animated bounceInDown delay-1s"><strong>Hi, my name is Kevin.</strong></h1>
+                <div className='info'><h1 className="animated bounceInDown delay-1s"><strong>HI, MY NAME IS <font color="#034">KEVIN</font>.</strong></h1>
                                       I am a Fullstack Software Engineer and Writer based in Brooklyn, New York. 
                                       My story started in Chicago, and is quite long, so I'll try my best not to bore you with the details.
                                       <br /><br />
@@ -43,7 +41,6 @@ class About extends Component {
                                       Check out some of my projects below for more insight on what I do.
                                       </div>
             </div>
-            </Fragment>
         )
     }
 }

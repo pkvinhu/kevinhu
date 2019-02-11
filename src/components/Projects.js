@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../App.css';
-// import { GridList, GridListTile, GridListTileBar, Icon } from '@material-ui/core';
 
 const projects = [{
                    name: "Rosetta Capstone",
@@ -42,9 +41,9 @@ class Projects extends Component {
         }, 10000)
     }
     render() {
-        const { bg } = this.state;
+        // const { bg } = this.state;
         return (
-            <div className={!bg ? 'projects section aboutBG1' : 'projects section aboutBG2'} id='projects'>
+            <div className='projects section scrollspy' id='projects'>
             <div className="container">
                 <div className="row">
                 {projects.slice(0, 3).map(each => {

@@ -69,7 +69,7 @@ class Technologies extends Component {
         const { handleClick } = this;
         const { current } = this.state;
         return (
-            <div className='tech section' id='tech'>
+            <div className='tech section scrollspy' id='tech'>
                 <div className="textbox">
                     <div >
                         <h3 onClick={handleClick} className="skills">Proficient</h3>
@@ -97,7 +97,7 @@ class Technologies extends Component {
                     })}
                     </div>
                     </div>) :
-                (<h1><strong>Want to know what technologies I use?</strong></h1>)
+                (<h1><strong>Want to know what <font color="#034">technologies</font> I use?</strong></h1>)
                 }
                 </div>
             </div>
