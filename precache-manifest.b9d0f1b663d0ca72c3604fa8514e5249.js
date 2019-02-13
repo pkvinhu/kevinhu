@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/kevinhu/static/media/RSCapstone.2cea6a18.png"
   },
   {
-    "revision": "589da3436bd9c9c42c44",
+    "revision": "81152d7cc41b082dacbb",
     "url": "/kevinhu/static/css/main.281cb0f5.chunk.css"
   },
   {
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/kevinhu/static/media/faphoto3.236428af.jpg"
   },
   {
-    "revision": "589da3436bd9c9c42c44",
-    "url": "/kevinhu/static/js/main.589da343.chunk.js"
+    "revision": "81152d7cc41b082dacbb",
+    "url": "/kevinhu/static/js/main.81152d7c.chunk.js"
   },
   {
     "revision": "82fc5348972726043ee89a930407828e",
@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/kevinhu/static/media/ExcavatingMemory.b8809e5d.png"
   },
   {
-    "revision": "13e2e57b446631d09d52eee193b09a4b",
+    "revision": "5fcaad958d49e9fb7414e3bcc8284a5e",
     "url": "/kevinhu/index.html"
   }
 ];
