@@ -23,9 +23,9 @@ class App extends Component {
           {/* <Home /> */}
           {/* <Parallax bg="first"/> */}
           {/* <FeatureTraits /> */}
-          <Technologies />
-          <Parallax bg="first" tag="Projects"/>
           <Projects />
+          <Parallax bg="first" tag="Tech"/>
+          <Technologies />
           <Parallax bg="second" tag="Writing"/>
           <Writing />
           <Parallax bg="first" tag="About Me"/>

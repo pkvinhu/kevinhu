@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import '../App.css';
 
-const projects = [{
+const projects = [
+                  {
                    name: "Rosetta Capstone",
                    image: require("../assets/RSCapstone.png"),
                    github: "https://github.com/RosettaCapstoned/main_app",
@@ -32,24 +33,26 @@ const projects = [{
 
 class Projects extends Component {
     state = {
-        bg: false
+        bg: false,
+        projectView: ''
     }
 
-    componentDidMount(){
-        setInterval(()=>{
-            this.setState({ bg: !this.state.bg})
-        }, 10000)
+    handleClick = (evt) => {
+        console.log("clicked")
+        this.setState({ projectView: evt.target.name})
+        console.log(this.state.projectView)
     }
+    
     render() {
-        // const { bg } = this.state;
+        const { handleClick } = this;
         return (
             <div className='projects section scrollspy' id='projects'>
             <div className="container">
                 <div className="row">
-                {projects.slice(0, 3).map(each => {
+                {projects.slice(0, 3).map((each, i) => {
                     return (
-                        <div className="col s4">
-                        <div className="card projectTile">
+                        <div className="col s4" key={i}>
+                        <div className="card projectTile" >
                             <div className="card-image">
                                 <img alt='' src={each.image}/>
                             </div>
@@ -57,10 +60,10 @@ class Projects extends Component {
                                 <p>{each.description}</p>
                                 <div className="overlay-icons">
                                 <a target="_blank" rel="noopener noreferrer" href={each.github}>
-                                    <i class="material-icons">code</i>
+                                    <i className="material-icons">code</i>
                                 </a>
                                 <a target="_blank" rel="noopener noreferrer" href={each.website}>
-                                    <i class="material-icons">open_in_new</i>
+                                    <i className="material-icons">open_in_new</i>
                                 </a>
                                 </div>
                             </div>
@@ -70,10 +73,10 @@ class Projects extends Component {
                 })}
                 </div>
                 <div className="row">
-                    {projects.slice(3).map(each => {
+                    {projects.slice(3).map((each, i) => {
                         return (
-                            <div className="col s4">
-                                <div className="card projectTile">
+                            <div className="col s4" key={i+3}>
+                                <div className="card projectTile" >
                                     <div className="card-image">
                                         <img alt="" src={each.image}/>
                                     </div>

@@ -7,7 +7,7 @@ import { withStyles } from '@material-ui/core/styles';
 const drawerWidth = 400
 const styles = theme => ({
   button: {
-    color: 'black',
+    color: 'white',
     
   },
   buttonBase: {
@@ -21,7 +21,7 @@ const styles = theme => ({
     display: 'flex',
     flexDirection: 'column',
     paddingTop: '35px',
-    backgroundColor: 'black',
+    background: 'linear-gradient(110deg, white, #FEC339 10%, black 50%)',
     height: '100%',
   },
   listItem: {
@@ -65,12 +65,12 @@ class DrawerList extends Component {
                 onClose={handleDrawerToggle}>
                 <ul className={classes.list}>
                     <a className={`scroll-link navbar-brand item ${classes.listItem}`} href='#header'>HOME</a>
-                    <a className={`scroll-link navbar-brand item ${classes.listItem}`} href='#tech'>TECHNOLOGIES</a>
                     <a className={`scroll-link navbar-brand item ${classes.listItem}`} href='#projects'>PROJECTS</a>
+                    <a className={`scroll-link navbar-brand item ${classes.listItem}`} href='#tech'>TECHNOLOGIES</a>
                     <a className={`scroll-link navbar-brand item ${classes.listItem}`} href='#writing'>WRITING</a>
                     <a className={`scroll-link navbar-brand item ${classes.listItem}`} href='#about'>ABOUT ME</a>
                     {/* <a className={`scroll-link navbar-brand item ${classes.listItem}`} href='#education'>EDUCATION</a> */}
-                    <a className={`scroll-link navbar-brand item ${classes.listItem}`} target="_blank" href="Software_Engineer_CV_v3.pdf">RESUME</a>
+                    <a className={`scroll-link navbar-brand item ${classes.listItem}`} target="_blank" href="Software_Engineer_CV.pdf">RESUME</a>
                 </ul>
   	    </Drawer>
   	    </div>
