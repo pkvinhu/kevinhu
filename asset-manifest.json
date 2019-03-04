@@ -1,7 +1,7 @@
 {
-  "main.css": "/kevinhu/static/css/main.281cb0f5.chunk.css",
-  "main.js": "/kevinhu/static/js/main.81152d7c.chunk.js",
-  "main.js.map": "/kevinhu/static/js/main.81152d7c.chunk.js.map",
+  "main.css": "/kevinhu/static/css/main.9f074efc.chunk.css",
+  "main.js": "/kevinhu/static/js/main.af164d82.chunk.js",
+  "main.js.map": "/kevinhu/static/js/main.af164d82.chunk.js.map",
   "static/js/1.35ca9c8e.chunk.js": "/kevinhu/static/js/1.35ca9c8e.chunk.js",
   "static/js/1.35ca9c8e.chunk.js.map": "/kevinhu/static/js/1.35ca9c8e.chunk.js.map",
   "runtime~main.js": "/kevinhu/static/js/runtime~main.124b90c6.js",
@@ -18,8 +18,8 @@
   "static/media/CultivatingAppetites.png": "/kevinhu/static/media/CultivatingAppetites.41d1c83a.png",
   "static/media/EngagingPower.png": "/kevinhu/static/media/EngagingPower.2d307aad.png",
   "static/media/ExcavatingMemory.png": "/kevinhu/static/media/ExcavatingMemory.b8809e5d.png",
-  "static/css/main.281cb0f5.chunk.css.map": "/kevinhu/static/css/main.281cb0f5.chunk.css.map",
+  "static/css/main.9f074efc.chunk.css.map": "/kevinhu/static/css/main.9f074efc.chunk.css.map",
   "index.html": "/kevinhu/index.html",
-  "precache-manifest.b9d0f1b663d0ca72c3604fa8514e5249.js": "/kevinhu/precache-manifest.b9d0f1b663d0ca72c3604fa8514e5249.js",
+  "precache-manifest.ef5bf39b9585b4357312622539b1b0b9.js": "/kevinhu/precache-manifest.ef5bf39b9585b4357312622539b1b0b9.js",
   "service-worker.js": "/kevinhu/service-worker.js"
 }
