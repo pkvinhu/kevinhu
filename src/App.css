@@ -308,15 +308,18 @@ html .section, body .section {
 }
 
 .projects {
-  overflow: hidden;
   height: 100%;
 }
 .projects .container {
-  padding: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .projectTile {
-  height: 90%;
+  height: 290px;
+  width: 290px;
+  margin: 25px;
 }
 .projectTile img {
   height: 100%;
@@ -507,8 +510,8 @@ html .section, body .section {
     padding: 0px;
   }
 
-  .home, .about, .tech, .education, .writing, .projects {
-    height: 150%;
+  .home, .about, .tech, .education {
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: center;

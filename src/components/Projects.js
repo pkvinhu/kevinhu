@@ -28,7 +28,13 @@ const projects = [
                     name: "Dig Inn Projections Tool",
                     image: require("../assets/DigInnProjection.png"),
                     description: "The Dig Inn Projection tool was another internal tool that I co-engineered during my time with Furey. It aggregated data from Dig Inn restaurants across New York City in order to calculate budgets and projections per store on a week-by-week basis. The intention was to be able to offer a small scale budgeting tool that could be reusable and that can be used for eventual analytics. This was built through Google App Maker with Google BigQuery integration. Unfortunately, the code is also private."
-                   },
+                   }, {
+                    name: "Classic Snake Game",
+                    image: require("../assets/sneks.png"),
+                    github: "https://github.com/pkvinhu/snake-game",
+                    website: "https://play-snake.herokuapp.com/#/",
+                    description: "A classic snake game built using React. Give it a play to see how high you can score!",
+                   }
                 ]
 
 class Projects extends Component {
@@ -48,10 +54,9 @@ class Projects extends Component {
         return (
             <div className='projects section scrollspy' id='projects'>
             <div className="container">
-                <div className="row">
-                {projects.slice(0, 3).map((each, i) => {
+                {projects.map((each, i) => {
                     return (
-                        <div className="col s4" key={i}>
+                        // <div className="col s4" key={i}>
                         <div className="card projectTile" >
                             <div className="card-image">
                                 <img alt='' src={each.image}/>
@@ -59,20 +64,23 @@ class Projects extends Component {
                             <div className="overlay">
                                 <p>{each.description}</p>
                                 <div className="overlay-icons">
+                                {each.github && (
                                 <a target="_blank" rel="noopener noreferrer" href={each.github}>
                                     <i className="material-icons">code</i>
                                 </a>
+                                )}
+                                {each.website && (
                                 <a target="_blank" rel="noopener noreferrer" href={each.website}>
                                     <i className="material-icons">open_in_new</i>
                                 </a>
+                                )}
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    // </div>
                     )
                 })}
-                </div>
-                <div className="row">
+                {/* <div className="row">
                     {projects.slice(3).map((each, i) => {
                         return (
                             <div className="col s4" key={i+3}>
@@ -85,9 +93,8 @@ class Projects extends Component {
                                     </div>
                                 </div>
                             </div>
-                    )})}
-                    <div className="col s4"></div>
-                </div>
+                    )})} */}
+                    {/* <div className="projectTile"></div> */}
                 </div>
             </div>
         )
