@@ -53,48 +53,31 @@ class Projects extends Component {
         const { handleClick } = this;
         return (
             <div className='projects section scrollspy' id='projects'>
-            <div className="container">
-                {projects.map((each, i) => {
-                    return (
-                        // <div className="col s4" key={i}>
-                        <div className="card projectTile" >
-                            <div className="card-image">
-                                <img alt='' src={each.image}/>
-                            </div>
-                            <div className="overlay">
-                                <p>{each.description}</p>
-                                <div className="overlay-icons">
-                                {each.github && (
-                                <a target="_blank" rel="noopener noreferrer" href={each.github}>
-                                    <i className="material-icons">code</i>
-                                </a>
-                                )}
-                                {each.website && (
-                                <a target="_blank" rel="noopener noreferrer" href={each.website}>
-                                    <i className="material-icons">open_in_new</i>
-                                </a>
-                                )}
-                                </div>
-                            </div>
-                        </div>
-                    // </div>
-                    )
-                })}
-                {/* <div className="row">
-                    {projects.slice(3).map((each, i) => {
+                <div className="container">
+                    {projects.map((each, i) => {
                         return (
-                            <div className="col s4" key={i+3}>
-                                <div className="card projectTile" >
-                                    <div className="card-image">
-                                        <img alt="" src={each.image}/>
-                                    </div>
-                                    <div className="overlay">
-                                        <p>{each.description}</p>
+                            <div className="card projectTile" >
+                                <div className="card-image">
+                                    <img alt='' src={each.image}/>
+                                </div>
+                                <div className="overlay">
+                                    <p>{each.description}</p>
+                                    <div className="overlay-icons">
+                                    {each.github && (
+                                    <a target="_blank" rel="noopener noreferrer" href={each.github}>
+                                        <i className="material-icons">code</i>
+                                    </a>
+                                    )}
+                                    {each.website && (
+                                    <a target="_blank" rel="noopener noreferrer" href={each.website}>
+                                        <i className="material-icons">open_in_new</i>
+                                    </a>
+                                    )}
                                     </div>
                                 </div>
                             </div>
-                    )})} */}
-                    {/* <div className="projectTile"></div> */}
+                        )
+                    })}
                 </div>
             </div>
         )
