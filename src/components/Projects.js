@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
+import sizeMe from 'react-sizeme';
 
 const projects = [
                   {
@@ -43,23 +44,39 @@ class Projects extends Component {
         projectView: ''
     }
 
-    handleClick = (evt) => {
-        console.log("clicked")
-        this.setState({ projectView: evt.target.name})
-        console.log(this.state.projectView)
+    showProjectDetails = (project) => {
+        const { width } = this.props.size;
+        this.setState({ projectView: project })
+        var container = document.getElementById("container")
+        var projectTiles = container.querySelectorAll(".projectTile")
+        var projects = document.getElementById("projects")
+        console.log(projectTiles)
+        if(width >= 768) {
+            projects.style.padding = "0px 50px 0px 50px"
+            projectTiles.forEach(projectTile => {
+                projectTile.style.width = "150px"
+                projectTile.style.height = "150px"
+            })
+            container.style.width = "30%"
+        }
     }
     
     render() {
-        const { handleClick } = this;
+        const { showProjectDetails } = this;
+        const { width } = this.props.size;
+        const { projectView } = this.state;
+        console.log(width)
         return (
             <div className='projects section scrollspy' id='projects'>
-                <div className="container">
+                <div className="container" id="container">
                     {projects.map((each, i) => {
                         return (
-                            <div className="card projectTile" >
+                            <div className="card projectTile" name={each.name} onClick={() => showProjectDetails(each)}>
+                                {projectView.name === each.name && (<div className="highlightedOverlay"></div>)}
                                 <div className="card-image">
                                     <img alt='' src={each.image}/>
                                 </div>
+                                {width < 768 && (
                                 <div className="overlay">
                                     <p>{each.description}</p>
                                     <div className="overlay-icons">
@@ -75,13 +92,30 @@ class Projects extends Component {
                                     )}
                                     </div>
                                 </div>
+                                )}
                             </div>
                         )
                     })}
                 </div>
+                {this.state.projectView && width >= 768 && (
+                <div className="animated fadeInRight projectDetails">
+                    <img src={projectView.image} />                        
+                    <div className="projectDescription">
+                        <div className="navigationIcons">
+                            <a target="_blank" rel="noopener noreferrer" href={projectView.github}>
+                                <img src={require('../assets/github_circle.png')} />
+                            </a>
+                            <a target="_blank" rel="noopener noreferrer" href={projectView.website}>
+                                <img src={require('../assets/navigation.png')} />
+                            </a>
+                        </div>
+                        <div className="describe">{projectView.description}</div>
+                    </div>
+                </div>
+                )}
             </div>
         )
     }
 }
 
-export default Projects;
+export default sizeMe()(Projects);

@@ -13,7 +13,7 @@ const tech = {
                         "https://miro.medium.com/max/730/1*d2zLEjERsrs1Rzk_95QU9A.png",
                         "https://d1.awsstatic.com/rdsImages/postgresql_logo.6de4615badd99412268bc6aa8fc958a0f403dd41.png",
                         "http://docs.sequelizejs.com/manual/asset/logo-small.png",
-                        "https://pngimage.net/wp-content/uploads/2018/06/git-logo-png-5.png",
+                        "https://www.clipartmax.com/png/middle/218-2181371_logo-git-git-icon.png",
                         "http://www.stickpng.com/assets/images/5847f98fcef1014c0b5e48c0.png",
                         "https://eg2.gallerycdn.vsassets.io/extensions/eg2/vscode-npm-script/0.3.5/1530888240980/Microsoft.VisualStudio.Services.Icons.Default",
                         ]
@@ -64,6 +64,12 @@ class Technologies extends Component {
             }
         }
         this.setState({ current: [evt.target.innerHTML]})
+        if(width >= 768){
+            var textbox = document.getElementById("textbox")
+                var techbox = document.getElementById("techbox")
+                textbox.style.width = "20%";
+                techbox.style.width = "80%";
+        }
     }
 
     render() {
@@ -71,20 +77,21 @@ class Technologies extends Component {
         const { current } = this.state;
         return (
             <div className='tech section scrollspy' id='tech'>
-                <div className="textbox">
+                <div className="textbox" id="textbox">
                     <div className="innerTextbox">
                         <h3 onClick={handleClick} className="skills">Proficient</h3>
                         <h3 onClick={handleClick} className="skills">Intermediate</h3>
                         <h3 onClick={handleClick} className="skills">Beginner</h3>      
                     </div>
                 </div>
-                <div className="techbox">
+                <div className="techbox" id="techbox">
                     {current ? (
-                    <div><ul>
-                        {tech[current].stack.map(each => (
-                            <li>{each}</li>
-                        ))}
-                    </ul>
+                    <div className="techList">
+                        <ul>
+                            {tech[current].stack.map(each => (
+                                <li>{each}</li>
+                            ))}
+                        </ul>
                     <hr/>
                     <div className="logoContainer">
                     {tech[current].logos.map(each => {

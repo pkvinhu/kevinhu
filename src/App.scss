@@ -43,6 +43,12 @@
     animation-fill-mode: forwards;
   }
 
+  %fade-right {
+    opacity: 0;
+    animation: fadeRight 5s 1;
+    animation-fill-mode: forwards;
+  }
+
   %li-fade {
     opacity: 0;
     animation: fadeIn 3s 1;
@@ -381,20 +387,23 @@
   }
 
   .projects {
-    // overflow: hidden;
     height: 100%;
+    padding: 30px 0px 30px 0px;
+    display: flex;
+    justify-content: center;
     .container {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      transition: 500ms ease;
       // padding: 50px;
     }
   }
 
   .projectTile {
-    height: 290px;
-    width: 290px;
-    margin: 25px;
+    height: 300px;
+    width: 300px;
+    margin: 10px;
     // border: 1px solid black;
 
     img {
@@ -411,7 +420,14 @@
   .card:hover .overlay {
     opacity: 1;
     background-color: rgba(10, 10, 10, 0.7)
+  }
 
+  .highlightedOverlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    background-color: rgba(10, 10, 10, 1)
   }
 
   .overlay {
@@ -440,6 +456,35 @@
     //   top: 45%;
   }
 
+  .projectDetails {
+    width: 60%;
+    img {
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+    }
+    .projectDescription {
+      height: 50%;
+      padding: 50px 0px 50px 0px;
+      display: flex;
+      .describe {
+        padding: 0px 25px 0px 25px;
+      }
+      // transition: 500ms ease;
+    }
+  }
+
+  .navigationIcons {
+    width: auto;
+    height: 100%;
+    padding: 30px 0px 30px 0px;
+    img {
+      height: 50px;
+      width: 50px;
+      cursor: pointer;
+    }
+  }
+
   .material-icons {
       font-size: 40px;
       color: $secondary-color;
@@ -461,10 +506,9 @@
   }
 
     .logoContainer{
-        height: 40%;
-        width: 100%;
+        height: auto;
+        width: 600px;
         padding: 20px;
-        margin-right: 20px;
         display: flex;
         flex-wrap: wrap;
         @extend %li-fade;
@@ -474,52 +518,63 @@
             height: 90px;
             object-fit: contain;
             padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
   
   .techbox {
-    // position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    left: 10%;
     height: 100%;
     width: 50%;
     padding: 50px;
-    margin-left: 100px;
     background-color: rgba(252, 154, 74, 0.6);
-    // color: rgb(255, 166, 82)
-    // border: 1px solid black;
+    @extend %fade-right;
+    transition: 500ms ease;
+    .techList {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 600px;
+      // border: 1px solid black;
+    }
     ul {
-        @extend %ul-style;
+        // @extend %ul-style;
         column-count: 3;
         align-content: center;
-        width: 100%;
+        align-items: center;
+        text-align: center;
+        width: auto;
         height: 50%;
         padding: 20px;
+        // border: 1px solid black;
         li {
             font: 1.3em $secondary-font;
-            @extend %li-fade;
-            text-align: left;
+            // @extend %li-fade;
+            width: 80%;
+            text-align: center;
             line-height: 1.3em;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
   }
 
   .textbox { 
-    // position: relative;
     display: flex;
     align-items: center;
-    // flex-direction: column;
     justify-content: flex-end;
     right: 10%;
     height: 100%;
     width: 50%;
     padding: 30px;
     margin-right: 100px;
-    @extend %li-fade;
+    @extend %fade-left;
     background-color: rgba(2, 2, 2, 0.4);
+    transition: 3000ms ease;
     // border: 1px solid black;
     .skills {
         @extend %flex-centered;
@@ -558,7 +613,7 @@
     }
     100% {
       opacity: 1.0;
-      margin-left: 35px;
+      margin-left: 0px;
     }
   }
 
@@ -569,8 +624,7 @@
     }
     100% {
       opacity: 1.0;
-
-      margin-right: 35px;
+      margin-right: 0px;
     }
   }
 
@@ -608,7 +662,7 @@
         .section{
             height: auto;
             width: 100%;
-            padding: 0px;
+            // padding: 0px;
         }
     }
     
@@ -694,12 +748,12 @@
     }
 
     .logoContainer{
-        width: 100%;
+        width: auto;
         height: 60%;
         align-items: center;
-        position: relative;
+        // position: relative;
         .logo {
-            width: 16%;
+            width: auto;
         }
     }
 
@@ -727,22 +781,23 @@
     }
 
     .techbox{
-        left: 0;
-        height: 170%;
+        height: auto;
         width: 100%;
-        padding: 50px 200px 50px 200px;
-        margin: 0px;
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
         background-color: rgba(247, 114, 6, 0.0);
         // border: 1px solid black;
-
+        .techList {
+          width: auto;
+        }
         ul {
             height: auto;
             width: 100%;
             // border: 1px solid black;
+            li {
+              width: 30%;
+            }
         }
     }
 
@@ -764,7 +819,8 @@
             width: 100%;
             height: auto;
             margin: auto;
-            position: relative;
+            // position: relative;
+            padding: 30px;
         }
     }
 
@@ -775,10 +831,6 @@
     .about, .home, .writing, .projects, .education {
         height: auto;
         width: auto;
-    }
-
-    .tech {
-        height: 1000px;
     }
 
     body {
@@ -846,6 +898,17 @@
         }
     }
 
+    .logoContainer {
+      width: 400px;
+      padding: auto;
+      display: flex;
+      flex-wrap: wrap;
+      .logo {
+        width: 75px;
+        height: 75px;
+      }
+    }
+
     .socialContainer {
         .social {
             height: 25px;
@@ -860,24 +923,17 @@
     .textbox {
         width: 100%;
         height: 40%;
-        position: none;
-        bottom: 70px;
-        left: 0;
         margin: 0px;
         padding: 50px 200px 50px 200px;
         display: flex;
         justify-content: center;
         // border: 1px solid black;
-
         ul {
             column-count: 4;
         }
     }
 
     .techbox{
-        top: 70px;
-        left: 0;
-        height: 170%;
         width: 100%;
         padding: 50px 100px 50px 100px;
         margin: 0px;
@@ -887,10 +943,13 @@
         justify-content: center;
         background-color: rgba(247, 114, 6, 0.0);
         // border: 1px solid black;
-
+      .techList {
+        width: 400px;
+      }
         ul {
             height: 100%;
             width: 100%;
+            padding: auto;
             // border: 1px solid black;
         }
     }
