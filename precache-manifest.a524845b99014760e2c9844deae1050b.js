@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/kevinhu/static/media/LitReviews.82fc5348.png"
   },
   {
-    "revision": "d87502fcf28fabda9f47",
-    "url": "/kevinhu/static/css/main.578ffbb9.chunk.css"
+    "revision": "da6f30121825362e0046",
+    "url": "/kevinhu/static/css/main.efe27503.chunk.css"
   },
   {
-    "revision": "cc3decafc1ceab798aa9",
-    "url": "/kevinhu/static/js/1.cc3decaf.chunk.js"
+    "revision": "09989d658f499068e06a",
+    "url": "/kevinhu/static/js/1.09989d65.chunk.js"
   },
   {
     "revision": "124b90c61e1c4b86bfa6",
@@ -28,6 +28,10 @@ self.__precacheManifest = [
     "url": "/kevinhu/static/media/brooklyn.ded47280.jpg"
   },
   {
+    "revision": "aea24fea2e9ac9db2a828523e4b89c99",
+    "url": "/kevinhu/static/media/github_circle.aea24fea.png"
+  },
+  {
     "revision": "fbae14d6db1afc47522b75f18b8a9a33",
     "url": "/kevinhu/static/media/kevinhu_photo.fbae14d6.png"
   },
@@ -40,16 +44,16 @@ self.__precacheManifest = [
     "url": "/kevinhu/static/media/RSCapstone.2cea6a18.png"
   },
   {
-    "revision": "d87502fcf28fabda9f47",
-    "url": "/kevinhu/static/js/main.d87502fc.chunk.js"
+    "revision": "da6f30121825362e0046",
+    "url": "/kevinhu/static/js/main.da6f3012.chunk.js"
   },
   {
     "revision": "b5025ac2da436efe4a1d3803b14cba0c",
     "url": "/kevinhu/static/media/ManPetals.b5025ac2.png"
   },
   {
-    "revision": "d987b8da71efc6daa640e3e1b1436cd9",
-    "url": "/kevinhu/static/media/Tula.d987b8da.png"
+    "revision": "0493551dd76d349f20a6da2a4483dd37",
+    "url": "/kevinhu/static/media/Tula.0493551d.png"
   },
   {
     "revision": "b86f6e4f11f963196afab8213944b169",
@@ -58,6 +62,10 @@ self.__precacheManifest = [
   {
     "revision": "7cf4c5f6124091d55e142f8ab4f326a4",
     "url": "/kevinhu/static/media/sneks.7cf4c5f6.png"
+  },
+  {
+    "revision": "df9242f4e04803f170b00991366c5442",
+    "url": "/kevinhu/static/media/navigation.df9242f4.png"
   },
   {
     "revision": "41d1c83abf69f95f58e275900b75e7dc",
@@ -76,7 +84,7 @@ self.__precacheManifest = [
     "url": "/kevinhu/static/media/ExcavatingMemory.b8809e5d.png"
   },
   {
-    "revision": "4c239a4cfea4ee00dec3b9dd65a84fd4",
+    "revision": "9a2d15af334b1030766bde202eafc96a",
     "url": "/kevinhu/index.html"
   }
 ];
