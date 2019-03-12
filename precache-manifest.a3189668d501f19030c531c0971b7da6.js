@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "2cea6a1851df50588e4477e6db379ca7",
-    "url": "/kevinhu/static/media/RSCapstone.2cea6a18.png"
+    "revision": "82fc5348972726043ee89a930407828e",
+    "url": "/kevinhu/static/media/LitReviews.82fc5348.png"
   },
   {
-    "revision": "af164d82d26590f54249",
-    "url": "/kevinhu/static/css/main.9f074efc.chunk.css"
+    "revision": "b03de06de32671057a89",
+    "url": "/kevinhu/static/css/main.578ffbb9.chunk.css"
   },
   {
-    "revision": "35ca9c8ed698c1e0b5f5",
-    "url": "/kevinhu/static/js/1.35ca9c8e.chunk.js"
+    "revision": "cc3decafc1ceab798aa9",
+    "url": "/kevinhu/static/js/1.cc3decaf.chunk.js"
   },
   {
     "revision": "124b90c61e1c4b86bfa6",
@@ -36,12 +36,12 @@ self.__precacheManifest = [
     "url": "/kevinhu/static/media/faphoto3.236428af.jpg"
   },
   {
-    "revision": "af164d82d26590f54249",
-    "url": "/kevinhu/static/js/main.af164d82.chunk.js"
+    "revision": "2cea6a1851df50588e4477e6db379ca7",
+    "url": "/kevinhu/static/media/RSCapstone.2cea6a18.png"
   },
   {
-    "revision": "82fc5348972726043ee89a930407828e",
-    "url": "/kevinhu/static/media/LitReviews.82fc5348.png"
+    "revision": "b03de06de32671057a89",
+    "url": "/kevinhu/static/js/main.b03de06d.chunk.js"
   },
   {
     "revision": "b5025ac2da436efe4a1d3803b14cba0c",
@@ -54,6 +54,10 @@ self.__precacheManifest = [
   {
     "revision": "b86f6e4f11f963196afab8213944b169",
     "url": "/kevinhu/static/media/DigInnProjection.b86f6e4f.png"
+  },
+  {
+    "revision": "7cf4c5f6124091d55e142f8ab4f326a4",
+    "url": "/kevinhu/static/media/sneks.7cf4c5f6.png"
   },
   {
     "revision": "41d1c83abf69f95f58e275900b75e7dc",
@@ -72,7 +76,7 @@ self.__precacheManifest = [
     "url": "/kevinhu/static/media/ExcavatingMemory.b8809e5d.png"
   },
   {
-    "revision": "1fdabd927981ece9b805bffb7c759a2d",
+    "revision": "99f9482358c8870e98bd1f418bc4ecfc",
     "url": "/kevinhu/index.html"
   }
 ];
