@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/kevinhu/static/media/LitReviews.82fc5348.png"
   },
   {
-    "revision": "88b1dba9b747f540d8b9",
+    "revision": "834d8e08c235c0446917",
     "url": "/kevinhu/static/css/main.1b4db847.chunk.css"
   },
   {
@@ -44,8 +44,8 @@ self.__precacheManifest = [
     "url": "/kevinhu/static/media/RSCapstone.2cea6a18.png"
   },
   {
-    "revision": "88b1dba9b747f540d8b9",
-    "url": "/kevinhu/static/js/main.88b1dba9.chunk.js"
+    "revision": "834d8e08c235c0446917",
+    "url": "/kevinhu/static/js/main.834d8e08.chunk.js"
   },
   {
     "revision": "b5025ac2da436efe4a1d3803b14cba0c",
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/kevinhu/static/media/ExcavatingMemory.b8809e5d.png"
   },
   {
-    "revision": "661df4eec4ea18b6bd7aee2407f48393",
+    "revision": "265c8b72add17505b140306266b19d24",
     "url": "/kevinhu/index.html"
   }
 ];
