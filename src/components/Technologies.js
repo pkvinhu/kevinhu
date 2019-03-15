@@ -88,15 +88,16 @@ class Technologies extends Component {
                     {current ? (
                     <div className="techList">
                         <ul>
-                            {tech[current].stack.map(each => (
-                                <li>{each}</li>
+                            {tech[current].stack.map((each, i) => (
+                                <li key ={i}>{each}</li>
                             ))}
                         </ul>
                     <hr/>
                     <div className="logoContainer">
-                    {tech[current].logos.map(each => {
+                    {tech[current].logos.map((each, i) => {
                         return(
                             <img 
+                                key={i}
                                 alt=""
                                 className="logo"
                                 src={each}

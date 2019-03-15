@@ -60,18 +60,49 @@ class Projects extends Component {
             container.style.width = "30%"
         }
     }
+
+    sizeBack = (scale) => {
+        var container = document.getElementById("container")
+        var projectTiles = container.querySelectorAll(".projectTile")
+        var projects = document.getElementById("projects")        
+        if(scale === 'scaleDown') {
+            projects.style.padding = "30px 0px 30px 0px"
+            projectTiles.forEach(projectTile => {
+                projectTile.style.width = "300px"
+                projectTile.style.height = "300px"
+            })
+            container.style.width = "auto"
+        }
+        else {
+            projects.style.padding = "0px 50px 0px 50px"
+            projectTiles.forEach(projectTile => {
+                projectTile.style.width = "150px"
+                projectTile.style.height = "150px"
+            })
+            container.style.width = "30%"
+        }
+    }
     
     render() {
-        const { showProjectDetails } = this;
+        const { showProjectDetails, sizeBack } = this;
         const { width } = this.props.size;
         const { projectView } = this.state;
-        console.log(width)
+        if(width < 768) {
+            sizeBack("scaleDown");
+        }
+        if(width >= 768 && projectView) {
+            sizeBack("scaleUp");
+        }
         return (
             <div className='projects section scrollspy' id='projects'>
                 <div className="container" id="container">
                     {projects.map((each, i) => {
                         return (
-                            <div className="card projectTile" name={each.name} onClick={() => showProjectDetails(each)}>
+                            <div 
+                                key={i} 
+                                className="card projectTile" 
+                                name={each.name} 
+                                onClick={() => showProjectDetails(each)}>
                                 {projectView.name === each.name && (<div className="highlightedOverlay"></div>)}
                                 <div className="card-image">
                                     <img alt='' src={each.image}/>
