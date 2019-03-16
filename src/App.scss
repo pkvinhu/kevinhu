@@ -381,8 +381,12 @@
     width: 30%;
     height: 100%;
     // border: 1px solid black;
-    img {
-        object-fit: cover;
+    .container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      transition: 500ms ease;
+      // padding: 50px;
     }
   }
 
@@ -581,6 +585,30 @@
         @extend %flex-centered;
         color: black;
         cursor: pointer;
+    }
+  }
+
+  .writingTile {
+    height: 325px;
+    width: 400px;
+    margin: 10px;
+    cursor: pointer;
+    // border: 1px solid black;
+
+    img {
+      height: 80%;
+      width: 100%;
+      object-fit: cover;
+    }
+    a {
+      @extend %flex-centered;
+      align-content: center;
+      text-align: center;
+      text-decoration: none;
+      color: black;
+      font-size: 1.4em;
+      padding: 7px;
+      height: 20%;
     }
   }
 

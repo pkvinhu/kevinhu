@@ -1,4 +1,4 @@
-.textbox .skills, .bio, .footer p, html .section, body .section {
+.writingTile a, .textbox .skills, .bio, .footer p, html .section, body .section {
   display: flex;
   justify-content: center;
 }
@@ -315,8 +315,11 @@ html .section, body .section {
   width: 30%;
   height: 100%;
 }
-.writing img {
-  object-fit: cover;
+.writing .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  transition: 500ms ease;
 }
 
 .projects {
@@ -498,6 +501,27 @@ html .section, body .section {
 .textbox .skills {
   color: black;
   cursor: pointer;
+}
+
+.writingTile {
+  height: 325px;
+  width: 400px;
+  margin: 10px;
+  cursor: pointer;
+}
+.writingTile img {
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
+}
+.writingTile a {
+  align-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 1.4em;
+  padding: 7px;
+  height: 20%;
 }
 
 .grow {

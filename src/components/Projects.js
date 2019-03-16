@@ -87,7 +87,7 @@ class Projects extends Component {
         const { showProjectDetails, sizeBack } = this;
         const { width } = this.props.size;
         const { projectView } = this.state;
-        if(width < 768) {
+        if(width < 768 && projectView) {
             sizeBack("scaleDown");
         }
         if(width >= 768 && projectView) {
@@ -133,12 +133,14 @@ class Projects extends Component {
                     <img src={projectView.image} />                        
                     <div className="projectDescription">
                         <div className="navigationIcons">
+                            {projectView.github && (
                             <a target="_blank" rel="noopener noreferrer" href={projectView.github}>
                                 <img src={require('../assets/github_circle.png')} />
-                            </a>
+                            </a>)}
+                            {projectView.github && (
                             <a target="_blank" rel="noopener noreferrer" href={projectView.website}>
                                 <img src={require('../assets/navigation.png')} />
-                            </a>
+                            </a>)}
                         </div>
                         <div className="describe">{projectView.description}</div>
                     </div>
