@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/kevinhu/static/media/LitReviews.82fc5348.png"
   },
   {
-    "revision": "834d8e08c235c0446917",
-    "url": "/kevinhu/static/css/main.1b4db847.chunk.css"
+    "revision": "e4c3998a3b4aa18f9722",
+    "url": "/kevinhu/static/css/main.8c724839.chunk.css"
   },
   {
-    "revision": "09989d658f499068e06a",
-    "url": "/kevinhu/static/js/1.09989d65.chunk.js"
+    "revision": "d5c356a3fb6ac53010a0",
+    "url": "/kevinhu/static/js/1.d5c356a3.chunk.js"
   },
   {
     "revision": "124b90c61e1c4b86bfa6",
@@ -44,16 +44,16 @@ self.__precacheManifest = [
     "url": "/kevinhu/static/media/RSCapstone.2cea6a18.png"
   },
   {
-    "revision": "834d8e08c235c0446917",
-    "url": "/kevinhu/static/js/main.834d8e08.chunk.js"
+    "revision": "e4c3998a3b4aa18f9722",
+    "url": "/kevinhu/static/js/main.e4c3998a.chunk.js"
   },
   {
     "revision": "b5025ac2da436efe4a1d3803b14cba0c",
     "url": "/kevinhu/static/media/ManPetals.b5025ac2.png"
   },
   {
-    "revision": "0493551dd76d349f20a6da2a4483dd37",
-    "url": "/kevinhu/static/media/Tula.0493551d.png"
+    "revision": "ddad66a03666f72b3481ff41290bda0c",
+    "url": "/kevinhu/static/media/Tula.ddad66a0.png"
   },
   {
     "revision": "b86f6e4f11f963196afab8213944b169",
@@ -68,23 +68,23 @@ self.__precacheManifest = [
     "url": "/kevinhu/static/media/navigation.df9242f4.png"
   },
   {
-    "revision": "41d1c83abf69f95f58e275900b75e7dc",
-    "url": "/kevinhu/static/media/CultivatingAppetites.41d1c83a.png"
+    "revision": "2251010c01902982dd61251bbb1a84bd",
+    "url": "/kevinhu/static/media/CA.2251010c.png"
   },
   {
-    "revision": "2d307aadf08f49024a7c0ea1351e283a",
-    "url": "/kevinhu/static/media/EngagingPower.2d307aad.png"
+    "revision": "7c4445c02adcce469e1c8982700fe357",
+    "url": "/kevinhu/static/media/PowerPolitics.7c4445c0.png"
   },
   {
-    "revision": "ac46886b15792eb5e8339142bbe2b1ea",
-    "url": "/kevinhu/static/media/NamingViolence.ac46886b.png"
+    "revision": "c4a88f108a48d626e87cffc8d76aba7f",
+    "url": "/kevinhu/static/media/Charlottesville.c4a88f10.png"
   },
   {
-    "revision": "b8809e5d2aceffb86a318f82a77f4dea",
-    "url": "/kevinhu/static/media/ExcavatingMemory.b8809e5d.png"
+    "revision": "a9341aaa9aab08bdca5ca4410e9f5f58",
+    "url": "/kevinhu/static/media/Excavating.a9341aaa.png"
   },
   {
-    "revision": "265c8b72add17505b140306266b19d24",
+    "revision": "23a388b9c75e7328cd3e773cdb1fccf2",
     "url": "/kevinhu/index.html"
   }
 ];
