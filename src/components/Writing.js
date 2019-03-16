@@ -25,16 +25,18 @@ class Writing extends Component {
                 <div className="container">
                 {writing.map((each, i) => {
                         return (
+                            <a 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                href={each.link}>
                             <div 
                                 key={i} 
                                 className="card writingTile" 
                                 name={each.name}>
                                     <img alt='' src={each.image}/>
-                                    <a
-                                        target="_blank" 
-                                        rel="noopener noreferrer"
-                                        href={each.link}>{each.name}</a>
+                                    <div className="writingContent">{each.name}</div>
                                 </div>
+                            </a>
                                 )
                     
                         })}

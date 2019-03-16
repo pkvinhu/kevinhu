@@ -62,7 +62,7 @@
 
   a {
       font: $secondary-font;
-      text-decoration: none;
+      text-decoration: none !important;
   }
 
   div {
@@ -593,14 +593,22 @@
     width: 400px;
     margin: 10px;
     cursor: pointer;
+    overflow: hidden;
     // border: 1px solid black;
 
     img {
       height: 80%;
       width: 100%;
       object-fit: cover;
+      transition: all .2s ease-in-out;
     }
-    a {
+    img:hover {
+      -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    
+    .writingContent {
       @extend %flex-centered;
       align-content: center;
       text-align: center;
@@ -609,6 +617,12 @@
       font-size: 1.4em;
       padding: 7px;
       height: 20%;
+      transition: all .2s ease-in-out;
+
+    }
+    .writingContent:hover {
+      font-weight: bolder;
+      text-transform: uppercase;
     }
   }
 
