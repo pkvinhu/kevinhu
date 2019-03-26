@@ -1,4 +1,4 @@
-.writingTile .writingContent, .textbox .skills, .bio, .footer p, html .section, body .section {
+.writingTile .writingContent, .textbox .innerTextbox .skills, .writing, .bio, .footer p, html .section, body .section {
   display: flex;
   justify-content: center;
 }
@@ -309,16 +309,16 @@ html .section, body .section {
 }
 
 .writing {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  width: 30%;
-  height: 100%;
+  padding: 60px 0px 60px 0px;
+  align-items: center;
+  width: 100%;
+  height: auto;
 }
 .writing .container {
-  display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  align-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
   transition: 500ms ease;
 }
 
@@ -496,9 +496,9 @@ html .section, body .section {
   padding: 30px;
   margin-right: 100px;
   background-color: rgba(2, 2, 2, 0.4);
-  transition: 3000ms ease;
+  transition: 1500ms ease;
 }
-.textbox .skills {
+.textbox .innerTextbox .skills {
   color: black;
   cursor: pointer;
 }
@@ -740,6 +740,10 @@ html .section, body .section {
   .transform {
     transform: translate(-100px, 0px);
   }
+
+  .writing .container {
+    grid-template-columns: repeat(2, auto);
+  }
 }
 @media (max-width: 767px) {
   html .section {
@@ -875,6 +879,10 @@ html .section, body .section {
   .trait {
     font-size: 1.2em;
     margin: 10px;
+  }
+
+  .writing .container {
+    grid-template-columns: repeat(1, auto);
   }
 }
 

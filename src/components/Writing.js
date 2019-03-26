@@ -14,6 +14,10 @@ import '../App.css';
       { name: "Excavating the Trenches of Chinese Memory",
         link: "https://www.inheritancemag.com/stories/excavating-the-trenches-of-chinese-memory",
         image: require("../assets/Excavating.png") },
+      { name: "Hearing the Ghost of Grandma",
+        link: "https://www.inheritancemag.com/stories/hearing-the-ghost-of-grandma",
+        image: require("../assets/Ghost.png") },
+      
   ]
 
 class Writing extends Component {
@@ -21,7 +25,7 @@ class Writing extends Component {
     render() {
         const { classes } = this.props;
         return (
-            <div className='writing section scrollspy' id='writing'>
+            <div className='writing' id='writing'>
                 <div className="container">
                 {writing.map((each, i) => {
                         return (

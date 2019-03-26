@@ -2,20 +2,14 @@ import React, { Component } from 'react';
 import '../App.css';
 
 class About extends Component {
-    state = {
-        bg: false
-    }
 
-    componentDidMount(){
-        setInterval(()=>{
-            this.setState({ bg: !this.state.bg})
-        }, 10000)
-    }
+    // componentDidMount(){
+        
+    // }
 
     render() {
-        // const { bg } = this.state;
         return (
-            <div className='about section' id="about">
+            <div className='lazy about section' id="about">
             <img
                 alt=""
                 className="image"

@@ -76,7 +76,7 @@ class Technologies extends Component {
         const { handleClick } = this;
         const { current } = this.state;
         return (
-            <div className='tech section scrollspy' id='tech'>
+            <div className='tech section' id='tech'>
                 <div className="textbox" id="textbox">
                     <div className="innerTextbox">
                         <h3 onClick={handleClick} className="skills">Proficient</h3>
