@@ -130,16 +130,16 @@ class Projects extends Component {
                 </div>
                 {this.state.projectView && width >= 768 && (
                 <div className="animated fadeInRight projectDetails">
-                    <img src={projectView.image} />                        
+                    <img alt='' src={projectView.image} />                        
                     <div className="projectDescription">
                         <div className="navigationIcons">
                             {projectView.github && (
                             <a target="_blank" rel="noopener noreferrer" href={projectView.github}>
-                                <img src={require('../assets/github_circle.png')} />
+                                <img alt='' src={require('../assets/github_circle.png')} />
                             </a>)}
                             {projectView.github && (
                             <a target="_blank" rel="noopener noreferrer" href={projectView.website}>
-                                <img src={require('../assets/navigation.png')} />
+                                <img alt='' src={require('../assets/navigation.png')} />
                             </a>)}
                         </div>
                         <div className="describe">{projectView.description}</div>

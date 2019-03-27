@@ -23,7 +23,6 @@ import '../App.css';
 class Writing extends Component {
 
     render() {
-        const { classes } = this.props;
         return (
             <div className='writing' id='writing'>
                 <div className="container">

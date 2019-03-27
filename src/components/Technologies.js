@@ -51,7 +51,7 @@ class Technologies extends Component {
         const { width } = this.props.size;
         var elements = document.querySelectorAll(".skills");
         for(let i = 0; i < elements.length; i++){
-            if(elements[i].innerHTML == evt.target.innerHTML) {
+            if(elements[i].innerHTML === evt.target.innerHTML) {
                 if(width >= 768){
                     elements[i].classList.add("grow2")
                 }

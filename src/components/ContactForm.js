@@ -6,7 +6,6 @@ import Modal from '@material-ui/core/Modal';
 const styles = theme => ({
     paper: {
       position: 'absolute',
-      width: '30%',
       backgroundColor: theme.palette.background.paper,
       padding: '30px 50px 30px 50px',
       height: '400px',
@@ -45,7 +44,17 @@ class ContactForm extends Component {
     }
     handleChange = (e) => {
         this.setState({ [e.target.name]: e.target.value })
-        console.log(this.state)
+    }
+
+    resetContent = () => {
+        this.props.handleClose();
+        setTimeout(() => {
+            this.setState({
+                email: '',
+                subject: '',
+                body: ''
+            })
+        }, 1000)
     }
 
     render() {
@@ -68,7 +77,7 @@ class ContactForm extends Component {
                                 value={this.state.email} 
                                 onChange={this.handleChange}
                                 className={`validate ${classes.formContent}`}/>
-                            <label for="icon_prefix1" className={classes.formContent}>Email From</label>
+                            <label htmlFor="icon_prefix1" className={classes.formContent}>Email From</label>
                         </div> */}
                         <div className="input-field contact-child-subject">
                             <i className={`material-icons prefix ${classes.formIcons}`}>subject</i>
@@ -79,7 +88,7 @@ class ContactForm extends Component {
                                 value={this.state.subject} 
                                 onChange={this.handleChange}
                                 className={`validate ${classes.formContent}`}/>
-                            <label for="icon_prefix2" className={classes.formContent}>Subject</label>
+                            <label htmlFor="icon_prefix2" className={classes.formContent}>Subject</label>
                         </div>
                         <div className="input-field contact-child-message">
                             <textarea 
@@ -90,12 +99,13 @@ class ContactForm extends Component {
                                 value={this.state.body} 
                                 onChange={this.handleChange}
                                 className={`validate ${classes.formContent}`}/>
-                            <label for="textarea" className={classes.formContent}>Send a Message!</label>
+                            <label htmlFor="textarea" className={classes.formContent}>Send a Message!</label>
                         </div>
                         <div className={classes.formSend}>
                             <a 
                                 href={`mailto:pkvinhu@gmail.com?subject=${this.state.subject}&body=${this.state.body.replace(/\n/g, '%0D%0A')}`}
-                                className={classes.formSendContent}>
+                                className={classes.formSendContent}
+                                onClick={this.resetContent}>
                                 SEND
                             </a>
                         </div>

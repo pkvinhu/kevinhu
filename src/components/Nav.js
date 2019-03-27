@@ -1,17 +1,9 @@
 import React, { Component } from 'react';
 import '../App.css';
-import { Paper } from '@material-ui/core';
 import sizeMe from 'react-sizeme';
 import DrawerList from './DrawerList';
 
 class Nav extends Component {
-    state={
-        toggle: false
-    }
-
-    handleClick = () => {
-        this.setState({ toggle: !this.state.toggle })
-    }
 
     // componentDidMount(){
     //     var navbar = document.getElementById("navbar");
@@ -31,7 +23,6 @@ class Nav extends Component {
     // }
 
     render() {
-        const { handleClick } = this;
         const { width } = this.props.size;
         return width >= 768 ? (
             <div className='App navbar' id="navbar">
