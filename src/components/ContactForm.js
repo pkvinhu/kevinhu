@@ -10,9 +10,9 @@ const styles = theme => ({
       backgroundColor: theme.palette.background.paper,
       padding: '30px 50px 30px 50px',
       height: '400px',
-      width: '65%',
+      width: '40%',
       top: '20%',
-      right: '18%',
+      right: '30%',
     },
     formContent: {
         height: '100%',

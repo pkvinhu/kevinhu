@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import FeatureTraits from './FeatureTraits';
 import ContactForm from './ContactForm';
+import sizeMe from 'react-sizeme';
 
 class Header extends Component {
     state = {
@@ -17,6 +18,7 @@ class Header extends Component {
     }
 
     render() {
+        const { width } = this.props.size;
         return (
             <div>
                 <div className='header' id="header">
@@ -34,12 +36,16 @@ class Header extends Component {
                     </div>
                 </div>
                 <FeatureTraits />
-                <div className="btn floatingContact" onClick={this.handleOpen}>Contact</div>
+                {width > 768 && (
+                <div>
+                    <div className="btn floatingContact" onClick={this.handleOpen}>Contact</div>
                     <ContactForm handleClose={this.handleClose} modalOpen={this.state.modalOpen}/>
+                </div>
+                )}
                 </div>
             </div>
         )
     }
 }
 
-export default Header;
+export default sizeMe()(Header);
