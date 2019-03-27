@@ -33,7 +33,6 @@ class Nav extends Component {
     render() {
         const { handleClick } = this;
         const { width } = this.props.size;
-        console.log(width)
         return width >= 768 ? (
             <div className='App navbar' id="navbar">
                 <div>

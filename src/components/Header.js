@@ -1,9 +1,21 @@
 import React, { Component } from 'react';
 import '../App.css';
 import FeatureTraits from './FeatureTraits';
-
+import ContactForm from './ContactForm';
 
 class Header extends Component {
+    state = {
+        modalOpen: false
+    }
+
+    handleOpen = () => {
+        this.setState({ modalOpen: true })
+    }
+
+    handleClose = () => {
+        this.setState({ modalOpen: false })
+    }
+
     render() {
         return (
             <div>
@@ -22,6 +34,8 @@ class Header extends Component {
                     </div>
                 </div>
                 <FeatureTraits />
+                <div className="btn floatingContact" onClick={this.handleOpen}>Contact</div>
+                    <ContactForm handleClose={this.handleClose} modalOpen={this.state.modalOpen}/>
                 </div>
             </div>
         )
