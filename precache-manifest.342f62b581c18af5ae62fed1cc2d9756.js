@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/kevinhu/static/media/ManPetals.b5025ac2.png"
   },
   {
-    "revision": "1abdcc0de99529c661e8",
+    "revision": "f1d82eeae89d2050a2cd",
     "url": "/kevinhu/static/css/main.5a685e13.chunk.css"
   },
   {
-    "revision": "940bc2d951ca59942ca0",
-    "url": "/kevinhu/static/js/1.940bc2d9.chunk.js"
+    "revision": "564cf00fa1090cff69dd",
+    "url": "/kevinhu/static/js/1.564cf00f.chunk.js"
   },
   {
     "revision": "124b90c61e1c4b86bfa6",
@@ -44,8 +44,8 @@ self.__precacheManifest = [
     "url": "/kevinhu/static/media/LitReviews.82fc5348.png"
   },
   {
-    "revision": "1abdcc0de99529c661e8",
-    "url": "/kevinhu/static/js/main.1abdcc0d.chunk.js"
+    "revision": "f1d82eeae89d2050a2cd",
+    "url": "/kevinhu/static/js/main.f1d82eea.chunk.js"
   },
   {
     "revision": "ddad66a03666f72b3481ff41290bda0c",
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/kevinhu/static/media/Ghost.7647b66c.png"
   },
   {
-    "revision": "05214e29c3db18b4e057b45879d7e6be",
+    "revision": "f7e6fc6cb5cc4471a1a84a9748983089",
     "url": "/kevinhu/index.html"
   }
 ];
