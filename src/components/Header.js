@@ -36,7 +36,7 @@ class Header extends Component {
                     </div>
                 </div>
                 <FeatureTraits />
-                {width > 768 && (
+                {/*width > 768 &&*/ (
                 <div>
                     <div className="btn floatingContact" onClick={this.handleOpen}>Contact</div>
                     <ContactForm handleClose={this.handleClose} modalOpen={this.state.modalOpen}/>

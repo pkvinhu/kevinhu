@@ -5,13 +5,18 @@ import Modal from '@material-ui/core/Modal';
 
 const styles = theme => ({
     paper: {
-      position: 'absolute',
-      backgroundColor: theme.palette.background.paper,
-      padding: '30px 50px 30px 50px',
-      height: '400px',
-      width: '40%',
-      top: '20%',
-      right: '30%',
+        position: 'fixed',
+        backgroundColor: theme.palette.background.paper,
+        width: '100%',
+        maxWidth: '500px',
+        minWidth: '300px',
+        top: '55%',
+        left: '50%',
+        right: 'auto',
+        bottom: 'auto',
+        marginRight: '-50%',
+        transform: 'translate(-50%, -50%)',
+        padding: '30px 50px 30px 50px',
     },
     formContent: {
         height: '100%',
@@ -92,7 +97,7 @@ class ContactForm extends Component {
                         </div>
                         <div className="input-field contact-child-message">
                             <textarea 
-                                rows="20" 
+                                rows="15" 
                                 id="textarea" 
                                 type="text" 
                                 name="body" 
