@@ -13,26 +13,36 @@ class About extends Component {
             <img
                 alt=""
                 className="image"
-                src={require('../assets/faphoto3.jpg')}
+                src={require('../assets/aboutme_img.jpg')}
             />
-                <div className='info'><h1 className="animated bounceInDown delay-1s"><strong>HI, MY NAME IS <font color="#034">KEVIN</font>.</strong></h1>
-                                      I am a Fullstack Software Engineer and Writer based in Brooklyn, New York. 
+                <div className='info'><h1 className="animated bounceInDown delay-1s"><strong>HI, MY NAME IS <font color="#2d5986">KEVIN</font>.</strong></h1>
+                                      I am a Writer and Software Engineer based in Brooklyn, New York. 
                                       My story started in Chicago, and is quite long, so I'll try my best not to bore you with the details.
                                       <br /><br />
-                                      My vocational journey took me on a whirlwind. On this journey, 
-                                      I discovered that I was passionate about connecting communities, doing good, story-telling, and my identity as an Asian American.
+                                      I have done pastoral work in both Chinese and Filipino immigrant communities in the past,
+                                      am invested in telling stories and writing history on behalf of invisible and voiceless demographics - 
+                                      starting with my own Asian Pacific American people and particularly on behalf of immigrants -
+                                      and am a listener, learner, and participant of communities that invest in decolonizing and deconstructing theology with hopes to rebuild.
                                       <br/><br/>
-                                      During this time, I also discovered code and fell in love with how it worked to intersect some of these passions.
-                                      So I took a deep dive into Javascript by attending Fullstack Academy's Web Development bootcamp,
-                                      and also into the Asian American writing space.
+                                      My journey into Software Engineering began with Fullstack Academy. 
+                                      Amongst many things, what I love most about coding is thinking about architecture 
+                                      and solving problems with the intent for reusability and accessibility while maintaining optimal efficiency.
+                                      I see myself less as "writer" and "engineer" but more as "creative and technical writer". 
+                                      Code, like writing, often tells a story, and I love that they intersect in that way.
                                       <br /><br />
-                                      This will sound cliche, but I promise I am being frank when I say this and not just trying to say what I'm supposed to.
-                                      I enjoy problem solving. It was a part of me that code really unlocked. Problem solving excites me. 
-                                      Like, when I solve problems, in the technical sense, something about my amygdala triggering and dopamine increasing.
-                                      I would like to think though that my exploration in identity and story as a writer humbles me to know that not every problem has a quick solution like coding often might.
+                                      I am currently a Solutions Engineer at 
+                                      <a 
+                                        target="_blank" 
+                                        rel="noopener noreferrer"
+                                        href="https://www.liveperson.com/"><font color="#2d5986"> LivePerson </font></a> 
+                                      in New York HQ. I believe that software can be used for a more just and equitable world,
+                                      and am interested in participating in independent projects that work for both social and environmental justice.
+                                      If you have any ideas regarding these spheres, I'd love to talk to you for further ideation -
+                                      especially if this includes public data sets that help to mobilize.
                                       <br/><br/>
-                                      I am currently searching for engineering roles where I can contribute on an agile oriented team that is built with a DNA of learning and curiosity.
-                                      Check out some of my projects for more insight on what I do.
+                                      I am also an avid fiction reader, and although I don't make any money for it, 
+                                      I am quite passionate about both written and spoken word, the creation process of stories, and that kind of thing.
+                                      If you'd like to chat more in any of these areas, feel free to hit me up.
                                       </div>
             </div>
         )

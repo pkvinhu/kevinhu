@@ -17,7 +17,10 @@ import '../App.css';
       { name: "Hearing the Ghost of Grandma",
         link: "https://www.inheritancemag.com/stories/hearing-the-ghost-of-grandma",
         image: require("../assets/Ghost.png") },
-      
+      { name: "Tips On Landing a Software Engineering Job Post-Bootcamp",
+        link: "https://hackernoon.com/tips-on-landing-a-software-engineering-job-post-bootcamp-fac8778e3fc7",
+        image: require("../assets/HN_getjob_img.png")
+      }
   ]
 
 class Writing extends Component {
