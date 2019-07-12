@@ -19,7 +19,10 @@ import '../App.css';
         image: require("../assets/Ghost.png") },
       { name: "Tips On Landing a Software Engineering Job Post-Bootcamp",
         link: "https://hackernoon.com/tips-on-landing-a-software-engineering-job-post-bootcamp-fac8778e3fc7",
-        image: require("../assets/HN_getjob_img.png")
+        image: require("../assets/HN_getjob_img.png") },
+      { name: "Severance By Ling Ma: A Book Review",
+        link: "https://www.inheritancemag.com/article/severance-by-ling-ma-a-book-review",
+        image: require("../assets/severance_review.jpg")
       }
   ]
 
