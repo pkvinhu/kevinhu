@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "b5025ac2da436efe4a1d3803b14cba0c",
-    "url": "/kevinhu/static/media/ManPetals.b5025ac2.png"
+    "revision": "ddad66a03666f72b3481ff41290bda0c",
+    "url": "/kevinhu/static/media/Tula.ddad66a0.png"
   },
   {
-    "revision": "28240805c6dbea9006a5",
+    "revision": "5d09a832d3a153b10ef1",
     "url": "/kevinhu/static/css/main.1af2f3ee.chunk.css"
   },
   {
-    "revision": "544d388b7833ebc862db",
-    "url": "/kevinhu/static/js/1.544d388b.chunk.js"
+    "revision": "355c1eab941cf7f30fef",
+    "url": "/kevinhu/static/js/1.355c1eab.chunk.js"
   },
   {
     "revision": "124b90c61e1c4b86bfa6",
@@ -44,12 +44,12 @@ self.__precacheManifest = [
     "url": "/kevinhu/static/media/LitReviews.82fc5348.png"
   },
   {
-    "revision": "28240805c6dbea9006a5",
-    "url": "/kevinhu/static/js/main.28240805.chunk.js"
+    "revision": "b5025ac2da436efe4a1d3803b14cba0c",
+    "url": "/kevinhu/static/media/ManPetals.b5025ac2.png"
   },
   {
-    "revision": "ddad66a03666f72b3481ff41290bda0c",
-    "url": "/kevinhu/static/media/Tula.ddad66a0.png"
+    "revision": "5d09a832d3a153b10ef1",
+    "url": "/kevinhu/static/js/main.5d09a832.chunk.js"
   },
   {
     "revision": "b86f6e4f11f963196afab8213944b169",
@@ -88,7 +88,11 @@ self.__precacheManifest = [
     "url": "/kevinhu/static/media/HN_getjob_img.86f9a524.png"
   },
   {
-    "revision": "6ce806561fb5e51ade3613bb59372f4d",
+    "revision": "f92c445731ea42a86716047bfeae2e49",
+    "url": "/kevinhu/static/media/severance_review.f92c4457.jpg"
+  },
+  {
+    "revision": "3b67faa5e9d597d4a66e5df6d2f52ada",
     "url": "/kevinhu/index.html"
   }
 ];
