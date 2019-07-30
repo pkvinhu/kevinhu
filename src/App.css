@@ -350,6 +350,40 @@ html .section, body .section {
   width: 100%;
   height: auto;
 }
+.writing .panel {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-gap: 10px;
+  padding: 0px 20px 0px 20px;
+}
+.writing .panel .section1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.writing .panel .section1 .sectionName {
+  text-transform: uppercase;
+  font: 20px solid black;
+  font-weight: bolder;
+}
+.writing .panel .section2 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  padding: 50px 30px 50px 30px;
+}
+.writing .panel .section2 li {
+  list-style-type: square;
+}
+.writing .panel .section2 li ._item {
+  font-size: 15px;
+  color: black;
+}
+.writing .panel .section2 li ._item:hover {
+  border-bottom: 2px solid black;
+}
+.writing .panel .section2 li .date {
+  font: 15px solid grey;
+  font-weight: bolder;
+}
 .writing .container {
   justify-content: center;
   align-content: center;

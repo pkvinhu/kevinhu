@@ -407,7 +407,40 @@
     align-items: center;
     width: 100%;
     height: auto;
-    // border: 1px solid black;
+    .panel {
+      display: grid;
+      grid-template-columns: 15% 85%;
+      grid-gap: 10px;
+      padding: 0px 20px 0px 20px;
+      .section1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        .sectionName {
+          text-transform: uppercase;
+          font: 20px solid black;
+          font-weight: bolder;
+        }
+      }
+      .section2 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        padding: 50px 30px 50px 30px;
+        li { 
+          list-style-type: square;
+          ._item {
+            font-size: 15px;
+            color: black;
+          }
+          ._item:hover {
+            border-bottom: 2px solid black;
+          }
+          .date {
+            font: 15px solid grey;
+            font-weight: bolder;
+          }
+        } 
+      }
+    }
     .container {
       justify-content: center;
       align-content: center;
