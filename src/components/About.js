@@ -19,10 +19,10 @@ class About extends Component {
                                       I am a Writer and Software Engineer based in Brooklyn, New York. 
                                       My story started in Chicago, and is quite long, so I'll try my best not to bore you with the details.
                                       <br /><br />
-                                      I have done pastoral work in both Chinese and Filipino immigrant communities in the past,
-                                      am invested in telling stories and writing history on behalf of invisible and voiceless demographics - 
-                                      starting with my own Asian Pacific American people and particularly on behalf of immigrants -
+                                      I have done pastoral work in both Chinese and Filipino immigrant communities in the past;
+                                      and am invested in telling stories through my writing, primarily exploring themes of the Chinese diaspora, displacement, memory and oblivion, and faith;
                                       and am a listener, learner, and participant of communities that invest in decolonizing and deconstructing theology with hopes to rebuild.
+                                      My writing aesthetic has been creative nonfiction and essays, but I am a storyteller at heart.
                                       <br/><br/>
                                       My journey into Software Engineering began with Fullstack Academy. 
                                       Amongst many things, what I love most about coding is thinking about architecture 

@@ -63,6 +63,10 @@ import '../App.css';
       { name: "Sustainability as a Decolonizing Liturgical Practice (Part 1): Plastic Free July",
         link: "https://www.divergingmag.com/decolonizing-sustainability-part-1/",
         date: "July 2019"
+      },
+      { name: "Sustainability as a Decolonizing Liturgical Practice (Part 2), Co-written with Charisse Serrano",
+        link: "https://www.divergingmag.com/decolonizing-sustainability-part-2/",
+        date: "September 2019"
       }
     ],
     tech: [
