@@ -61,7 +61,7 @@
     "workbox-webpack-plugin": "3.6.3"
   },
   "scripts": {
-    "sass": "sass --watch src/App.scss src/App.css",
+    "sass": "sass --watch src/App.scss src/App.css && sass --watch src/index.scss src/index.css",
     "start": "npm run sass & node scripts/start.js",
     "build": "npm run sass & node scripts/build.js",
     "predeploy": "npm run build",

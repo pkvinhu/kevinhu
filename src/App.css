@@ -1,4 +1,5 @@
-.writingTile .writingContent, .textbox .innerTextbox .skills, .writing, .bio, .footer p, html .section, body .section {
+.writingTile .writingContent, .textbox .innerTextbox .skills, .writing, .bio, .footer p, html .section,
+body .section {
   display: flex;
   justify-content: center;
 }
@@ -54,7 +55,8 @@ div {
   font: #034;
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
   width: 100%;
   height: 100%;
@@ -62,13 +64,45 @@ html, body {
   padding: 0px;
   overflow-x: hidden;
 }
-html .section, body .section {
+html .section,
+body .section {
   align-items: center;
   height: 800px;
   width: 100%;
   padding: 60px 0px 60px 0px;
 }
 
+/* START VERSION 2 SCSS */
+.name2 {
+  font: "Quattrocento Sans";
+  font-size: 3em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar-item {
+  font: "Quattrocento Sans";
+  font-weight: bolder;
+  width: auto;
+  height: auto;
+  margin: auto 10px;
+  padding: 10px;
+}
+
+.route-container {
+  border-bottom: 3px solid #1d1d80;
+  margin: 100px 200px 0px 200px;
+  height: 600px;
+  width: auto;
+}
+
+/* END VERSION 2 SCSS */
 .App {
   padding: 20px 60px 20px 60px;
   background-color: black;
@@ -680,7 +714,10 @@ html .section, body .section {
     width: 100%;
   }
 
-  .home, .about, .tech, .education {
+  .home,
+.about,
+.tech,
+.education {
     height: auto;
     width: 100%;
     display: flex;
@@ -830,7 +867,11 @@ html .section, body .section {
     padding: 0px;
   }
 
-  .about, .home, .writing, .projects, .education {
+  .about,
+.home,
+.writing,
+.projects,
+.education {
     height: auto;
     width: auto;
   }
