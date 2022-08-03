@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/static/media/severance_review.f92c4457.jpg"
   },
   {
-    "revision": "7cf1ad3be4d86a09fcc52d419028a2d7",
+    "revision": "ecc564e5f869957c8544aabdf32fb163",
     "url": "/index.html"
   }
 ];
