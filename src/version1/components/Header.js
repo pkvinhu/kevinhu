@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../App.css';
+import '../../styles/Version1.css';
 import FeatureTraits from './FeatureTraits';
 import ContactForm from './ContactForm';
 import sizeMe from 'react-sizeme';
@@ -27,11 +27,11 @@ class Header extends Component {
                         <div className="animated slideInLeft name">KEVIN HU</div>
                         <h4 className="animated slideInRight delay-1s title"><font color="#FEC339">WRITER</font> AND <font color="#2d5986">SOFTWARE ENGINEER</font></h4>
                         <div className="animated slideInRight delay-1s socialContainer">
-                            <a  target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kevin-hu-82673529/"><img alt="" className="social" src={require('../assets/linkedin_circle.png')}/></a>
-                            <a  href="mailto:pkvinhu@gmail.com"><img alt="" className="social" src={require('../assets/gmaillogo.png')}/></a>
-                            <a  target="_blank" rel="noopener noreferrer" href="https://github.com/pkvinhu"><img alt="" className="social" src={require('../assets/github_circle.png')}/></a>
-                            <a  target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/pkvinhu/"><img alt="" className="social" src={require('../assets/instagramlogo.png')}/></a>
-                            <a  target="_blank" rel="noopener noreferrer" href="https://medium.com/@kvinhu/latest"><img alt="" className="social" src={require('../assets/mediumlogo.png')}/></a>
+                            <a  target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kevin-hu-82673529/"><img alt="" className="social" src={require('../../assets/linkedin_circle.png')}/></a>
+                            <a  href="mailto:pkvinhu@gmail.com"><img alt="" className="social" src={require('../../assets/gmaillogo.png')}/></a>
+                            <a  target="_blank" rel="noopener noreferrer" href="https://github.com/pkvinhu"><img alt="" className="social" src={require('../../assets/github_circle.png')}/></a>
+                            <a  target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/pkvinhu/"><img alt="" className="social" src={require('../../assets/instagramlogo.png')}/></a>
+                            <a  target="_blank" rel="noopener noreferrer" href="https://medium.com/@kvinhu/latest"><img alt="" className="social" src={require('../../assets/mediumlogo.png')}/></a>
                         </div>
                     </div>
                 </div>

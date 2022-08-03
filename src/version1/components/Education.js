@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../App.css';
+import '../../styles/Version1.css';
 
 const ed = [
     { img: "https://religionnews.com/wp-content/uploads/2018/04/webRNS-Wheaton-College-041718.jpg",

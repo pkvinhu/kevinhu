@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../App.css';
+import '../../styles/Version1.css';
 import { Button } from '@material-ui/core';
 import sizeMe from 'react-sizeme';
 
@@ -69,7 +69,7 @@ class Home extends Component {
                         alt=""
                         name="transform"
                         className={transform ? "profilePic transform2" : "profilePic"}
-                        src={require('../assets/kevinhu_photo.png')}
+                        src={require('../../assets/kevinhu_photo.png')}
                         onClick={handleClick}
                     />
                     </div>

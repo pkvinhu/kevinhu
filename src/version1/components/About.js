@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../App.css';
+import '../../styles/Version1.css';
 
 class About extends Component {
 
@@ -13,7 +13,7 @@ class About extends Component {
             <img
                 alt=""
                 className="image"
-                src={require('../assets/aboutme_img.jpg')}
+                src={require('../../assets/aboutme_img.jpg')}
             />
                 <div className='info'><h1 className="animated bounceInDown delay-1s"><strong>HI, MY NAME IS <font color="#2d5986">KEVIN</font>.</strong></h1>
                                       I am a Writer and Software Engineer based in Brooklyn, New York. 

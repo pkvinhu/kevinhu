@@ -1,31 +1,18 @@
-import React, { Component } from 'react';
-import { HashRouter as Router } from 'react-router-dom';
-import Nav from './components/Nav';
-import Footer from './components/Footer';
-import About from './components/About';
-import Projects from './components/Projects';
-import Writing from './components/Writing';
-import Technologies from './components/Technologies';
-import Parallax from './components/Parallax';
-import Header from './components/Header';
+import React, { Component } from "react";
+import { HashRouter as Router } from "react-router-dom";
+import Version1Root from "./version1/root";
+import Version2Root from "./version2/root";
 
 class App extends Component {
-
   render() {
+    
     return (
       <Router>
-        <div>
-          <Nav />
-          <Header />
-          <Projects />
-          <Parallax bg="first" tag="Tech"/>
-          <Technologies />
-          <Parallax bg="second" tag="Writing"/>
-          <Writing />
-          <Parallax bg="first" tag="About Me"/>
-          <About />
-          <Footer />
-        </div>
+        {process.env.VERSION === 2 ? (
+          <Version2Root />
+        ) : (
+          <Version1Root />
+        )}
       </Router>
     );
   }

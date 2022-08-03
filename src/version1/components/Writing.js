@@ -1,62 +1,56 @@
 import React, { Component } from 'react';
-import '../App.css';
+import '../../styles/Version1.css';
 
   const writing = [
       { name: "Cultivating Appetites",
         link: "https://www.inheritancemag.com/stories/cultivating-appetites",
-        image: require("../assets/CA.png") },
+        image: require("../../assets/CA.png") },
       { name: "Engaging Power and Politics in an Immigrant Family",
         link: "https://www.inheritancemag.com/article/engaging-power-and-politics-in-an-immigrant-family",
-        image: require("../assets/PowerPolitics.png") },
+        image: require("../../assets/PowerPolitics.png") },
       { name: "Naming the Violence of Charlottesville",
         link: "https://www.inheritancemag.com/article/naming-the-violence-of-charlottesville",
-        image: require("../assets/Charlottesville.png") },
+        image: require("../../assets/Charlottesville.png") },
       { name: "Excavating the Trenches of Chinese Memory",
         link: "https://www.inheritancemag.com/stories/excavating-the-trenches-of-chinese-memory",
-        image: require("../assets/Excavating.png") },
+        image: require("../../assets/Excavating.png") },
       { name: "Hearing the Ghost of Grandma",
         link: "https://www.inheritancemag.com/stories/hearing-the-ghost-of-grandma",
-        image: require("../assets/Ghost.png") },
+        image: require("../../assets/Ghost.png") },
       { name: "Tips On Landing a Software Engineering Job Post-Bootcamp",
         link: "https://hackernoon.com/tips-on-landing-a-software-engineering-job-post-bootcamp-fac8778e3fc7",
-        image: require("../assets/HN_getjob_img.png") },
+        image: require("../../assets/HN_getjob_img.png") },
       { name: "Severance By Ling Ma: A Book Review",
         link: "https://www.inheritancemag.com/article/severance-by-ling-ma-a-book-review",
-        image: require("../assets/severance_review.jpg")
+        image: require("../../assets/severance_review.jpg")
       }
   ]
   const sections = {
     books: [
       { name: "Severance By Ling Ma: A Book Review",
         link: "https://www.inheritancemag.com/article/severance-by-ling-ma-a-book-review",
-        image: require("../assets/severance_review.jpg"),
         date: "June 2019"
       }
     ],
     diaspora: [
       { name: "Engaging Power and Politics in an Immigrant Family",
         link: "https://www.inheritancemag.com/article/engaging-power-and-politics-in-an-immigrant-family",
-        image: require("../assets/PowerPolitics.png"),
         date: "July 2017" },
       { name: "Excavating the Trenches of Chinese Memory",
         link: "https://www.inheritancemag.com/stories/excavating-the-trenches-of-chinese-memory",
-        image: require("../assets/Excavating.png"),
         date: "March 2018" },
       { name: "Hearing the Ghost of Grandma",
         link: "https://www.inheritancemag.com/stories/hearing-the-ghost-of-grandma",
-        image: require("../assets/Ghost.png"),
         date: "March 2019" }
     ],
     food: [
       { name: "Cultivating Appetites: Eating as the Initial Rite of Acceptance",
         link: "https://www.inheritancemag.com/stories/cultivating-appetites",
-        image: require("../assets/CA.png"),
         date: "April 2017" }
     ],
     race: [
       { name: "Naming the Violence of Charlottesville: The American Church Must Denounce White Supremacy",
         link: "https://www.inheritancemag.com/article/naming-the-violence-of-charlottesville",
-        image: require("../assets/Charlottesville.png"),
         date: "August 2017" }
     ],
     sustainability: [
@@ -72,7 +66,6 @@ import '../App.css';
     tech: [
       { name: "Tips On Landing a Software Engineering Job Post-Bootcamp",
         link: "https://hackernoon.com/tips-on-landing-a-software-engineering-job-post-bootcamp-fac8778e3fc7",
-        image: require("../assets/HN_getjob_img.png"),
         date: "May 2019"
       }
     ]

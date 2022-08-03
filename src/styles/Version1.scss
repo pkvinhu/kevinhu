@@ -110,31 +110,6 @@
     }
   }
 
-//   .sticky {
-//     position: fixed;
-//     top: 0;
-//     width: 100%;
-//   }
-
-//   .about::before, .projects::before {
-//     content: "";
-//     position: absolute;
-//     width : 100%;
-//     height: 100%;
-//     background: inherit;
-//     z-index: -1;
-    
-//     filter        : blur(4px);
-//     -moz-filter   : blur(4px);
-//     -webkit-filter: blur(4px);
-//     -o-filter     : blur(4px);
-    
-//     transition        : all 1s linear;
-//     -moz-transition   : all 1s linear;
-//     -webkit-transition: all 1s linear;
-//     -o-transition     : all 1s linear;
-//   }
-
   .about{
     overflow: hidden;
     height: 100%;
@@ -176,7 +151,7 @@
   }
 
   .header {
-    background-image: url('./assets/lightbulb.jpg');
+    background-image: url('../assets/lightbulb.jpg');
     height: 1200px;
     @extend %background-fade;
   }
@@ -218,13 +193,13 @@
   }
 
   .parallax1 {
-    background-image: url('./assets/chicago.jpg');
+    background-image: url('../assets/chicago.jpg');
     height: 250px;
     @extend %background-fade;
   }
 
   .parallax2 {
-    background-image: url('./assets/brooklyn.jpg');
+    background-image: url('../assets/brooklyn.jpg');
     height: 250px;
     @extend %background-fade;
   }

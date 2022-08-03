@@ -1,0 +1,88 @@
+$primary-font: Raleway;
+$secondary-font: "Quattrocento Sans";
+$primary-color: rgb(34, 66, 77);
+$secondary-color: rgb(150, 123, 2);
+$tertiary-color: rgb(65, 90, 95);
+$batman: #fec339;
+
+%flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about {
+  padding: 60px 0px;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background-color: rgb(238, 240, 247);
+}
+
+.nav {
+  @extend %flex-space-between;
+  padding: 40px 0px;
+  align-items: baseline;
+
+  .leftNav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    color: $primary-color;
+
+    .name {
+      font: $primary-font;
+      font-size: 50px;
+    }
+
+    .page {
+      font: $primary-font;
+      font-size: 40px;
+    }
+  }
+}
+
+.navLink {
+  font: $secondary-font;
+  text-decoration: none !important;
+  color: $secondary-color;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.paragraphLink {
+  @extend .navLink;
+  padding: 0px;
+}
+
+.paragraphLink:hover {
+  color: $secondary-color;
+  border-bottom: 2px solid $tertiary-color;
+}
+
+section {
+  font-style: $primary-font;
+  font-size: 20px;
+  color: $tertiary-color;
+}
+
+.writing {
+  li {
+    list-style-type: square;
+    ._item {
+      font-size: 20px;
+      color: $primary-color;
+    }
+    ._item:hover {
+      border-bottom: 2px solid $primary-color;
+    }
+    .date,
+    .pub {
+      font-size: 15px;
+      color: $secondary-color;
+      font-weight: bolder;
+    }
+  }
+}

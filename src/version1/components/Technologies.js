@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../App.css';
+import '../../styles/Version1.css';
 import sizeMe from 'react-sizeme';
 
 const tech = {
