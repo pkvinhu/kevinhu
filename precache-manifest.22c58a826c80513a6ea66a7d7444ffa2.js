@@ -20,12 +20,12 @@ self.__precacheManifest = [
     "url": "/static/media/lightbulb.630467c3.jpg"
   },
   {
-    "revision": "e4936486c9f39d72ce98afe5f59c675b",
-    "url": "/static/media/chicago.e4936486.jpg"
-  },
-  {
     "revision": "ded472805f226fddc44576d3c23d6ccc",
     "url": "/static/media/brooklyn.ded47280.jpg"
+  },
+  {
+    "revision": "e4936486c9f39d72ce98afe5f59c675b",
+    "url": "/static/media/chicago.e4936486.jpg"
   },
   {
     "revision": "aea24fea2e9ac9db2a828523e4b89c99",
@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/static/media/severance_review.f92c4457.jpg"
   },
   {
-    "revision": "4b83c8ac8ac167c2bc069855c0ec43c5",
+    "revision": "c1f9f3b636ec2a2ee2833cd4625d2db4",
     "url": "/index.html"
   }
 ];
