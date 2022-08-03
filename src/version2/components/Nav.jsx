@@ -25,6 +25,12 @@ const Nav = () => {
           className="navLink"
           target="_blank"
           rel="noopener noreferrer"
+          href="https://github.com/pkvinhu"
+        >github</a>
+        <a
+          className="navLink"
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://app.thestorygraph.com/profile/kevinhu"
         >
           reading
