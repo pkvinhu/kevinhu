@@ -8,11 +8,10 @@ const Version2Root = () => {
   return (
     <div className="container">
       <Nav />
-      <Route exact path="/">
-        <Redirect to="/about" />
-      </Route>
       <Route path="/about" component={About} />
       <Route path="/writing" component={Writing} />
+      <Route exact path="/" render={() => <Redirect to="/about" />} />
+      <Route path="*" render={() => <Redirect to="/about" />} />
     </div>
   );
 };
