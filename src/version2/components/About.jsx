@@ -20,7 +20,7 @@ const About = () => {
         <a className="paragraphLink" href="https://www.greatriverreview.com/">
           the Great River Review
         </a>
-        , amongst others. All of their writing can be found in the{" "}
+        , amongst others. All of their writing can be found{" "}
         <a className="paragraphLink" href="/#/writing">
           here
         </a>
