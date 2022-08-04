@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "d4a285109a7bbc591213",
+    "revision": "66a3378f9df96d12ff52",
     "url": "/static/css/main.30974ab8.chunk.css"
   },
   {
-    "revision": "d4a285109a7bbc591213",
-    "url": "/static/js/main.d4a28510.chunk.js"
+    "revision": "66a3378f9df96d12ff52",
+    "url": "/static/js/main.66a3378f.chunk.js"
   },
   {
     "revision": "e6f659969ba32ea8d359",
@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/static/media/severance_review.f92c4457.jpg"
   },
   {
-    "revision": "ecc564e5f869957c8544aabdf32fb163",
+    "revision": "be23e3c17ab9808e4a6dfff2fc6fa0b7",
     "url": "/index.html"
   }
 ];
