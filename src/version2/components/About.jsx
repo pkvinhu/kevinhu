@@ -4,11 +4,13 @@ const About = () => {
   return (
     <div className="about">
       <section>
-        Kevin (they/he) is a nonbinary writer, software engineer, and dad.
+        Hi, my name is Kevin. I use <strong>they</strong> and{" "}
+        <strong>he</strong> pronouns. I am a nonbinary writer, software
+        engineer, and dad.
       </section>
       <br />
       <section>
-        They have written for publications such as{" "}
+        I have written for publications such as{" "}
         <a className="paragraphLink" href="https://www.inheritancemag.com/">
           Inheritance Magazine
         </a>
@@ -20,7 +22,7 @@ const About = () => {
         <a className="paragraphLink" href="https://www.greatriverreview.com/">
           the Great River Review
         </a>
-        , amongst others. All of their writing can be found{" "}
+        , amongst others. All of my writing can be found{" "}
         <a className="paragraphLink" href="/#/writing">
           here
         </a>
@@ -28,29 +30,34 @@ const About = () => {
       </section>
       <br />
       <section>
-        Most recently, they worked at{" "}
-        <a className="paragraphLink" href="https://livefeather.com">
-          Feather
+        I am an incoming Software Engineer at{" "}
+        <a className="paragraphLink" href="https://www.tempus.com/">
+          Tempus Labs
         </a>
-        , a furniture rental company with the mission to keep furniture waste
-        out of landfills towards realizing a more circular economy. They were a
-        Software Engineer on the Experience Pod, working across the stack, where
-        they most notably shipped features on the consumer website, repurposed
-        the subscription plans system, and rebuilt a dynamic subscription
-        leasing system.
+        – a precision medicine data platform focused primarily on oncology,
+        neurology, and infectious disease.
       </section>
       <br />
       <section>
-        Previous to this, they were at{" "}
+        Previously, I have worked as a Software Engineer at{" "}
+        <a className="paragraphLink" href="https://livefeather.com">
+          Feather
+        </a>
+        – a furniture rental company with the mission to keep furniture waste
+        out of landfills towards realizing a more circular economy – and at{" "}
         <a className="paragraphLink" href="https://www.liveperson.com/">
           LivePerson
         </a>
-        , a conversational commerce platform, where they worked on both the
-        Implementations Team and the Advanced Analytics Team as a (Fullstack)
-        Software Engineer.
+        , a conversational commerce platform.
       </section>
       <br />
-      <section>They are currently searching for a new opportunity.</section>
+      <section>
+        A more complete overview of my work history can be found{" "}
+        <a className="paragraphLink" href="/#/resume">
+          here
+        </a>
+        .
+      </section>
     </div>
   );
 };
