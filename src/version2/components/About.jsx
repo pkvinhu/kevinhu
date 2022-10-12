@@ -34,7 +34,7 @@ const About = () => {
         <a className="paragraphLink" href="https://www.tempus.com/">
           Tempus Labs
         </a>
-        – a precision medicine data platform focused primarily on oncology,
+        {" "}– a precision medicine data platform focused primarily on oncology,
         neurology, and infectious disease.
       </section>
       <br />
@@ -43,7 +43,7 @@ const About = () => {
         <a className="paragraphLink" href="https://livefeather.com">
           Feather
         </a>
-        – a furniture rental company with the mission to keep furniture waste
+        {" "}– a furniture rental company with the mission to keep furniture waste
         out of landfills towards realizing a more circular economy – and at{" "}
         <a className="paragraphLink" href="https://www.liveperson.com/">
           LivePerson
