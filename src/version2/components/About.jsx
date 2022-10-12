@@ -53,7 +53,7 @@ const About = () => {
       <br />
       <section>
         A more complete overview of my work history can be found{" "}
-        <a className="paragraphLink" href="/#/resume">
+        <a className="paragraphLink" target="_blank" href="Software_Engineer_CV.pdf">
           here
         </a>
         .
