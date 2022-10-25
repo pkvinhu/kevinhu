@@ -31,21 +31,36 @@ const About = () => {
       <br />
       <section>
         I am currently a Software Engineer at{" "}
-        <a className="paragraphLink" href="https://www.tempus.com/">
+        <a
+          className="paragraphLink"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.tempus.com/"
+        >
           Tempus Labs
-        </a>
-        {" "}– a precision medicine data platform focused primarily on oncology,
+        </a>{" "}
+        – a precision medicine data platform focused primarily on oncology,
         neurology, and infectious disease.
       </section>
       <br />
       <section>
         Previously, I have worked as a Software Engineer at{" "}
-        <a className="paragraphLink" href="https://livefeather.com">
+        <a
+          className="paragraphLink"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://livefeather.com"
+        >
           Feather
-        </a>
-        {" "}– a furniture rental company with the mission to keep furniture waste
+        </a>{" "}
+        – a furniture rental company with the mission to keep furniture waste
         out of landfills towards realizing a more circular economy – and at{" "}
-        <a className="paragraphLink" href="https://www.liveperson.com/">
+        <a
+          className="paragraphLink"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.liveperson.com/"
+        >
           LivePerson
         </a>
         , a conversational commerce platform.
@@ -53,7 +68,11 @@ const About = () => {
       <br />
       <section>
         A more complete overview of my work history can be found{" "}
-        <a className="paragraphLink" target="_blank" href="Software_Engineer_CV.pdf">
+        <a
+          className="paragraphLink"
+          target="_blank"
+          href="Software_Engineer_CV.pdf"
+        >
           here
         </a>
         .
