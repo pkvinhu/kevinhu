@@ -30,7 +30,7 @@ const About = () => {
       </section>
       <br />
       <section>
-        I am an incoming Software Engineer at{" "}
+        I am currently a Software Engineer at{" "}
         <a className="paragraphLink" href="https://www.tempus.com/">
           Tempus Labs
         </a>
