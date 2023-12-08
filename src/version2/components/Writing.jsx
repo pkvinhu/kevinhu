@@ -90,6 +90,24 @@ const writing = [
     link: "https://www.greatriverreview.com/issue-68-toc/kevin-hu",
     date: "November 2021",
   },
+  {
+    name: "Protesters Demand Ceasefire in Gaza and End to Israeli Occupation",
+    publication: "South Side Weekly",
+    link: "https://southsideweekly.com/protesters-demand-ceasefire-in-gaza-and-end-to-israeli-occupation/",
+    date: "October 2023",
+  },
+  {
+    name: "Chinese Americans Protest Planned Brighton Park Tent Camp",
+    publication: "South Side Weekly",
+    link: "https://southsideweekly.com/chinese-americans-in-protests-against-tent-encampments-in-brighton-park/",
+    date: "November 2023",
+  },
+  {
+    name: "Chicago Students Join National Wave of Pro-Palestine University Protests",
+    publication: "South Side Weekly",
+    link: "https://southsideweekly.com/chicago-students-join-national-wave-of-pro-palestine-university-protests/",
+    date: "December 2023",
+  },
 ];
 
 const Writing = () => {
