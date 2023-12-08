@@ -73,7 +73,7 @@ const writing = [
     name: "A Ritual of Grief in New Waves",
     publication: "The LitPub",
     link:
-      "https://www.thelitpub.com/blog/a-ritual-of-grief-in-new-waves-by-kevin-nguyen",
+      "https://www.thelitpub.com/reviews-interviews/a-ritual-of-grief-in-new-waves-by-kevin-nguyen",
     date: "March 2020",
   },
   {
