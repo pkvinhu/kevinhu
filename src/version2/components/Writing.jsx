@@ -108,6 +108,12 @@ const writing = [
     link: "https://southsideweekly.com/chicago-students-join-national-wave-of-pro-palestine-university-protests/",
     date: "December 2023",
   },
+  {
+    name: "U. of C. Police Clear Gaza Encampment",
+    publication: "South Side Weekly",
+    link: "https://southsideweekly.com/students-occupy-university-of-chicago-campus-and-demand-divestment-from-israel/",
+    date: "April 2024",
+  },
 ];
 
 const Writing = () => {
