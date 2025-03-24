@@ -114,6 +114,12 @@ const writing = [
     link: "https://southsideweekly.com/students-occupy-university-of-chicago-campus-and-demand-divestment-from-israel/",
     date: "April 2024",
   },
+  {
+    name: "Best Book Store Doubling as Political Home: Pilsen Community Books – Pilsen",
+    publication: "South Side Weekly",
+    link: "https://southsideweekly.com/best-book-store-doubling-as-political-home-pilsen-community-books-pilsen/",
+    date: "September 2024",
+  }
 ];
 
 const Writing = () => {
