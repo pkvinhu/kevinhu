@@ -47,7 +47,7 @@
     "react-app-polyfill": "^0.2.2",
     "react-dev-utils": "^7.0.5",
     "react-dom": "^16.7.0",
-    "react-router-dom": "^5.3.4",
+    "react-router-dom": "^7.5.2",
     "react-sizeme": "^2.6.12",
     "resolve": "1.8.1",
     "sass": "^1.86.0",
